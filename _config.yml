@@ -1,0 +1,19 @@
+full_rebuild: true
+name: reactive.how
+author: Cédric Soulas
+url: http://reactive.how
+version: 0.1
+repository: https://github.com/cedricss/reactive.how.git
+branch: master
+encoding: utf-8
+sass:
+  sass_dir: _scss_partials
+defaults:
+  -
+    values:
+      layout: "index"
+exclude: [
+.git,
+.gitignore,
+README.md,
+]
