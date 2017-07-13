@@ -3,4 +3,11 @@ _site
 .jekyll-metadata
 .DS_Store
 node_modules
-lib/semantic
+
+lib/semantic/*
+!lib/semantic/src
+lib/semantic/src/*
+!lib/semantic/src/themes
+lib/semantic/src/themes/*
+!lib/semantic/src/theme.config
+
