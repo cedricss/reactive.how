@@ -10,4 +10,4 @@ lib/semantic/src/*
 !lib/semantic/src/themes
 lib/semantic/src/themes/*
 !lib/semantic/src/theme.config
-
+!lib/semantic/src/themes/reactive.how
