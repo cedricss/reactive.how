@@ -6,19 +6,13 @@
        Fonts
 --------------------*/
 
-@fontName          : 'Lato';
+@fontName          : -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 @fontSmoothing     : antialiased;
 
-@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
-@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@headerFont        : @fontName;
+@pageFont          : @fontName;
 
-@googleFontName    : @fontName;
-@importGoogleFonts : true;
-@googleFontSizes   : '400,700,400italic,700italic';
-@googleSubset      : 'latin';
-
-@googleProtocol    : 'https://';
-@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
+@importGoogleFonts : false;
 
 /*-------------------
       Base Sizes
