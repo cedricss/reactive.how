@@ -1,3 +1,19 @@
 /*******************************
          Theme Overrides
 *******************************/
+
+.ui.cards > .card > .content > .header:not(.ui),
+.ui.card > .content > .header:not(.ui) {
+  font-weight: 900;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+
+.ui.cards > .card > .extra,
+.ui.card > .extra {
+  border-top: none !important;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+}

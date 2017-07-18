@@ -3,6 +3,68 @@ id: index
 layout: default
 ---
 
-<h1>{{site.data.content.h1}}</h1>
-<h2>{{site.data.content.h2}}</h2>
-<h3>{{site.data.content.h3}}</h3>
+<h1 class="ui header">
+    <span>reactive.how</span>
+</h1>
+<div>
+<a href="https://github.com/cedricss/reactive.how" target="_blank" class="ui black left corner medium label">
+    <i class="github icon"></i>
+</a>
+</div>
+<div class="ui three cards stackable">
+    <div class="ui card">
+        <div class="content">
+            <a class="ui red medium tiny ribbon label">starting soon</a>
+            <div class="ui hidden divider"></div>
+            <span class="header">
+                Reactive programming
+                <i class="wizard icon"></i>
+            </span>
+            <p class="meta">A new animated card <b>every Monday</b></p>
+            <div class="left floated">
+                <a href="https://github.com/staltz/xstream" target="_blank" class="ui mini label">xstream</a>
+                <a href="http://reactivex.io/rxjs/" target="_blank" class="ui mini label">RxJS 5</a>
+            </div>
+            <div class="right floated">
+                <img class="ui avatar mini image" src="img/icons/transformation.png" />
+                <img class="ui avatar mini image" src="img/icons/aggregation.png" />
+                <img class="ui avatar mini image" src="img/icons/filtering.png" />
+                <img class="ui avatar mini image" src="img/icons/combination.png" />
+            </div>
+        </div>
+        <div class="extra content">
+            <a href="#course"><i class="mail icon"></i><b>Join the email course</b></a>
+            <div class="right floated">
+                <a href="https://twitter.com/CedricSoulas" target="_blank"><i class="twitter icon"></i>Follow</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% for level in site.data.cards.levels %}
+<div class="stripe">
+    <h2 class="ui horizontal divider header">
+        <div class="ui black label">Level {{ forloop.index }}</div>
+    </h2>
+    {% for module in level.modules %}
+    <div class="ui hidden divider"></div>
+    <h2 class="ui header">
+        {{ module.name }}
+    </h2>
+    <div class="ui four cards doubling">
+    {% for card in module.cards %}
+    {% include card.html card=card %}
+    {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
+
+<div class="stripe">
+<h2 class="ui horizontal divider header">
+    <div class="ui black label">
+        <a class="item" href="https://github.com/cedricss/reactive.how" target="_blank">
+            <i class="github icon"></i> Contribute to the next levels
+        </a>
+    </div>
+</h2>
+</div>

@@ -19,6 +19,7 @@
   "autoInstall": false,
   "rtl": false,
   "components": [
+    "reset",
     "site",
     "container",
     "divider",
@@ -28,7 +29,10 @@
     "list",
     "segment",
     "grid",
-    "card"
+    "card",
+    "button",
+    "icon",
+    "image"
   ],
   "version": "2.2.11"
 }

@@ -3,10 +3,10 @@
 
 @import "base";
 
-html{
-    min-height: 100%;
+body {
+    padding-top: 3em;
 }
 
-body {
-    padding: 80px;
+.stripe {
+    padding: 4em 0em;
 }

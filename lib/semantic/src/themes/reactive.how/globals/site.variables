@@ -51,7 +51,7 @@
   Page Heading
 ---------------*/
 
-@headerFontWeight : bold;
+@headerFontWeight : 300;
 @headerLineHeight : unit((18 / 14), em);
 
 @h1 : unit((28 / 14), rem);
@@ -235,14 +235,14 @@
 @lightPurple      : #DC73FF;
 @lightPink        : #FF8EDF;
 @lightBrown       : #D67C1C;
-@lightGrey        : #DCDDDE;
+@lightGrey        : #FAFAFA;
 @lightBlack       : #545454;
 
 /*---   Neutrals  ---*/
 @fullBlack        : #000000;
 @offWhite         : #F9FAFB;
 @darkWhite        : #F3F4F5;
-@midWhite         : #DCDDDE;
+@midWhite         : #FAFAFA;
 @white            : #FFFFFF;
 
 /*--- Colored Backgrounds ---*/
@@ -252,7 +252,7 @@
 @oliveBackground  : #FBFDEF;
 @greenBackground  : #E5F9E7;
 @tealBackground   : #E1F7F7;
-@blueBackground   : #DFF0FF;
+@blueBackground   : #00c3e3;
 @violetBackground : #EAE7FF;
 @purpleBackground : #F6E7FF;
 @pinkBackground   : #FFE3FB;

@@ -1,0 +1,76 @@
+levels:
+  - modules:
+    - name: Basic operations
+      cards:
+        - name: Map
+          type: transformation
+          released: false
+
+        - name: Filter
+          type: filtering
+          released: false
+
+        - name: StartWith
+          type: combination
+          released: false
+
+        - name: Fold
+          type: 
+            - aggregation
+            - transformation
+          aka: StartWith + Scan
+          released: false
+
+  - modules:
+    - name: Multiple streams combination
+      cards:
+        - name: Merge
+          type: combination
+          released: true
+
+        - name: Combine
+          type: combination
+          released: true
+
+  - modules:
+    - name: Stream filtering
+      cards:
+        - name: Take
+          type: filtering
+          release: false
+
+        - name: Last
+          type: filtering
+          release: false
+
+        - name: Skip
+          type: filtering
+          release: false
+
+        - name: Drop
+          type: filtering
+          release: false
+
+        - name: EndWhen
+          aka: TakeUntil
+          type: filtering
+          released: false
+
+  - modules:
+    - name: Extra operations
+      cards:
+        - name: Concat
+          type: combination
+          released: false
+
+        - name: Delay
+          type: utility
+          released: false
+
+        - name: Debounce
+          type: filtering
+          release: false
+
+        - name: Pairwise
+          type: transformation
+          released: false
