@@ -26,10 +26,10 @@ layout: default
                 <a href="http://reactivex.io/rxjs/" target="_blank" class="ui mini label">RxJS 5</a>
             </div>
             <div class="right floated">
-                <img class="ui avatar mini image" src="img/icons/transformation.png" />
-                <img class="ui avatar mini image" src="img/icons/aggregation.png" />
-                <img class="ui avatar mini image" src="img/icons/filtering.png" />
-                <img class="ui avatar mini image" src="img/icons/combination.png" />
+                <img class="ui avatar mini image" alt="transformation" src="img/icons/transformation.png" />
+                <img class="ui avatar mini image" alt="aggregation" src="img/icons/aggregation.png" />
+                <img class="ui avatar mini image" alt="filtering" src="img/icons/filtering.png" />
+                <img class="ui avatar mini image" alt="combination" src="img/icons/combination.png" />
             </div>
         </div>
         <div class="extra content">
@@ -43,7 +43,7 @@ layout: default
 {% for level in site.data.cards.levels %}
 <div class="stripe">
     <h2 class="ui horizontal divider header">
-        <div class="ui black label">Level {{ forloop.index }}</div>
+        <span class="ui black label">Level {{ forloop.index }}</span>
     </h2>
     {% for module in level.modules %}
     <div class="ui hidden divider"></div>
@@ -61,10 +61,10 @@ layout: default
 
 <div class="stripe">
 <h2 class="ui horizontal divider header">
-    <div class="ui black label">
+    <span class="ui black label">
         <a class="item" href="https://github.com/cedricss/reactive.how" target="_blank">
             <i class="github icon"></i> Contribute to the next levels
         </a>
-    </div>
+    </span>
 </h2>
 </div>

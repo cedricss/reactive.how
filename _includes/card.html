@@ -11,14 +11,14 @@
   </div>
   <div class="image">
     {% if include.card.released %}
-      <img src="img/{{ include.card.name | downcase }}.gif" />
+      <img alt="{{ include.card.name }}" src="img/{{ include.card.name | downcase }}.gif" />
     {% else %}
-    <img src="img/empty.png" />
+    <img alt="animation not yet released" src="img/empty.png" />
     {% endif %}
   </div>
   <div class="extra content">
     {% for type in include.card.type %}
-    <img class="ui avatar mini image" src="/img/icons/{{ type }}.png">
+    <img class="ui avatar mini image" alt="{{ type }}" src="/img/icons/{{ type }}.png">
     <span class="">{{ type }}</span>
     {% endfor %}
   </div>
