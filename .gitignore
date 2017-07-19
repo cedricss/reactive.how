@@ -5,6 +5,10 @@ _site
 node_modules
 
 lib/semantic/*
+!lib/semantic/dist
+lib/semantic/dist/*
+!lib/semantic/dist/semantic.min.css
+!lib/semantic/dist/themes
 !lib/semantic/src
 lib/semantic/src/*
 !lib/semantic/src/themes
