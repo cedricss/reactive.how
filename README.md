@@ -2,6 +2,8 @@
 
 ## Learn reactive programming
 
+<img width="50%" src="img/content_preview_padding.gif" />
+
 ### A new animated card every Monday ✨ (starting soon)
 
 - [Preview](http://reactive.how/)
