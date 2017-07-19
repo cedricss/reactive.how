@@ -11,7 +11,7 @@
   </div>
   <div class="image">
     {% if include.card.released %}
-      <img src="img/{{ include.card.name }}.gif" />
+      <img src="img/{{ include.card.name | downcase }}.gif" />
     {% else %}
     <img src="img/empty.png" />
     {% endif %}
