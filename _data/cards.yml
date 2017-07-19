@@ -22,7 +22,7 @@ levels:
           released: false
 
   - modules:
-    - name: Multiple streams combination
+    - name: Stream combination
       cards:
         - name: Merge
           type: combination
