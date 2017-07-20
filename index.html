@@ -33,10 +33,8 @@ layout: default
             </div>
         </div>
         <div class="extra content">
-            <a href="#course"><i class="mail icon"></i><b>Join the email course</b></a>
-            <div class="right floated">
-                <a href="https://twitter.com/CedricSoulas" target="_blank"><i class="twitter icon"></i>Follow</a>
-            </div>
+            <a href="#subscribe"><i class="mail icon"></i>Get updates</a> |
+            <a href="https://twitter.com/CedricSoulas" target="_blank"><i class="twitter icon"></i>Follow</a>
         </div>
     </div>
 </div>
@@ -60,11 +58,25 @@ layout: default
 {% endfor %}
 
 <div class="stripe">
-<h2 class="ui horizontal divider header">
-    <span class="ui black label">
-        <a class="item" href="https://github.com/cedricss/reactive.how" target="_blank">
-            <i class="github icon"></i> Contribute to the next levels
-        </a>
-    </span>
-</h2>
+    <div class="ui two column centered doubling grid">
+        <div class="center aligned column">
+            <div class="ui tall piled very padded segment">
+                <h2 id="subscribe" class="ui header">Dive deeper into reactive programming
+                    <span class="sub header">Get my upcoming email course, early updates and bonuses.
+                    </span>
+                </h2>
+                {% include email_form.html %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="stripe">
+    <h2 class="ui horizontal divider header">
+        <span class="ui black label">
+            <a class="item" href="https://github.com/cedricss/reactive.how" target="_blank">
+                <i class="github icon"></i> Contribute to the next levels
+            </a>
+        </span>
+    </h2>
 </div>
