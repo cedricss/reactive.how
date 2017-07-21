@@ -13,19 +13,27 @@ layout: default
     <a class="ui logo large label" href="http://reactive.how">reactive.how</a>
 </div>
 <div class="ui hidden divider"></div>
-<div class="ui two centered cards stackable">
+<div class="ui two centered cards doubling">
     <div class="ui card">
         <div class="content">
-            <a class="ui medium medium ribbon label"><i class="lightning icon"></i>starting soon</a>
-            <h3 class="center aligned">
+            <a class="ui medium ribbon label">starting soon</a>
+            <h4 class="center aligned extra">
+                <i class="announcement icon"></i> Upcoming series to <b>learn reactive programming</b>
+            </h4>
+            <h3 class="center aligned light weight header">
                     A new animated card <b>every Monday</b>
             </h3>
         </div>
         <div class="extra center aligned content">
             <a class="ui teal tiny button" href="#subscribe"><i class="mail icon"></i>Get updates + bonuses</a>
             <a class="ui twitter tiny button" href="https://twitter.com/CedricSoulas" target="_blank"><i class="twitter icon"></i>Follow</a>
-            <div class="ui hidden divider"></div>
-            <p>An upcoming series to <b>learn reactive programming</b>.</p>
+        </div>
+        <div class="extra content">
+            <div class="right aligned">
+                <a href="https://twitter.com/CedricSoulas">
+                    <img class="ui avatar huge image" alt="Cédric Soulas" src="img/cedricsoulas.jpg">
+                </a>
+            </div>
         </div>
     </div>
 </div>
@@ -48,16 +56,25 @@ layout: default
     {% endfor %}
 </div>
 {% endfor %}
-
 <div class="stripe">
-    <div class="ui two column centered doubling grid">
-        <div class="center aligned column">
-            <div class="ui cta segment">
-                <h2 id="subscribe" class="ui header">Dive deeper into reactive programming
-                    <span class="sub header">Get my upcoming email course, early updates and bonuses.
-                    </span>
-                </h2>
-                {% include email_form.html %}
+    <div class="ui two centered cards doubling">
+        <div class="ui card">
+            <div class="content">
+                <div class="cta">
+                    <h2 id="subscribe" class="ui center aligned header">Dive deeper into reactive programming</h2>
+                    <h3 class="center aligned light weight header">
+                        Get my upcoming email course,<br/>early updates and bonuses
+                    </h3>
+                    {% include email_form.html %}
+                </div>
+                <div class="extra content">
+                    <div class="ui hidden divider"></div>
+                    <div class="right aligned">
+                        <a href="https://twitter.com/CedricSoulas">
+                            <img class="ui avatar huge image negative margin" alt="Cédric Soulas" src="img/cedricsoulas.jpg">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
