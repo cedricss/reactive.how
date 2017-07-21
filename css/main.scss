@@ -10,3 +10,24 @@ body {
 .stripe {
     padding: 4em 0em;
 }
+
+.ui.cta.segment {
+    border: 1px solid rgba(34, 36, 38, 0.08);
+}
+
+@media only screen and (min-width: 767px)  {
+    .ui.cta.segment {
+        padding: 3em;
+    }
+}
+
+.button.cta {
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 0.5em;
+    font-weight: 500;
+}
+
+.ui.green.cta.button {
+    background-color: #00ce8d;
+}
