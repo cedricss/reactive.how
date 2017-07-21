@@ -3,41 +3,33 @@ id: index
 layout: default
 ---
 
-<h1 class="ui header">
-    <span>reactive.how</span>
-</h1>
+
 <div>
 <a href="https://github.com/cedricss/reactive.how" target="_blank" class="ui black left corner medium label">
     <i class="github icon"></i>
 </a>
 </div>
-<div class="ui three cards stackable">
+<div>
+    <a class="ui logo large label" href="http://reactive.how">reactive.how</a>
+</div>
+<div class="ui hidden divider"></div>
+<div class="ui two centered cards stackable">
     <div class="ui card">
         <div class="content">
-            <a class="ui red medium tiny ribbon label">starting soon</a>
-            <div class="ui hidden divider"></div>
-            <span class="header">
-                Reactive programming
-                <i class="wizard icon"></i>
-            </span>
-            <p class="meta">A new animated card <b>every Monday</b></p>
-            <div class="left floated">
-                <a href="https://github.com/staltz/xstream" target="_blank" class="ui mini label">xstream</a>
-                <a href="http://reactivex.io/rxjs/" target="_blank" class="ui mini label">RxJS 5</a>
-            </div>
-            <div class="right floated">
-                <img class="ui avatar mini image" alt="transformation" src="img/icons/transformation.png" />
-                <img class="ui avatar mini image" alt="aggregation" src="img/icons/aggregation.png" />
-                <img class="ui avatar mini image" alt="filtering" src="img/icons/filtering.png" />
-                <img class="ui avatar mini image" alt="combination" src="img/icons/combination.png" />
-            </div>
+            <a class="ui medium medium ribbon label"><i class="lightning icon"></i>starting soon</a>
+            <h3 class="center aligned">
+                    A new animated card <b>every Monday</b>
+            </h3>
         </div>
-        <div class="extra content">
-            <a href="#subscribe"><i class="mail icon"></i>Get updates</a> |
-            <a href="https://twitter.com/CedricSoulas" target="_blank"><i class="twitter icon"></i>Follow</a>
+        <div class="extra center aligned content">
+            <a class="ui teal tiny button" href="#subscribe"><i class="mail icon"></i>Get updates + bonuses</a>
+            <a class="ui twitter tiny button" href="https://twitter.com/CedricSoulas" target="_blank"><i class="twitter icon"></i>Follow</a>
+            <div class="ui hidden divider"></div>
+            <p>An upcoming series to <b>learn reactive programming</b>.</p>
         </div>
     </div>
 </div>
+
 {% for level in site.data.cards.levels %}
 <div class="stripe">
     <h2 class="ui horizontal divider header">

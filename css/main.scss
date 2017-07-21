@@ -4,7 +4,14 @@
 @import "base";
 
 body {
-    padding-top: 3em;
+    padding-top: 2.4em;
+}
+
+.ui.logo.label {
+    background-color: white;
+    font-weight: 500;
+    border: 1px solid #00c3e3;
+    color: #00c3e3;
 }
 
 .stripe {
@@ -26,8 +33,4 @@ body {
     text-transform: uppercase;
     margin-top: 0.5em;
     font-weight: 500;
-}
-
-.ui.green.cta.button {
-    background-color: #00ce8d;
 }
