@@ -12,8 +12,7 @@ layout: default
 <div>
     <a class="ui logo large label" href="http://reactive.how">reactive.how</a>
 </div>
-<div class="ui hidden divider"></div>
-<div class="ui two centered cards doubling">
+<div class="ui announcement block two centered cards doubling">
     <div class="ui card">
         <div class="content">
             <a class="ui medium ribbon label">starting soon</a>
@@ -41,14 +40,13 @@ layout: default
 {% for level in site.data.cards.levels %}
 <div class="stripe">
     <h2 class="ui horizontal divider header">
-        <span class="ui black label">Level {{ forloop.index }}</span>
+        <span class="ui label">Level {{ forloop.index }}</span>
     </h2>
     {% for module in level.modules %}
-    <div class="ui hidden divider"></div>
     <h2 class="ui header">
         {{ module.name }}
     </h2>
-    <div class="ui four cards doubling">
+    <div class="ui five cards doubling">
     {% for card in module.cards %}
     {% include card.html card=card %}
     {% endfor %}
@@ -57,6 +55,7 @@ layout: default
 </div>
 {% endfor %}
 <div class="stripe">
+    <div class="ui divider"></div>
     <div class="ui two centered cards doubling">
         <div class="ui card">
             <div class="content">
@@ -82,7 +81,7 @@ layout: default
 
 <div class="stripe">
     <h2 class="ui horizontal divider header">
-        <span class="ui black label">
+        <span class="ui label">
             <a class="item" href="https://github.com/cedricss/reactive.how" target="_blank">
                 <i class="github icon"></i> Contribute to the next levels
             </a>

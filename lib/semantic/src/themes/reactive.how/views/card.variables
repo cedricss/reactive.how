@@ -173,9 +173,9 @@
 ;
 
 /* Card Count */
-@wideCardSpacing: 1em;
-@cardSpacing: 0.75em;
-@smallCardSpacing: 0.5em;
+@wideCardSpacing: 0.6em;
+@cardSpacing: 0.4em;
+@smallCardSpacing: 0.2em;
 
 @oneCardSpacing: 0em;
 @twoCardSpacing: @wideCardSpacing;

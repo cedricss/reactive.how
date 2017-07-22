@@ -15,13 +15,43 @@ body {
 }
 
 .stripe {
-    padding: 4em 0em;
+    padding: 1em 0em 1.5em 0em;
+
+    h2.ui.header {
+        margin-top: 0em;
+        &.divider {
+            margin-bottom: 0.3em;
+        }
+    }
+    .ui.divider {
+        opacity: 0.5!important;
+    }
+    .ui.cards>.card {
+        margin-bottom: 0em;
+    }
+}
+
+.announcement.block {
+    margin-top: -4.1em;
+    margin-bottom: 0em;
 }
 
 @media only screen and (min-width: 767px)  {
     .cta {
         padding: 2em 2em 1.5em 2em;
     }
+}
+
+@media only screen and (max-width: 767px) {
+    .ui.card .meta.very.long {
+        font-size: 0.66em;
+    }
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .button.cta {

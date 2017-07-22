@@ -6,7 +6,8 @@
     {% endif %}
     <span class="header center aligned">{{ include.card.name }}</span>
     {% if include.card.aka %}
-    <div class="meta center aligned">(aka <b>{{ include.card.aka }}</b>)</div>
+    {% assign akasize = include.card.aka | size %}
+    <div class="{% if akasize > 11 %}very long{% endif %} meta center aligned">(aka <b>{{ include.card.aka }}</b>)</div>
     {% endif %}
   </div>
   <div class="image">
@@ -16,7 +17,7 @@
     <img alt="animation not yet released" src="img/empty.png" />
     {% endif %}
   </div>
-  <div class="extra content">
+  <div class="ellipsis extra content">
     {% for type in include.card.type %}
     <img class="ui avatar mini image" alt="{{ type }}" src="/img/icons/{{ type }}.png">
     <span class="">{{ type }}</span>
