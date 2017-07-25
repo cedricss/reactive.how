@@ -1,6 +1,6 @@
 levels:
   - modules:
-    - name: Basic operations
+    - name: Classic operations
       cards:
         - name: Map
           type: transformation
@@ -33,26 +33,21 @@ levels:
           released: true
 
   - modules:
-    - name: Stream filtering
+    - name: Basic stream filtering
       cards:
         - name: Take
           type: filtering
-          release: false
+          released: false
 
         - name: Last
           type: filtering
-          release: false
+          released: false
 
         - name: Skip
           type: filtering
-          release: false
+          released: false
 
         - name: Drop
-          type: filtering
-          release: false
-
-        - name: EndWhen
-          aka: TakeUntil
           type: filtering
           released: false
 
@@ -69,7 +64,7 @@ levels:
 
         - name: Debounce
           type: filtering
-          release: false
+          released: false
 
         - name: Pairwise
           type: transformation
