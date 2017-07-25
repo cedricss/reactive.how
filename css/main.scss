@@ -145,6 +145,7 @@ body {
         flex-wrap: nowrap;
         overflow-x: scroll;
         overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
         width: 100%;
         // Fake right margin working on overflow:
         &:after {
