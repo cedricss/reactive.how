@@ -4,10 +4,12 @@
 @import "base";
 
 body {
-    padding-top: 2.4em;
+    margin-top: 1em;
+    background-color: white;
 }
 
 .ui.logo.label {
+    margin-left: 4em;
     background-color: white;
     font-weight: 500;
     border: 1px solid #00c3e3;
@@ -15,10 +17,13 @@ body {
 }
 
 .stripe {
-    padding: 1em 0em 1.5em 0em;
+    padding: 4em 0em 1.5em 0em;
 
     h2.ui.header {
         margin-top: 0em;
+        border-bottom: 5px solid #f5f5f5;
+        margin-top: 0.25em;
+        margin-bottom: 1em;
         &.divider {
             margin-bottom: 0.3em;
         }
@@ -28,23 +33,75 @@ body {
     }
     .ui.cards>.card {
         margin-bottom: 0em;
+        background: white;
+        border: 2px solid #f5f5f5;
+        &.coming.soon {
+            .image {
+                background:rgba(189, 189, 189, 0.04);
+            }
+        }
+        &.pop.out {
+            background: linear-gradient(45deg, #3d97dc 0%, #55acee 40%, #00b5ad 100%);
+             .header, .aka, .extra {
+                color: white;
+            }
+        }
     }
 }
 
-.announcement.block {
-    margin-top: -4.1em;
-    margin-bottom: 0em;
+.footer {
+    padding: 4em 0em!important;
+    background-color:#f6f6f6!important;
+}
+
+.transparent.cards .card {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+.micro.image {
+    width: 10px!important;
+    height: auto!important;
+}
+
+.block.flex {
+    display: flex;
+    .flex0 {
+        flex: 0 0 auto;
+    }
+    .flex1 {
+        flex: 1 1 auto;
+    }
+    .padded {
+        padding-left: 10px;
+    }
 }
 
 @media only screen and (min-width: 767px)  {
     .cta {
-        padding: 2em 2em 1.5em 2em;
+        padding: 1em 2em 1.5em 2em;
+        text-align: center;
+        max-width: 340px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
-@media only screen and (max-width: 767px) {
-    .ui.card .meta.very.long {
-        font-size: 0.66em;
+.author.block {
+    margin-top: 3em;
+    .avatar.image {
+        width: 3em;
+        height: 3em;
+    }
+    .bio {
+        font-size: 1em;
+        color: rgba(0, 0, 0, 0.4);
+        line-height: initial;
+        font-weight: 100;
+    }
+    a {
+        color: #2f2f2f;
     }
 }
 
@@ -59,6 +116,8 @@ body {
     text-transform: uppercase;
     margin-top: 0.5em;
     font-weight: 500;
+    padding: 1.2em 2em;
+    letter-spacing: .17em;
 }
 
 .extra {
@@ -72,7 +131,89 @@ body {
     text-align: right;
 }
 
+.right.floated {
+    float: right;
+}
+
 .light.weight.header {
     font-weight: 300!important;
     margin-top:0;
+}
+
+@media only screen and (max-width: 767px) {
+    .mobile.overflow.x {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        // Fake right margin working on overflow:
+        &:after {
+            content: "";
+            display: flex;
+            min-width: 4%;
+            height: initial;
+        }
+        .ui.card {
+            min-width: 140px;
+            @media only screen and (max-width: 767px) {
+                & {
+                    margin-bottom: 8px;
+                    &:first-child {
+                        margin-left: 6%!important;
+                    }
+                }
+            }
+            @media only screen and (max-width: 345px) {
+                min-width: 125px;
+            }
+            @media only screen and (min-width: 450px) {
+                min-width: 180px;
+            }
+            @media only screen and (min-width: 570px) {
+                min-width: 230px;
+            }
+            @media only screen and (min-width: 700px) {
+                min-width: 270px;
+            }
+        }
+    }
+    .ui.card .meta.very.long {
+        font-size: 0.66em;
+    }
+    .author.block {
+        margin-top: 2em;
+        .bio {
+            font-size: 0.7em;
+        }
+    }
+    .computer.only {
+        display: none!important;
+    }
+    .extra {
+        font-size: 0.7em;
+        margin-bottom: 0;
+    }
+    .tiny.button {
+        font-size: .75rem!important;
+    }
+    h2.ui.header {
+        font-size: 1.1rem;
+    }
+    .ui.cards {
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+    .headlines {
+        padding: 0 0.7em 1em 1.7em;
+        h1.ui.header {
+            margin-top: 0.6em;
+            font-size: 1.6rem;
+        }
+    }
+    .stripe {
+        padding-top: 1em;
+    }
+    .mobile-center {
+        text-align: center;
+    }
 }

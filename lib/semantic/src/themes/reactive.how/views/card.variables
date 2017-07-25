@@ -7,8 +7,8 @@
 --------------------*/
 
 /* Shadow */
-@shadowDistance: 25px;
-@shadowBoxShadow: @shadowDistance @shadowDistance 100px 10px rgba(234, 233, 233, 0.5);
+@shadowDistance: 2px;
+@shadowBoxShadow: -2px @shadowDistance 0px 0px rgba(234, 233, 233, 0.5);
 
 /* Card */
 @fontFamily: @pageFont;
@@ -21,10 +21,7 @@
 @width: 290px;
 @borderWidth: 1px;
 @borderShadow: 0px 0px 0px @borderWidth rgba(245, 245, 245, 0.8);
-@boxShadow:
-  @shadowBoxShadow,
-  @borderShadow
-;
+@boxShadow: none;
 @border: none;
 
 @zIndex: '';
@@ -113,7 +110,7 @@
 @contentImageVerticalAlign: middle;
 
 /* Avatar Image */
-@avatarSize: 1.5em;
+@avatarSize: 2em;
 @avatarBorderRadius: @circularRadius;
 
 /* Paragraph */

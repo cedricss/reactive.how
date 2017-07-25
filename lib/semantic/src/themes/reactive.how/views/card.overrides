@@ -9,11 +9,14 @@
   line-height: 1.4em;
 }
 
-
 .ui.cards > .card > .extra,
 .ui.card > .extra {
   border-top: none !important;
   text-transform: uppercase;
-  font-size: 0.7em;
+  font-size: 0.6em;
   letter-spacing: 0.1em;
+}
+
+.ui.card .meta, .ui.cards>.card .meta {
+  font-size: 0.7em;
 }

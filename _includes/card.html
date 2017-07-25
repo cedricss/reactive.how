@@ -1,25 +1,25 @@
-<div class="ui card">
+<div class="ui card {% if include.card.released == false %}coming soon{% endif %}">
   <div class="content">
     {% if include.card.released %}
-      <a class="ui red mini ribbon label">early preview</a>
-      <div class="ui hidden divider"></div>
-    {% endif %}
+    <a class="ui red mini ribbon label">early preview</a>
+    <div class="ui hidden divider"></div>
+    {% endif %} 
     <span class="header center aligned">{{ include.card.name }}</span>
     {% if include.card.aka %}
     {% assign akasize = include.card.aka | size %}
-    <div class="{% if akasize > 11 %}very long{% endif %} meta center aligned">(aka <b>{{ include.card.aka }}</b>)</div>
+    <div class="{% if akasize > 11 %}very long{% endif %} ellipsis meta center aligned">(aka <b>{{ include.card.aka }}</b>)</div>
     {% endif %}
   </div>
   <div class="image">
     {% if include.card.released %}
-      <img alt="{{ include.card.name }}" src="img/{{ include.card.name | downcase }}.gif" />
+    <img alt="{{ include.card.name }}" src="img/{{ include.card.name | downcase }}.gif" />
     {% else %}
     <img alt="animation not yet released" src="img/empty.png" />
     {% endif %}
   </div>
   <div class="ellipsis extra content">
     {% for type in include.card.type %}
-    <img class="ui avatar mini image" alt="{{ type }}" src="/img/icons/{{ type }}.png">
+    <img class="ui avatar micro image" alt="{{ type }}" src="/img/icons/{{ type }}.png">
     <span class="">{{ type }}</span>
     {% endfor %}
   </div>
