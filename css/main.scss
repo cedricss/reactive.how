@@ -186,6 +186,11 @@ body {
         .bio {
             font-size: 0.7em;
         }
+        .avatar.image {
+            margin-top: 0.25em;
+            width: 2.1em;
+            height: 2.1em;
+        }
     }
     .computer.only {
         display: none!important;
@@ -198,14 +203,18 @@ body {
         font-size: .75rem!important;
     }
     h2.ui.header {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+        margin-bottom: 0.45em!important;
+    }
+    h3.header {
+        font-size: 1rem;
     }
     .ui.cards {
         margin-left: 0!important;
         margin-right: 0!important;
     }
     .headlines {
-        padding: 0 0.7em 1em 1.7em;
+        padding: 0 0em 1em 1em;
         h1.ui.header {
             margin-top: 0.6em;
             font-size: 1.6rem;
@@ -213,8 +222,16 @@ body {
     }
     .stripe {
         padding-top: 1em;
+            h2.ui.header {
+                border-bottom: none;
+            }
     }
     .mobile-center {
         text-align: center;
+    }
+    .block.flex {
+        .padded {
+            padding-left: 3px;
+        }
     }
 }
