@@ -56,3 +56,9 @@ code {
     line-height: 1em;
     color: rgba(0,0,0,.87);
 }
+
+@media only screen and (max-width: 767px) {
+    .ui.logo.label {
+        margin-left: 1.8em;
+    }
+}
