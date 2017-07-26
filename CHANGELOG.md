@@ -66,7 +66,7 @@ layout: changelog
 
 ### 🐙
 - Create initial reactive.how semantic theme, forked from the default one
-- Add [semantic ui](semantic-ui.com), the UI component framework 
+- Add [semantic ui](http://semantic-ui.com), the UI component framework 
 
 ## `1.0` Jul 12, 2017
 
