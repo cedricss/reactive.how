@@ -7,7 +7,7 @@ layout: changelog
 ## `4.1` Jul 26, 2017
 
 ### 🌕
-- Add [reactive.how/CHANGELOG](http://reactive.how/CHANGELOG) page
+- Add [reactive.how/CHANGELOG](http://reactive.how/CHANGELOG) page (automatically generated from [CHANGELOG.md](https://github.com/cedricss/reactive.how/blob/master/CHANGELOG.md))
 
 ## `4.0` Jul 25, 2017
 
