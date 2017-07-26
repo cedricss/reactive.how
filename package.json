@@ -1,6 +1,6 @@
 {
   "name": "reactive.how",
-  "version": "0.1.0",
+  "version": "4.1.0",
   "description": "Learn reactive programming",
   "devDependencies": {
     "semantic-ui": "^2.2.11"

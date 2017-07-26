@@ -2,7 +2,7 @@ full_rebuild: true
 name: Reactive.how - Animated cards to learn reactive programming
 author: Cédric Soulas
 url: http://reactive.how
-version: 0.1
+version: 4.1
 repository: https://github.com/cedricss/reactive.how.git
 branch: master
 encoding: utf-8

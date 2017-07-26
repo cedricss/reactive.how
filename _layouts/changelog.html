@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+    <head>
+        {% include head.html %}
+        <link rel="stylesheet" href="css/changelog.css" />
+    </head>
+    <body>
+        <div>
+            <a href="https://github.com/cedricss/reactive.how" target="_blank" class="ui black left corner medium label computer only">
+                <i class="github icon"></i>
+            </a>
+        </div>
+        <div>
+            <a class="ui logo large label computer only" href="http://reactive.how">reactive.how</a>
+        </div>
+        <div class="ui main text container">
+            {{ content }}
+        </div>
+        <footer>
+            {% include footer.html %}
+        </footer>
+        {% include scripts.html %}
+    </body>
+</html>
