@@ -7,7 +7,7 @@
 ### A new animated card every Monday ✨ (starting soon)
 
 - [Preview](http://reactive.how/)
-- [Join the email course](http://reactive.how/#course)
+- [Get updates + bonuses](http://reactive.how/#subscribe)
 
 ## Contribute
 
