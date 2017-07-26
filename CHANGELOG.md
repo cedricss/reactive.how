@@ -7,7 +7,7 @@ layout: changelog
 ## `4.1` Jul 26, 2017
 
 ### 🌕
-- Add [reactive.how/CHANGELOG](reactive.how/CHANGELOG) page
+- Add [reactive.how/CHANGELOG](http://reactive.how/CHANGELOG) page
 
 ## `4.0` Jul 25, 2017
 
