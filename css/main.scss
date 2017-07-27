@@ -52,6 +52,13 @@ body {
     }
 }
 
+.cta.very.long {
+    font-size: 0.7em;
+    .icon {
+        margin-top: -2em!important;
+    }
+}
+
 .footer {
     padding: 4em 2em!important;
     background-color:#f6f6f6!important;
@@ -68,6 +75,10 @@ body {
     height: auto!important;
 }
 
+.twitter.icon {
+    color: #1da1f2;
+}
+
 .block.flex {
     display: flex;
     .flex0 {
@@ -82,13 +93,26 @@ body {
 }
 
 @media only screen and (min-width: 767px)  {
-    .cta {
-        padding: 1em 2em 1.5em 2em;
-        text-align: center;
-        max-width: 340px;
-        margin-left: auto;
-        margin-right: auto;
+    button, a.button, input {
+        max-width: 300px!important;
     }
+}
+
+.sub.info {
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.4);
+    line-height: initial;
+    font-weight: 100;
+    &.smaller {
+        font-size: 0.8em;
+    }
+    a {
+        color: rgba(0, 0, 0, 0.4)!important;
+        text-decoration: underline;
+    }
+}
+ul.sub.info {
+    padding: 0 0 0 1.5em;
 }
 
 .author.block {
@@ -96,12 +120,6 @@ body {
     .avatar.image {
         width: 3em;
         height: 3em;
-    }
-    .bio {
-        font-size: 1em;
-        color: rgba(0, 0, 0, 0.4);
-        line-height: initial;
-        font-weight: 100;
     }
     a {
         color: #2f2f2f;
@@ -119,7 +137,7 @@ body {
     text-transform: uppercase;
     margin-top: 0.5em;
     font-weight: 500;
-    padding: 1.2em 2em;
+    padding: 1.2em 0.5em;
     letter-spacing: .17em;
 }
 
@@ -187,7 +205,7 @@ body {
     .author.block {
         margin-top: 2em;
         .bio {
-            font-size: 0.7em;
+            font-size: 0.9em;
         }
         .avatar.image {
             margin-top: 0.25em;
@@ -217,7 +235,7 @@ body {
         margin-right: 0!important;
     }
     .headlines {
-        padding: 0 0em 1em 1em;
+        padding: 0 1em 1em 1em;
         h1.ui.header {
             margin-top: 0.6em;
             font-size: 1.6rem;

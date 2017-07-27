@@ -5,16 +5,15 @@ layout: default
 
 <div class="headlines">
     {% include author.html %}
-    <h1 class="ui header">Upcoming series to learn reactive&nbsp;programming</h1>
-    <a class="ui tiny teal button" href="#subscribe"><i class="mail icon"></i>Get updates + bonuses</a>
-    <a class="ui tiny twitter button" href="https://twitter.com/CedricSoulas" target="_blank"><i class="twitter icon solo mobile"></i>Follow</a>
+    <h1 class="ui header">Animated cards to learn reactive&nbsp;programming</h1>
+    <a class="ui fluid very long cta teal button" href="#subscribe"><i class="icon mail"></i> Receive a card every&nbsp;Monday</a>
 </div>
 
 {% for level in site.data.cards.levels %}
-<div class="stripe mobile-center ">
+<div class="stripe mobile-center">
     <span class="ui tiny label">Level {{ forloop.index }}</span>
     {% for module in level.modules %}
-    <h2 class="ui aligned header">
+    <h2 class="ui header">
         {{ module.name }}
     </h2>
     <div class="ui four cards mobile overflow x">
@@ -25,33 +24,19 @@ layout: default
     {% endfor %}
 </div>
 {% endfor %}
+
 <div class="stripe">
-    <div class="ui one transparent cards doubling">
-        <div class="ui card">
-            <div class="content">
-                <div class="cta">
-                    <h2 id="subscribe" class="ui center aligned header">Dive deeper into reactive&nbsp;programming</h2>
-                    <h3 class="center aligned light weight header">
-                        Get my upcoming email course,<br/>early updates and bonuses
-                    </h3>
-                    {% include email_form.html %}
-                </div>
-            </div>
-        </div>
+    <div class="headlines">
+        <h2 id="subscribe" class="ui header">An animated card every&nbsp;Monday 🎉</h2>
+        {% include email_form.html %}
+        <ul class="smaller sub info">
+            <li>An animated card every Monday (starting soon)</li>
+            <li>Occasional bonus lessons and early news</li>
+            <li>Easy to unsubscribe</li>
+        </ul>
+        <div class="ui divider"></div>
+        {% include author.html %}
     </div>
 </div>
-
-<div class="headlines">
-    {% include author.html %}
-    <div class="stripe">
-        <a class="ui tiny twitter button" href="https://twitter.com/CedricSoulas" target="_blank">
-            <i class="twitter icon solo mobile"></i> Follow
-        </a>
-        <a class="ui tiny github button" href="https://github.com/cedricss/reactive.how" target="_blank">
-            <i class="github icon"></i> Contribute to the next levels
-        </a>
-    </div>
-</div>
-
 
 
