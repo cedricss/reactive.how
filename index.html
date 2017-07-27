@@ -10,8 +10,15 @@ layout: default
 </div>
 
 {% for level in site.data.cards.levels %}
-<div class="stripe mobile-center">
+<div class="stripe">
+    {% if forloop.index == 2 %}
+    <div class="attached labels">
+        <span class="ui tiny label">Level 2</span>
+        <span class="ui tag red tiny label">early preview</span>
+    </div>
+    {% else %}
     <span class="ui tiny label">Level {{ forloop.index }}</span>
+    {% endif %}
     {% for module in level.modules %}
     <h2 class="ui header">
         {{ module.name }}
