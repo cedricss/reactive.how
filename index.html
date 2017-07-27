@@ -6,7 +6,7 @@ layout: default
 <div class="headlines">
     {% include author.html %}
     <h1 class="ui header">Animated cards to learn reactive&nbsp;programming</h1>
-    <a class="ui fluid very long cta teal button" href="#subscribe"><i class="icon mail"></i> Receive a card every&nbsp;Monday</a>
+    <a class="ui fluid limited width very long cta teal button" href="#subscribe"><i class="icon mail"></i> Receive a card every&nbsp;Monday</a>
 </div>
 
 {% for level in site.data.cards.levels %}
@@ -27,13 +27,16 @@ layout: default
 
 <div class="stripe">
     <div class="headlines">
-        <h2 id="subscribe" class="ui header">An animated card every&nbsp;Monday 🎉</h2>
-        {% include email_form.html %}
-        <ul class="smaller sub info">
-            <li>An animated card every Monday (starting soon)</li>
-            <li>Occasional bonus lessons and early news</li>
-            <li>Easy to unsubscribe</li>
-        </ul>
+        <div class="cta">
+            <h6 id="subscribe" class="ui center aligned light color uppercase header">starting soon</h6>
+            <h1 class="ui header center aligned">An animated card<br/>every&nbsp;Monday</h1>
+            {% include email_form.html %}
+            <ul class="smaller sub info">
+                <li>An animated card every Monday (starting soon)</li>
+                <li>Occasional bonus lessons and early updates</li>
+                <li>Easy to unsubscribe</li>
+            </ul>
+        </div>
         <div class="ui divider"></div>
         {% include author.html %}
     </div>

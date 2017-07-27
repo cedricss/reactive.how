@@ -52,13 +52,6 @@ body {
     }
 }
 
-.cta.very.long {
-    font-size: 0.7em;
-    .icon {
-        margin-top: -2em!important;
-    }
-}
-
 .footer {
     padding: 4em 2em!important;
     background-color:#f6f6f6!important;
@@ -79,6 +72,14 @@ body {
     color: #1da1f2;
 }
 
+.attached.labels {
+    >:first-child {
+        padding-right: 2.5em;
+    }
+    .tag {
+        margin-left: -1em;
+    }
+}
 .block.flex {
     display: flex;
     .flex0 {
@@ -92,14 +93,8 @@ body {
     }
 }
 
-@media only screen and (min-width: 767px)  {
-    button, a.button, input {
-        max-width: 300px!important;
-    }
-}
-
 .sub.info {
-    font-size: 1em;
+    font-size: 0.8em;
     color: rgba(0, 0, 0, 0.4);
     line-height: initial;
     font-weight: 100;
@@ -116,7 +111,6 @@ ul.sub.info {
 }
 
 .author.block {
-    margin-top: 3em;
     .avatar.image {
         width: 3em;
         height: 3em;
@@ -132,13 +126,43 @@ ul.sub.info {
     text-overflow: ellipsis;
 }
 
+.cta.very.long {
+    font-size: 0.7em;
+    .icon {
+        margin-top: -2em!important;
+    }
+}
+
+div.cta {
+    margin-bottom: 3em;
+}
+
+@media only screen and (min-width: 767px)  {
+    div.cta {
+        width: 330px;
+        margin: auto;
+    }
+}
+
+.button.cta, .uppercase {
+    text-transform: uppercase!important;
+    letter-spacing: .17em;
+    font-weight: 500!important;
+}
+
 .button.cta {
     color: #fff;
-    text-transform: uppercase;
     margin-top: 0.5em;
     font-weight: 500;
     padding: 1.2em 0.5em;
-    letter-spacing: .17em;
+}
+
+.highlighted {
+    background-color: #fff173;
+    padding: 3px 10px 7px 10px;
+}
+.button.cta.limited.width {
+    max-width: 300px;
 }
 
 .extra {
@@ -156,9 +180,15 @@ ul.sub.info {
     float: right;
 }
 
-.light.weight.header {
-    font-weight: 300!important;
-    margin-top:0;
+.light.header {
+    &.weight {
+        font-weight: 300!important;
+        margin-top:0;
+        margin-bottom:0;
+    }
+    &.color {
+        color: rgba(0, 0, 0, 0.4);
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -199,18 +229,20 @@ ul.sub.info {
             }
         }
     }
+    .footer {
+        padding: 1em 0.1em!important;
+    } 
     .ui.card .meta.very.long {
         font-size: 0.66em;
     }
     .author.block {
-        margin-top: 2em;
         .bio {
             font-size: 0.9em;
         }
         .avatar.image {
             margin-top: 0.25em;
-            width: 2.1em;
-            height: 2.1em;
+            width: 2.3em;
+            height: 2.3em;
         }
     }
     .computer.only {
@@ -243,12 +275,12 @@ ul.sub.info {
     }
     .stripe {
         padding-top: 1em;
-            h2.ui.header {
-                border-bottom: none;
-            }
-    }
-    .mobile-center {
-        text-align: center;
+        h1, h2, h3, .mobile.center {
+            text-align: center;
+        }
+        h2.ui.header {
+            border-bottom: none;
+        }
     }
     .block.flex {
         .padded {
