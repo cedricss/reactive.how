@@ -19,6 +19,10 @@
     {% for card in module.cards %}
     {% include card.html card=card %}
     {% endfor %}
+    {% assign module_size = module.cards | size %}
+    {% if module_size < 4 %}
+    {% include card_dotted.html %}
+    {% endif %}
     </div>
     {% endfor %}
 </div>

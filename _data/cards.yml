@@ -10,10 +10,6 @@ levels:
           type: filtering
           released: false
 
-        - name: StartWith
-          type: combination
-          released: false
-
         - name: Fold
           type: 
             - aggregation
@@ -22,8 +18,12 @@ levels:
           released: false
 
   - modules:
-    - name: Stream combination
+    - name: Combination
       cards:
+        - name: StartWith
+          type: combination
+          released: false
+
         - name: Merge
           type: combination
           released: true

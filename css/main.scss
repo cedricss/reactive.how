@@ -59,6 +59,11 @@ ul {
                 color: white;
             }
         }
+        &.dotted {
+            box-shadow: none;
+            opacity: 0.5;
+            border: 1px dashed gray;
+        }
     }
     .ui.one.cards>.card {
         margin: 0;
