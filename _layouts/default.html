@@ -31,17 +31,22 @@
                             <li>Easy to unsubscribe</li>
                         </ul>
                     </div>
+                    
+                    <div class="more mobile center">
+                        {% if page.more %}
+                        <a class="ui mini basic button" href="more.html">
+                            Preview more levels
+                        </a>
+                        {% else %}
+                        <a class="ui mini basic button" href="/">
+                            reactive.how/
+                        </a>
+                        {% endif %}
+                    </div>
                     <div class="ui divider"></div>
                     {% include author.html %}
                 </div>
             </div>
-            {% if page.more %}
-            <div class="more mobile center">
-                <a class="ui mini basic button" href="more.html">
-                    Preview more levels...
-                </a>
-            </div>
-            {% endif %}
         </div>
         <footer>
             {% include footer.html %}
