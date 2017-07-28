@@ -8,6 +8,19 @@ body {
     background-color: white;
 }
 
+ul {
+    padding: 0 0 0 0.5em;
+    li {
+        list-style: none;
+        &:before {
+            font-family: Icons;
+            content: "\f0da";
+            margin: 0 .4rem 0 0;
+            color: rgba(0, 0, 0, 0.2)
+        }
+    }
+}
+
 .ui.logo.label {
     margin-left: 4em;
     background-color: white;
@@ -95,19 +108,13 @@ body {
 
 .sub.info {
     font-size: 0.8em;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.3);
     line-height: initial;
     font-weight: 100;
-    &.smaller {
-        font-size: 0.8em;
-    }
     a {
-        color: rgba(0, 0, 0, 0.4)!important;
+        color: rgba(0, 0, 0, 0.3)!important;
         text-decoration: underline;
     }
-}
-ul.sub.info {
-    padding: 0 0 0 1.5em;
 }
 
 .author.block {
@@ -232,7 +239,10 @@ div.cta {
         }
     }
     .footer {
-        padding: 1em 0.1em!important;
+        padding: 2em 0.1em!important;
+        .ui.small.horizontal.list>.item {
+            font-size: 0.7em!important;
+        }
     } 
     .ui.card .meta.very.long {
         font-size: 0.66em;
@@ -256,6 +266,9 @@ div.cta {
     }
     .tiny.button {
         font-size: .75rem!important;
+    }
+    .sub.info {
+        font-size: 0.7em;
     }
     h2.ui.header {
         font-size: 1.3rem;
