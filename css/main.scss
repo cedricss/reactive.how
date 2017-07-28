@@ -30,7 +30,7 @@ ul {
 }
 
 .stripe {
-    padding: 4em 0em 1.5em 0em;
+    padding: 3em 0em 1.5em 0em;
 
     h2.ui.header {
         border-bottom: 1px solid rgba(0, 0, 0, 0.08);
@@ -156,6 +156,9 @@ div.cta {
         margin-left: auto;
         margin-right: auto;
     }
+    .button.cta.limited.width {
+        max-width: 320px;
+    }
 }
 
 .button.cta, .uppercase {
@@ -174,9 +177,6 @@ div.cta {
 .highlighted {
     background-color: #fff173;
     padding: 3px 10px 7px 10px;
-}
-.button.cta.limited.width {
-    max-width: 300px;
 }
 
 .extra {
@@ -295,12 +295,12 @@ div.cta {
     }
     .stripe {
         padding-top: 1em;
-        h1, h2, h3, .mobile.center {
-            text-align: center;
-        }
         h2.ui.header {
             border-bottom: none;
         }
+    }
+    h2, h3, .mobile.center {
+        text-align: center;
     }
     .block.flex {
         .padded {
