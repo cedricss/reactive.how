@@ -35,6 +35,13 @@
                     {% include author.html %}
                 </div>
             </div>
+            {% if page.more %}
+            <div class="more mobile center">
+                <a class="ui mini basic button" href="more.html">
+                    Preview more levels...
+                </a>
+            </div>
+            {% endif %}
         </div>
         <footer>
             {% include footer.html %}
