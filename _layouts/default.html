@@ -13,7 +13,28 @@
             <a class="ui logo large label computer only" href="http://reactive.how">reactive.how</a>
         </div>
         <div class="ui main text container">
+            <div class="headlines">
+                {% include author.html %}
+                <h1 class="ui header">{{ page.title }}</h1>
+                <a class="ui fluid limited width very long cta teal button" href="#subscribe"><i class="icon mail"></i> Receive a card every&nbsp;Monday</a>
+            </div>
             {{ content }}
+            <div class="stripe">
+                <div class="headlines">
+                    <div class="cta">
+                        <h6 id="subscribe" class="ui center aligned light color uppercase header">starting soon</h6>
+                        <h1 class="ui header center aligned">An animated card<br/>every&nbsp;Monday</h1>
+                        {% include email_form.html %}
+                        <ul class="smaller sub info">
+                            <li>An animated card every Monday (starting&nbsp;soon)</li>
+                            <li>Occasional bonus lessons and early updates</li>
+                            <li>Easy to unsubscribe</li>
+                        </ul>
+                    </div>
+                    <div class="ui divider"></div>
+                    {% include author.html %}
+                </div>
+            </div>
         </div>
         <footer>
             {% include footer.html %}

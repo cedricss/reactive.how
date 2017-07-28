@@ -1,0 +1,25 @@
+{% for level_index in (include.from..include.to)  %}
+{% assign level = site.data.cards.levels[level_index] %}
+<div class="stripe">
+    {% if level_index == 1 %}
+    <div class="mobile center attached labels">
+        <span class="ui tiny label">Level 2</span>
+        <span class="ui tag red tiny label">early preview</span>
+    </div>
+    {% else %}
+    <div class="mobile center">
+        <span class="ui tiny label">Level {{ level_index | plus: 1}}</span>
+    </div>
+    {% endif %}
+    {% for module in level.modules %}
+    <h2 class="ui header">
+        {{ module.name }}
+    </h2>
+    <div class="ui four cards mobile overflow x">
+    {% for card in module.cards %}
+    {% include card.html card=card %}
+    {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
