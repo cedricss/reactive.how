@@ -8,6 +8,12 @@ body {
     background-color: white;
 }
 
+a {
+    color: #00b5ad;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
 ul.triangle {
     padding: 0 0 0 0.5em;
     li {
@@ -22,11 +28,12 @@ ul.triangle {
 }
 
 .ui.logo.label {
-    margin-left: 4em;
+    margin: 0em 0 1em 4em;
     background-color: white;
     font-weight: 500;
-    border: 1px solid #00c3e3;
-    color: #00c3e3;
+    border: 1px solid #00b5ad;
+    color: #00b5ad;
+    text-decoration: none;
 }
 
 .stripe {
@@ -60,9 +67,8 @@ ul.triangle {
             }
         }
         &.dotted {
-            box-shadow: none;
-            opacity: 0.5;
-            border: 1px dashed gray;
+            border: 3px dashed rgba(139, 226, 208, 0.51);
+            background-color: #fcfbfc;
         }
     }
     .ui.one.cards>.card {
@@ -76,8 +82,25 @@ div.more {
 }
 
 .footer {
-    padding: 4em 2em!important;
+    padding: 5em 2em!important;
     background-color:#f6f6f6!important;
+}
+
+.card .embed-video {
+    position: relative;
+    padding-bottom: 156%;
+    height: 0;
+    overflow: hidden;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
 }
 
 .transparent.cards .card {
@@ -151,8 +174,7 @@ div.more {
 }
 
 div.cta {
-    margin-top: 1em;
-    margin-bottom: 6em;
+    margin: 5em 0 3em 0;
 }
 
 @media only screen and (min-width: 767px)  {
@@ -299,7 +321,7 @@ div.cta {
         }
     }
     .stripe {
-        padding-top: 1em;
+        padding-top: 1.3em;
         h2.ui.header {
             border-bottom: none;
         }

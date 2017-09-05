@@ -22,7 +22,7 @@
             <div class="stripe">
                 <div class="headlines">
                     <div class="cta">
-                        <h6 id="subscribe" class="ui center aligned light color uppercase header">starting soon</h6>
+                        <h6 id="subscribe" class="ui center aligned light color uppercase header">starting on Monday, September 18</h6>
                         <h1 class="ui header center aligned">An animated card<br/>every&nbsp;Monday</h1>
                         {% include email_form.html %}
                         <ul class="triangle smaller sub info">
@@ -30,18 +30,7 @@
                             <li>Occasional bonus lessons and early updates</li>
                             <li>Easy to unsubscribe</li>
                         </ul>
-                    </div>
-                    
-                    <div class="more mobile center">
-                        {% if page.more %}
-                        <a class="ui mini basic button" href="more">
-                            Preview more levels
-                        </a>
-                        {% else %}
-                        <a class="ui mini basic button" href="/">
-                            Go back to level 1
-                        </a>
-                        {% endif %}
+                        <img class="ui image fluid" src="img/collection_preview.png" alt="" />
                     </div>
                     <div class="ui divider"></div>
                     {% include author.html %}

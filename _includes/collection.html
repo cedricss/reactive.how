@@ -1,29 +1,22 @@
-{% for level_index in (include.from..include.to)  %}
-{% assign level = site.data.cards.levels[level_index] %}
 <div class="stripe">
-    {% if level_index == 1 %}
-    <div class="mobile center attached labels">
-        <span class="ui tiny label">Level 2</span>
-        <span class="ui tag red tiny label">early preview</span>
-    </div>
-    {% else %}
-    <div class="mobile center">
-        <span class="ui tiny label">Level {{ level_index | plus: 1}}</span>
-    </div>
-    {% endif %}
-    {% for module in level.modules %}
     <h2 class="ui header">
-        {{ module.name }}
+        Reactive programming episodes
     </h2>
-    <div class="ui four cards mobile overflow x">
-    {% for card in module.cards %}
-    {% include card.html card=card %}
-    {% endfor %}
-    {% assign module_size = module.cards | size %}
-    {% if module_size < 4 %}
-    {% include card_dotted.html %}
-    {% endif %}
+    <h3>Starting on <a href="#subscribe">Monday, September 18</a> </h3>
+    <div class="ui disabled segment">
+        <h3>
+            <i class="circle thin icon"></i> Episode 1 - Introduction to event&nbsp;streams
+        </h3>
     </div>
-    {% endfor %}
 </div>
-{% endfor %}
+<div class="stripe">
+    <h2 class="ui header">
+            Sneak peek!
+    </h2>
+    <h3>Animated cards from future episodes</h3>
+    <div class="ui three cards mobile overflow x">
+        {% include card_player.html video=232448029 %}
+        {% include card_player.html video=232449782 %}
+        {% include card_more.html %}
+    </div>
+</div>
