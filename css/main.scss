@@ -54,7 +54,7 @@ ul.triangle {
     .ui.cards>.card {
         margin-bottom: 0em;
         background: white;
-        border: 1px solid white;
+        border: none;
         &.coming.soon {
             .image {
                 background:rgba(189, 189, 189, 0.04);
@@ -157,6 +157,7 @@ div.more {
     }
     a {
         color: #2f2f2f;
+        text-decoration: none;
     }
 }
 
