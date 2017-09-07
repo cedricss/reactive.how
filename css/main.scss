@@ -12,6 +12,9 @@ a {
     color: #00b5ad;
     text-decoration: underline;
     font-weight: 500;
+    &:hover {
+        color: #009c95;
+    }
 }
 
 ul.triangle {
