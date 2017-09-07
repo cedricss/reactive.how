@@ -7,9 +7,12 @@
     margin-bottom: 50px;
 }
 
+h1, h2, p {
+    margin-left: 20px;
+}
+
 h1, h2 {
     font-weight: 900;
-    margin-left: 20px;
 }
 
 h1 {
@@ -44,6 +47,7 @@ img {
     width: 100%;
     height: auto;
     margin-bottom: 2em;
+    margin-left: -20px;
 }
 
 ul {
