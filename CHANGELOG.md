@@ -5,6 +5,40 @@ preview_image: changelog_preview.jpg
 
 # Change log
 
+## `5.0` Sept 5, 2017
+
+### 🌕
+- Add card video player
+- Add option to play a card full screen on web and mobile
+
+[![](img/changelog/5.0.png)](http://reactive.how)
+
+### 🃏
+- Adjust color theme and path borders
+- Improve animation speed and timing functions
+- Highlight new events with a sparkle animation
+
+![](img/changelog/5.0.gif)
+
+### 🌕
+- Announce [episode 1](http://reactive.how) starting date
+- Update combine icon and favicon
+
+
+## ` ` --------------------- 🌞 Summer break ⛰️ ---------------------
+
+## `4.2` Jul 29, 2017
+
+### 🌕
+- Add card shadow
+
+### 🌒
+- Tweak design and layout
+- Refactor card collection templates
+
+### ☄️
+- Fix visual glitches on mobile
+
 ## `4.1` Jul 26, 2017
 
 ### 🌕
