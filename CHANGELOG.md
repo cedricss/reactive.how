@@ -1,5 +1,6 @@
 ---
 layout: changelog
+title: Learn reactive programming - Change log
 preview_image: changelog_preview.jpg
 ---
 
