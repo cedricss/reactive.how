@@ -17,14 +17,15 @@ preview_image: changelog_preview.jpg
 [![](img/changelog/5.0.png)](http://reactive.how)
 
 ### 🃏
-- Adjust color theme and path borders
+- Improve design of the vertical progress bars
+- Adjust color theme and combination borders
 - Improve animation speed and timing functions
 - Highlight new events with a sparkle animation
 
 ![](img/changelog/5.0.gif)
 
 ### 🌕
-- Announce [episode 1](http://reactive.how) starting date
+- Announce starting date of the [series](http://reactive.how)
 - Update combine icon and favicon
 
 
