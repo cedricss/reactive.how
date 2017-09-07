@@ -1,5 +1,6 @@
 ---
 layout: changelog
+preview_image: changelog_preview.jpg
 ---
 
 # Change log
