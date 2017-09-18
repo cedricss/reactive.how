@@ -2,7 +2,7 @@
 
 ## Learn reactive programming
 
-<a hre="http://reactive.how/"><img width="50%" src="img/collection_preview.png" /></a>
+<a href="http://reactive.how/"><img width="50%" src="img/collection_preview.png" /></a>
 
 ### A new animated card every Monday ✨
 
