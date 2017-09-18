@@ -6,7 +6,7 @@ class: post
 preview_image: fromEvent/content_preview.jpg
 ---
 
-## Episode 1 - fromEvent
+## Episode 1 - A stream of toggle events
 
 Welcome to _The Reactive Company_!
 
