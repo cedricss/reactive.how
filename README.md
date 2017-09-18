@@ -2,11 +2,11 @@
 
 ## Learn reactive programming
 
-<img width="50%" src="img/content_preview_padding.gif" />
+<a hre="http://reactive.how/"><img width="50%" src="img/collection_preview.png" /></a>
 
-### A new animated card every Monday ✨ (starting soon)
+### A new animated card every Monday ✨
 
-- [Preview](http://reactive.how/)
+- [Watch episodes](http://reactive.how/)
 - [Get updates + bonuses](http://reactive.how/#subscribe)
 
 ## Contribute
