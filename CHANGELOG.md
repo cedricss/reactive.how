@@ -8,6 +8,11 @@ preview_image: changelog_preview.jpg
 
 [reactive.how](http://reactive.how), learn reactive programming.
 
+## `6.0` Sept 18, 2017
+
+### 🃏
+- Add [fromEvent](/fromEvent) episode
+
 ## `5.0` Sept 5, 2017
 
 ### 🌕
