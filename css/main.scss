@@ -30,6 +30,94 @@ ul.triangle {
     }
 }
 
+
+.embed-video {
+    position: relative;
+    padding-bottom: 155.75%;
+    height: 0;
+    overflow: hidden;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+}
+
+
+.post {
+    .content {
+        max-width: 580px !important;
+    }
+    .embed-video {
+        padding-bottom: 76.75%;
+    }
+    .box {
+        max-width:40px;
+    }
+    img {
+        width:100%;
+    }
+    ul {
+        padding-left: 0em;
+        li {
+            list-style: none;
+            &:before {
+                content: '○';
+                padding-right: 0.6em;
+                font-size: 1em;
+                vertical-align: -2px;
+                color: #c6e6e2;
+            }
+        }
+    }
+    strong {
+        font-weight: 700;
+    }
+    p, ul, blockquote {
+        line-height: 1.65em;
+        font-size: 17px;
+        letter-spacing: -.002em;
+        font-weight: 300;
+        color: #373d3d;
+    }
+    blockquote {
+        margin: 3em 3.5em 3em 2.8em;
+    }
+    blockquote p {
+        font-style: italic;
+        color: #505857;
+        font-size: 0.9em;
+        line-height: 1.3em;
+        text-align: center;
+    }
+    h2 {
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+        margin-top: 2em;
+        margin-bottom: 1em;
+        padding-bottom: 0.3em;
+        font-size: 1.3em;
+        line-height: 1.125;
+        font-weight: 300;
+        letter-spacing: 0em;
+    }
+    code {
+        padding: 0px 8px 2px 10px;
+        border-radius: 8px;
+        color: rgba(0, 0, 0, 0.74);
+        font-weight: 700;
+        border: 1px solid #c6e6e2;
+        font-style: normal;
+        white-space: nowrap;
+    }
+}
+
+
+
 .ui.logo.label {
     margin: 0em 0 1em 4em;
     background-color: white;
@@ -39,8 +127,12 @@ ul.triangle {
     text-decoration: none;
 }
 
+a.segment {
+    text-decoration: none;
+    display:block;
+}
 .stripe {
-    padding: 3em 0em 1.5em 0em;
+    padding: 1.5em 0em;
 
     h2.ui.header {
         border-bottom: 1px solid rgba(0, 0, 0, 0.08);
@@ -87,23 +179,6 @@ div.more {
 .footer {
     padding: 5em 2em!important;
     background-color:#f6f6f6!important;
-}
-
-.card .embed-video {
-    position: relative;
-    padding-bottom: 155.75%;
-    height: 0;
-    overflow: hidden;
-    iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #fff;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-    }
 }
 
 .transparent.cards .card {

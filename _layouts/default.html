@@ -12,13 +12,15 @@
         <div>
             <a class="ui logo large label computer only" href="http://reactive.how">reactive.how</a>
         </div>
-        <div class="ui main text container">
+        <div class="ui main text container {{ page.class }}">
             <div class="headlines">
                 {% include author.html %}
                 <h1 class="ui header">Animated cards to learn reactive&nbsp;programming</h1>
                 <a class="ui fluid limited width very long cta teal button" href="#subscribe"><i class="icon mail"></i> Receive a card every&nbsp;Monday</a>
             </div>
+            <div class="content">
             {{ content }}
+            </div>
             <div class="stripe">
                 <div class="headlines">
                     <div class="cta">
