@@ -184,6 +184,19 @@ div.more {
     .logo.label {
         margin: 0em 0 0.2em 0em;
     }
+    a {
+        text-decoration: none;
+    }
+    ul {
+        padding: 0;
+        margin-left: -8px;
+        li {
+            list-style: none;
+            small {
+                color: gray;
+            }
+        }
+    }
 }
 
 .transparent.cards .card {
