@@ -1,10 +1,15 @@
 ---
 id: fromEvent
-title: Learn reactive programming
+title: Learn reactive programming - Episode 1, A stream of toggle events
 layout: default
 class: post
 preview_image: fromEvent/content_preview.jpg
+preview_image_alt: fromEvent reactive operator and streams
 ---
+
+<a class="ui basic tiny button" href="/map">
+     Episode 2 - Immutability <i class="arrow right icon"></i>
+</a>
 
 ## Episode 1 - A stream of toggle events
 
@@ -46,3 +51,7 @@ Congrats on your first experiment!
 🤔
 
 This event box is still a mystery though. What's inside? How can we open each box of the stream? That will be for next Monday!
+
+<a class="ui basic tiny button" href="/map">
+     Episode 2 - Immutability <i class="arrow right icon"></i>
+</a>

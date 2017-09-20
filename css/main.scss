@@ -85,6 +85,18 @@ ul.triangle {
     img {
         width:100%;
     }
+    img.w30 {
+        width: 30px;
+    }
+    img.w50 {
+        width: 50px;
+    }
+    img.w100 {
+        width: 100px;
+    }
+    img.w150 {
+        width: 150px;
+    }
     ul {
         padding-left: 0em;
         li {
@@ -109,14 +121,14 @@ ul.triangle {
         color: #373d3d;
     }
     blockquote {
-        margin: 3em 3.5em 3em 2.8em;
+        margin: 1.5em;
+        text-align: center;
     }
     blockquote p {
         font-style: italic;
         color: #505857;
-        font-size: 0.9em;
-        line-height: 1.3em;
-        text-align: center;
+        font-size: 1em;
+        line-height: 1.2em;
     }
     h2 {
         border-bottom: 1px solid rgba(0,0,0,0.08);
