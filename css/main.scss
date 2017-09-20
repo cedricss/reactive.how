@@ -150,6 +150,12 @@ ul.triangle {
     text-decoration: none;
 }
 
+@media only screen and (max-width: 1140px) {
+    .ui.logo.label {
+        display: none!important;
+    }
+}
+
 a.segment {
     text-decoration: none;
     display:block;
