@@ -4,8 +4,20 @@
 @import "base";
 
 body {
-    margin-top: 1em;
+    margin-top: 3em;
     background-color: white;
+}
+
+.fixed.bar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: auto;
+    bottom: auto;
+    z-index: 100;
+    width: 100%;
+    border-top: 5px solid #3eccba;
+    padding-top: 3em;
 }
 
 a {
@@ -17,6 +29,10 @@ a {
     .content & {
         text-decoration: underline;
     }
+}
+
+.headlines {
+    margin-bottom: 2em;
 }
 
 ul.triangle {
