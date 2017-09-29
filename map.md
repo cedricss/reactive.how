@@ -10,6 +10,9 @@ preview_image_alt: Map reactive operator and immutability
 <a class="ui basic tiny button" href="/fromEvent">
     <i class="arrow left icon"></i> Episode 1 - A stream of toggle events
 </a>
+<a class="ui basic tiny button" href="/listen">
+    Episode 3 - Reactivity <i class="arrow right icon"></i>
+</a>
 
 ## Episode 2 - Immutability
 
@@ -62,6 +65,6 @@ Next Monday we'll start building a little machine by assembling several cards to
 <a class="ui basic tiny button" href="/fromEvent">
     <i class="arrow left icon"></i> Episode 1 - A stream of toggle events
 </a>
-<a class="ui basic disabled tiny button" href="#subscribe">
-    Episode 3 (coming next Monday)
+<a class="ui basic tiny button" href="/listen">
+    Episode 3 - Reactivity <i class="arrow right icon"></i>
 </a>
