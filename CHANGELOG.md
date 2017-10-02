@@ -13,9 +13,9 @@ preview_image: changelog_preview.jpg
 ### 🃏
 - Add [subscribe](/listen) card
 - Add [Episode 3 - Reactivity](/listen)
-- Improve the way the time flows on cards (avoid wondering if events are already below the wrapper)
-- Enhance event animation (more noticeable, especially on small screen)
-- Change the piece placeholders on cards (avoid confusion on card title vs piece name)
+- Improve the way the time flows on cards (one could have thought events were already under the wrapper)
+- Enhance event animation (one may not have noticed the animation on small screen)
+- Change the piece placeholders on cards (one may think the card title was the piece name)
 
 ## `7.0` Sept 25, 2017
 
