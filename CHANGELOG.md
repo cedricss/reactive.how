@@ -8,10 +8,32 @@ preview_image: changelog_preview.jpg
 
 [reactive.how](http://reactive.how), learn reactive programming.
 
+## `8.0` Oct 2, 2017
+
+### 🃏
+- Add [subscribe](/listen) card
+- Add [Episode 3 - Reactivity](/listen)
+- Improve the way the time flows on cards
+- Enhance event animation
+- Change the piece placeholders on cards
+
+## `7.0` Sept 25, 2017
+
+### 🃏
+- Add [map](/map) card
+- Add [Episode 2 - Immutability](/map)
+
+## `6.1` Sept 20, 2017
+
+### 🌒
+- Add footer links to send me a message
+- Tweak button style and layout 
+
 ## `6.0` Sept 18, 2017
 
 ### 🃏
-- Add [fromEvent](/fromEvent) episode
+- Add [fromEvent](/fromEvent) card
+- Add [Episode 1 - Streams](/fromEvent)
 
 ## `5.0` Sept 5, 2017
 
