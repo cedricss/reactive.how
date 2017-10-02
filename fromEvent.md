@@ -11,7 +11,7 @@ preview_image_alt: fromEvent reactive operator and streams
      Episode 2 - Immutability <i class="arrow right icon"></i>
 </a>
 
-## Episode 1 - A stream of toggle events
+## Episode 1 - Streams
 
 Welcome to _The Reactive Company_!
 

@@ -8,7 +8,7 @@ preview_image_alt: Map reactive operator and immutability
 ---
 
 <a class="ui basic tiny button" href="/fromEvent">
-    <i class="arrow left icon"></i> Episode 1 - A stream of toggle events
+    <i class="arrow left icon"></i> Episode 1 - Streams
 </a>
 <a class="ui basic tiny button" href="/listen">
     Episode 3 - Reactivity <i class="arrow right icon"></i>
@@ -63,7 +63,7 @@ In your collection, you now have:
 Next Monday we'll start building a little machine by assembling several cards together. See you!
 
 <a class="ui basic tiny button" href="/fromEvent">
-    <i class="arrow left icon"></i> Episode 1 - A stream of toggle events
+    <i class="arrow left icon"></i> Episode 1 - Streams
 </a>
 <a class="ui basic tiny button" href="/listen">
     Episode 3 - Reactivity <i class="arrow right icon"></i>
