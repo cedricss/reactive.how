@@ -10,8 +10,8 @@ preview_image_alt: Subscribe reactive method and listeners
 <a class="ui basic tiny button" href="/map">
     <i class="arrow left icon"></i> Episode 2 - Immutability
 </a>
-<a class="ui basic disabled tiny button" href="#subscribe">
-    Episode 4 (coming next Monday)
+<a class="ui basic tiny button" href="/delay">
+    Episode 4 - Time projection <i class="arrow right icon"></i>
 </a>
 
 ## Episode 3 - Reactivity
@@ -57,6 +57,6 @@ You now have the basic knowledge of Reactive Programming. Over the next episodes
 <a class="ui basic tiny button" href="/map">
     <i class="arrow left icon"></i> Episode 2 - Immutability
 </a>
-<a class="ui basic disabled tiny button" href="#subscribe">
-    Episode 4 (coming next Monday)
+<a class="ui basic tiny button" href="/delay">
+    Episode 4 - Time projection <i class="arrow right icon"></i>
 </a>
