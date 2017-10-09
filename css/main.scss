@@ -45,7 +45,7 @@ ul.triangle {
             font-family: Icons;
             content: "\f0da";
             margin: 0 .4rem 0 0;
-            color: rgba(0, 0, 0, 0.2)
+            color: rgba(0, 0, 0, 0.5)
         }
     }
 }
@@ -78,6 +78,10 @@ ul.triangle {
         padding-bottom: 76.75%;
         margin-bottom: 1em;
     }
+    .card {
+        border-radius: .7rem;
+        box-shadow: 3px 8px 30px 0 rgba(0,0,0,.1);
+    }
     .box {
         max-width:40px;
     }
@@ -96,38 +100,53 @@ ul.triangle {
     img.w150 {
         width: 150px;
     }
-    ul {
-        padding-left: 0em;
+    img.w200 {
+        width: 200px;
+    }
+    img.w300 {
+        width: 300px;
+    }
+    img.w400 {
+        width: 400px;
+    }
+    ul:not(.triangle) {
+        background-color: #f7f7f7;
+        padding: 0.5em 0em 0.5em 2em;
+        
+        border-radius: 0.4em;
         li {
             list-style: none;
             &:before {
-                content: '○';
+                content: '►';
                 padding-right: 0.6em;
-                font-size: 1em;
-                vertical-align: -2px;
-                color: #c6e6e2;
+                font-size: 0.7em;
+                color: #616161;
+                left: -1em;
+                display: block;  
+                height: 0;  
+                width: 0;  
+                left: -1.5em;  
+                top: 0.4em;  
+                position: relative;
             }
         }
+    }
+    a {
+        font-weight: normal;
+        color: inherit;
     }
     strong {
         font-weight: 700;
     }
-    p, ul, blockquote {
-        line-height: 1.65em;
-        font-size: 17px;
-        letter-spacing: -.002em;
-        font-weight: 300;
-        color: #373d3d;
+    p, ul, blockquote, pre {
+        line-height: 1.6;
+        font-size: 16px;
+        font-weight: 400;
+        color: #24403c;
     }
     blockquote {
         margin: 1.5em;
         text-align: center;
-    }
-    blockquote p {
-        font-style: italic;
-        color: #505857;
-        font-size: 1em;
-        line-height: 1.2em;
     }
     h2 {
         border-bottom: 1px solid rgba(0,0,0,0.08);
@@ -136,17 +155,29 @@ ul.triangle {
         padding-bottom: 0.3em;
         font-size: 1.3em;
         line-height: 1.125;
-        font-weight: 300;
         letter-spacing: 0em;
     }
-    code {
-        padding: 0px 8px 2px 10px;
-        border-radius: 8px;
-        color: rgba(0, 0, 0, 0.74);
+    h3 {
+        font-weight: 700;
+        font-size: 1.1em;
+    }
+    :not(pre) > code {
+        padding: 2px 8px;
+        font-size: 0.95em;
+        border-radius: 3px;
         font-weight: 700;
         border: 1px solid #c6e6e2;
+        background-color: #e7fbf9;
         font-style: normal;
         white-space: nowrap;
+    }
+    pre {
+        background-color: #E9E9E9;
+        white-space: pre-wrap;
+        padding: 1em;
+        border-radius: 0.5em;
+        font-size: 14px;
+        color: #4B4B4B;
     }
 }
 
@@ -165,8 +196,11 @@ ul.triangle {
     }
 }
 
-a.segment {
+a.ui.segment {
     text-decoration: none;
+    font-size: 1.1em;
+    color: inherit;
+    font-weight: 500;
     display:block;
 }
 .stripe {
@@ -269,8 +303,8 @@ div.more {
 }
 
 .sub.info {
-    font-size: 0.8em;
-    color: rgba(0, 0, 0, 0.3);
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.6);
     line-height: initial;
     font-weight: 100;
     a {
