@@ -12,8 +12,8 @@ preview_image_alt: Delay reactive method
 <a class="ui basic tiny button" href="/listen">
     <i class="arrow left icon"></i> Lesson 3 - Reactivity
 </a>
-<a class="ui basic disabled tiny button" href="#subscribe">
-    A new card coming next Monday
+<a class="ui basic tiny button" href="/merge">
+     Lesson 5 - Interleave of multiple streams<i class="arrow right icon"></i>
 </a>
 
 ## Lesson 4 - Time projection
@@ -42,8 +42,8 @@ Next Monday, we'll play with _two_ input streams 😎.
 <a class="ui basic tiny button" href="/listen">
     <i class="arrow left icon"></i> Lesson 3 - Reactivity
 </a>
-<a class="ui basic disabled tiny button" href="#subscribe">
-    A new card coming next Monday
+<a class="ui basic tiny button" href="/merge">
+     Lesson 5 - Interleave of multiple streams<i class="arrow right icon"></i>
 </a>
 
 {% include back_home.html %}

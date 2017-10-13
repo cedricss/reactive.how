@@ -83,9 +83,14 @@ ul.triangle {
         padding-bottom: 76.75%;
         margin-bottom: 1em;
     }
-    .card {
-        border-radius: .7rem;
-        box-shadow: 3px 8px 30px 0 rgba(0,0,0,.1);
+    .ui.card {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 3em;
+        .embed-video {
+            padding-bottom: 155.75%;
+            margin-bottom: 0em;
+        }
     }
     .box {
         max-width:40px;
