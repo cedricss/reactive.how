@@ -7,6 +7,8 @@ preview_image: fromEvent/content_preview.jpg
 preview_image_alt: fromEvent reactive operator and streams
 ---
 
+{% include back_home.html %}
+
 <a class="ui basic tiny button" href="/map">
      Episode 2 - Immutability <i class="arrow right icon"></i>
 </a>
@@ -55,3 +57,5 @@ This event box is still a mystery though. What's inside? How can we open each bo
 <a class="ui basic tiny button" href="/map">
      Episode 2 - Immutability <i class="arrow right icon"></i>
 </a>
+
+{% include back_home.html %}

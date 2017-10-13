@@ -7,6 +7,8 @@ preview_image: map/content_preview.jpg
 preview_image_alt: Map reactive operator and immutability
 ---
 
+{% include back_home.html %}
+
 <a class="ui basic tiny button" href="/fromEvent">
     <i class="arrow left icon"></i> Episode 1 - Streams
 </a>
@@ -68,3 +70,5 @@ Next Monday we'll start building a little machine by assembling several cards to
 <a class="ui basic tiny button" href="/listen">
     Episode 3 - Reactivity <i class="arrow right icon"></i>
 </a>
+
+{% include back_home.html %}

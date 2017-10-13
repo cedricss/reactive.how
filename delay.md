@@ -7,6 +7,8 @@ preview_image: delay/content_preview.jpg
 preview_image_alt: Delay reactive method
 ---
 
+{% include back_home.html %}
+
 <a class="ui basic tiny button" href="/listen">
     <i class="arrow left icon"></i> Episode 3 - Reactivity
 </a>
@@ -43,3 +45,5 @@ Next Monday, we'll play with _two_ input streams 😎.
 <a class="ui basic disabled tiny button" href="#subscribe">
     A new card coming next Monday
 </a>
+
+{% include back_home.html %}
