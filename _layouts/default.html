@@ -24,16 +24,16 @@
             <div class="stripe">
                 <div class="headlines">
                     <div class="cta">
-                        <h1 id="subscribe" class="ui header center aligned">An animated card<br/>every&nbsp;Monday</h1>
+                        <h1 id="subscribe" class="ui header center aligned">An animated card with a free&nbsp;lesson — every Monday</h1>
                         {% include email_form.html %}
                         <ul class="triangle smaller sub info">
-                            <li>Downloadable animated cards (.GIF)</li>
-                            <li>Occasional news and bonus lessons</li>
+                            <li>Downloadable animate cards (.GIF)</li>
+                            <li>Free reactive programming lessons</li>
+                            <li>Occasional news and bonuses</li>
                             <li>Easy to unsubscribe</li>
                         </ul>
-                        <img class="ui image fluid" src="img/collection_preview.png" alt="" />
                     </div>
-                    <div class="ui divider"></div>
+                    {% include episodes.html %}
                     {% include author.html %}
                 </div>
             </div>

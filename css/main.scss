@@ -31,10 +31,15 @@ a {
 }
 
 .headlines {
+    margin-top: 2em;
     margin-bottom: 2em;
     h1.ui.header {
         padding-top: 1em;
     }
+}
+
+.cta h1 {
+    font-size: 1.45em!important;
 }
 
 ul.triangle {
@@ -198,7 +203,7 @@ ul.triangle {
 
 a.ui.segment {
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 0.9em;
     color: inherit;
     font-weight: 500;
     display:block;
