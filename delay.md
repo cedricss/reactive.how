@@ -1,6 +1,6 @@
 ---
 id: delay
-title: Learn reactive programming - Episode 4, Time projection
+title: Learn reactive programming - Lesson 4, Time projection
 layout: default
 class: post
 preview_image: delay/content_preview.jpg
@@ -16,9 +16,9 @@ preview_image_alt: Delay reactive method
     A new card coming next Monday
 </a>
 
-## Episode 4 - Time projection
+## Lesson 4 - Time projection
 
-With the first three episodes, you have learned three concepts of Reactive Programming. Congrats!
+With the first three lessons, you have learned three concepts of Reactive Programming. Congrats!
 
 - 1 - [Streams](/fromEvent)
 - 2 - [Immutability](/map)

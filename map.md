@@ -1,6 +1,6 @@
 ---
 id: map
-title: Learn reactive programming - Episode 2, Immutability
+title: Learn reactive programming - Lesson 2, Immutability
 layout: default
 class: post
 preview_image: map/content_preview.jpg
@@ -10,13 +10,13 @@ preview_image_alt: Map reactive operator and immutability
 {% include back_home.html %}
 
 <a class="ui basic tiny button" href="/fromEvent">
-    <i class="arrow left icon"></i> Episode 1 - Streams
+    <i class="arrow left icon"></i> Lesson 1 - Streams
 </a>
 <a class="ui basic tiny button" href="/listen">
-    Episode 3 - Reactivity <i class="arrow right icon"></i>
+    Lesson 3 - Reactivity <i class="arrow right icon"></i>
 </a>
 
-## Episode 2 - Immutability
+## Lesson 2 - Immutability
 
 Last Monday you created [a stream of toggle events](fromEvent). When an action was performed on the toggle (on→off or off→on), an event box was emitted.
 
@@ -65,10 +65,10 @@ In your collection, you now have:
 Next Monday we'll start building a little machine by assembling several cards together. See you!
 
 <a class="ui basic tiny button" href="/fromEvent">
-    <i class="arrow left icon"></i> Episode 1 - Streams
+    <i class="arrow left icon"></i> Lesson 1 - Streams
 </a>
 <a class="ui basic tiny button" href="/listen">
-    Episode 3 - Reactivity <i class="arrow right icon"></i>
+    Lesson 3 - Reactivity <i class="arrow right icon"></i>
 </a>
 
 {% include back_home.html %}
