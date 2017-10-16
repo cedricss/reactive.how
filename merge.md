@@ -1,10 +1,10 @@
 ---
 id: listen
-title: Learn reactive programming - Lesson 5, Interleave of multiple streams
+title: Learn reactive programming - Lesson 5, Interleave events of multiple streams
 layout: default
 class: post
 preview_image: merge/content_preview.jpg
-preview_image_alt: Interleave of multiple streams (merge)
+preview_image_alt: Interleave events of multiple streams (merge)
 ---
 
 {% include back_home.html %}
@@ -16,7 +16,7 @@ preview_image_alt: Interleave of multiple streams (merge)
     Lesson 6 (coming next Monday)
 </a>
 
-## Lesson 5 - Interleave of multiple streams
+## Lesson 5 - Interleaving the events
 
 So far, you have learned three important concepts ([streams](/fromEvent), [immutability](/map) and [reactivity](/listen)) and three kinds of stream operations:
 

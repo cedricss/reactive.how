@@ -13,7 +13,7 @@ preview_image_alt: Delay reactive method
     <i class="arrow left icon"></i> Lesson 3 - Reactivity
 </a>
 <a class="ui basic tiny button" href="/merge">
-     Lesson 5 - Interleave of multiple streams<i class="arrow right icon"></i>
+     Lesson 5 - Interleaving the events <i class="arrow right icon"></i>
 </a>
 
 ## Lesson 4 - Time projection
@@ -43,7 +43,7 @@ Next Monday, we'll play with _two_ input streams 😎.
     <i class="arrow left icon"></i> Lesson 3 - Reactivity
 </a>
 <a class="ui basic tiny button" href="/merge">
-     Lesson 5 - Interleave of multiple streams<i class="arrow right icon"></i>
+     Lesson 5 - Interleaving the events <i class="arrow right icon"></i>
 </a>
 
 {% include back_home.html %}
