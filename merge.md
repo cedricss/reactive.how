@@ -1,10 +1,10 @@
 ---
 id: listen
-title: Learn reactive programming - Episode 3, Reactivity
+title: Learn reactive programming - Lesson 5, Interleave of multiple streams
 layout: default
 class: post
-preview_image: listen/content_preview.jpg
-preview_image_alt: Subscribe reactive method and listeners
+preview_image: merge/content_preview.jpg
+preview_image_alt: Interleave of multiple streams (merge)
 ---
 
 {% include back_home.html %}
