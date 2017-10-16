@@ -8,14 +8,42 @@ preview_image: changelog_preview.jpg
 
 [reactive.how](http://reactive.how), learn reactive programming.
 
+## `10.1` Oct 16, 2017
+
+### 🃏
+- Add [Episode 5 - Interleave of multiple streams](/merge)
+
+## `10.0` Oct 13, 2017
+
+### 🃏
+- Update existing [card deck](http://reactive.how)
+- Add "returns" label on cards to see where are input and output streams
+- Add timelines with arrows to show how the stream flow on static version of the cards
+- Lighten the look and animation of paths between in/out events, to highlight the streams
+- Update card arguments with more explicit texts
+- Move card title to the top, so the arguments are close to the beginning of the timelines
+
+[![](img/changelog/10.0.png)](http://reactive.how)
+
+## `9.0` Oct 9, 2017
+
+### 🃏
+- Add [delay](/delay) card
+- Add [Episode 4 - Time projection](/delay)
+
 ## `8.0` Oct 2, 2017
+
+
+### 🃏
+- Improve the way the time flows on cards (one could have thought events were already under the wrapper)
+- Enhance event animation (one may not have noticed the animation on small screen)
+- Change the piece placeholders on cards (one may think the card title was the piece name)
+
+[![](img/changelog/8.0.gif)](http://reactive.how)
 
 ### 🃏
 - Add [subscribe](/listen) card
 - Add [Episode 3 - Reactivity](/listen)
-- Improve the way the time flows on cards (one could have thought events were already under the wrapper)
-- Enhance event animation (one may not have noticed the animation on small screen)
-- Change the piece placeholders on cards (one may think the card title was the piece name)
 
 ## `7.0` Sept 25, 2017
 
