@@ -212,6 +212,12 @@ a.ui.segment {
     color: inherit;
     font-weight: 500;
     display:block;
+    small {
+        font-size: 80%;
+        font-weight: 300;
+        padding-left: 1em;
+        color: #ababab;
+    }
 }
 .stripe {
     padding: 1.5em 0em;
@@ -223,6 +229,11 @@ a.ui.segment {
         padding-bottom: 0.3em;
         &.divider {
             margin-bottom: 0.3em;
+        }
+        small {
+            font-size: 60%;
+            font-weight: 300;
+            padding-left: 1em;
         }
     }
     .ui.divider {
