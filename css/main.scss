@@ -77,8 +77,9 @@ ul.triangle {
 
 .post {
     .content {
-        max-width: 580px !important;
-        padding: 0em;
+        background-color: white;
+        padding: 2.6em 2.9em;
+        border-radius: 0.4em;
     }
     .embed-video {
         padding-bottom: 76.75%;
@@ -455,7 +456,10 @@ div.cta {
         }
     }
     .post {
-        padding: 0 1em;
+        .content {
+            border-radius: 0;
+            padding: 0.8em 1em;
+        }
     }
     .footer {
         padding: 2em 0.1em!important;
