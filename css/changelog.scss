@@ -7,62 +7,63 @@
     margin-bottom: 50px;
     background-color: white;
     border-radius: 0.7em;
-}
 
-h1, h2, p {
-    margin-left: 20px;
-}
+    h1, h2, p {
+        margin-left: 20px;
+    }
 
-h1, h2 {
-    font-weight: 900;
-}
+    h1, h2 {
+        font-weight: 900;
+    }
 
-h1 {
-    padding-top: 60px!important;
-}
+    h1 {
+        padding-top: 60px!important;
+    }
 
-h2 {
-    font-size: 0.7em;
-    font-family: inherit;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-align: left!important;
-    color: rgba(0,0,0,0.4);
-    margin-top: 5em;
-}
+    h2 {
+        font-size: 0.7em;
+        font-family: inherit;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: left!important;
+        color: rgba(0,0,0,0.4);
+        margin-top: 5em;
+    }
 
-h3 {
-    font-size: 1.5em;
-    background-color: #f6f6f6;
-    width: 1.8em;
-    height: 1.8em;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 0 0 -1.05em;
-    padding-top: 0.3em;
-}
+    h3 {
+        font-size: 1.5em;
+        background-color: #f6f6f6;
+        width: 1.8em;
+        height: 1.8em;
+        text-align: center;
+        border-radius: 50%;
+        margin: 0 0 0 -1.05em;
+        padding-top: 0.3em;
+    }
 
-img {
-    max-width: 350px;
-    max-height: 475px;
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: 2em;
-    margin-left: -20px;
-}
+    img {
+        max-width: 350px;
+        max-height: 475px;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 2em;
+        margin-left: -20px;
+    }
 
-ul {
-    margin-top: -2.15em;
-}
+    ul {
+        margin-top: -2.15em;
+    }
 
-code {
-    display: block;
-    font-family: inherit;
-    font-size: 24px;
-    font-weight: 900;
-    line-height: 1em;
-    color: rgba(0,0,0,.87);
+    code {
+        display: block;
+        font-family: inherit;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 1em;
+        color: rgba(0,0,0,.87);
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -70,3 +71,4 @@ code {
         margin-left: 1.8em;
     }
 }
+
