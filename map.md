@@ -30,36 +30,36 @@ You can find dozens of properties inside each box. In particular, a box contains
 
 Today I'm happy to hand you:
 
-* the `▮ map` _transformation_ card 
-* the `▬ isChecked?` _projection function_ piece
+* the `❚ map` _transformation_ card 
+* the `▬ isChecked` _projection function_ piece
 
-> ![](img/map/isChecked.png){:.w100}
->
-> <small>The `▬ isChecked?` piece. It works on events from "checkable" interactive pieces: checkboxes, radio buttons, options of a menu, toggles, etc.</small>
+`▬ isChecked` accepts events from _checkable_ elements (such as checkboxes, radio buttons, options of a menu, toggles, etc). It returns `✔` if the element is checked, `✘` otherwise. Here is how it works with `❚ map`:
 
-Here is how they work together:
+{% include card_player.html video=238067754 episode=false %}
 
-{% include card_player.html video=235306650 episode=true %}
+Use a projection function on this card, such as `▬ isChecked`. Then, this is how `❚ map` operates:
 
-The `▮ map` card waits for events from an input stream (eg. _toggle events_). It projects each event of this input stream with a _projection function_ (eg. `▬ isChecked?`). 
+- It waits for events from an input stream
+- It projects each event of this input stream with a _projection function_
+- As a result, it returns a **new stream** of projected events
 
-A card <span class="highlighted">never modifies</span> the input stream. Instead, it returns a **new** stream. This principle is called **immutability**.
+A card <span class="highlighted">never modifies</span> the input stream. Instead, it returns a new stream. This principle is called **immutability**.
 
 ## Summary
 
 Awesome!
 
-* you unlocked `▮ map`. 
-* you unlocked `▬ isChecked?`
+* you unlocked `❚ map`. 
+* you unlocked `▬ isChecked`
 * you created a new stream from an existing one
 * you learned the principle of **immutability**
 
 In your collection, you now have:
 
-* one **creation** card `▮ fromEvent`
-* one **transformation** card `▮ map`
+* one **creation** card `❚ fromEvent`
+* one **transformation** card `❚ map`
 * one **interactive** piece `▬ toggle`
-* one **projection function** piece `▬ isChecked?`
+* one **projection function** piece `▬ isChecked`
 
 
 Next Monday we'll start building a little machine by assembling several cards together. See you!

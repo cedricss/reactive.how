@@ -16,7 +16,7 @@ preview_image_alt: Interleave events of multiple streams (merge)
     Lesson 6 (coming next Monday)
 </a>
 
-## Lesson 5 - Interleaving the events
+## Lesson 5 - Interleaving the events 
 
 So far, you have learned three important concepts ([streams](/fromEvent), [immutability](/map) and [reactivity](/listen)) and three kinds of stream operations:
 
@@ -26,7 +26,7 @@ So far, you have learned three important concepts ([streams](/fromEvent), [immut
 
 Today I present a fourth kind of operation: **combining streams**. Look at this card:
 
-{% include card_player.html video=238067762 type=vertical %}
+{% include card_player.html video=238067762 epsiode=false %}
 
 It only accepts input streams as arguments. This is how `❚ merge` operates with two (or more) input streams:
 

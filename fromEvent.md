@@ -15,24 +15,23 @@ preview_image_alt: fromEvent reactive operator and streams
 
 ## Lesson 1 - Streams
 
-Welcome to _The Reactive Company_!
-
-This is your first Monday! I am so excited to have you on board. We build silly reactive machines here. Our building blocks are **cards** and **pieces**.
+This is your first Monday! I am so excited to have you on board. We build reactive machines here. Our building blocks are **cards** and **pieces**.
 
 ![](img/fromEvent/card-piece.png)
 
 Every Monday we'll play with cards and pieces to learn new reactive programming skills. Today, I'm pleased to give you your first building blocks:
 
-* the `▮ fromEvent` card 👍
-* the `▬ toggle` piece 👍
+> ![](img/fromEvent/toggle.png){:.w100}
+>
+> <small>The `▬ toggle` interactive piece. It can be turned on and off.</small>
 
-The `▬ toggle` is an interactive piece. Go ahead, turn it on and off. Nothing happened? Put the toggle on the `▮ fromEvent` card and try again.
+{% include card_player.html video=238067747 episode=false %}
 
-{% include card_player.html video=234284224 episode=true %}
+> <small>The `❚ fromEvent` card</small>
 
-It creates **a sequence of events over time**. This sequence is called a **stream**.
+This card accepts a source of events, such as _click events_ on the `▬ toggle` interactive piece. As a result, it creates **a sequence of events over time**. This sequence is called a **stream**.
 
-**Reactive programming** is programming with **streams**. With the full deck of cards, you'll be able to:
+Reactive programming is programming with **streams**. With the full deck of cards, you'll be able to:
 
 - **create** a stream from various sources
 - **transform** and **filter** a stream in different ways
@@ -46,7 +45,7 @@ I can’t wait to give you new cards!
 Congrats on your first experiment! 
 
 * you unlocked `▬ toggle`
-* you unlocked `▮ fromEvent`
+* you unlocked `❚ fromEvent`
 * you learned the concept of **stream**
 
 ![](img/fromEvent/box.png){:.box}
