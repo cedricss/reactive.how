@@ -20,7 +20,6 @@
 
 /* This is the single variable that controls them all */
 @emSize   : 14px;
-
 /* The size of page text  */
 @fontSize : 14px;
 
@@ -33,7 +32,7 @@
    for explanation of @px variables
 */
 @relativeBorderRadius: @relative4px;
-@absoluteBorderRadius: @10px;
+@absoluteBorderRadius: @6px;
 
 @defaultBorderRadius: @absoluteBorderRadius;
 
@@ -51,7 +50,7 @@
   Page Heading
 ---------------*/
 
-@headerFontWeight : 300;
+@headerFontWeight : bold;
 @headerLineHeight : unit((18 / 14), em);
 
 @h1 : unit((28 / 14), rem);
@@ -319,7 +318,7 @@
 
 /* Differentiating Layers */
 @subtleShadow:
-  0px 1px 2px 0 @borderColor
+  0px 1px 2px 0 rgba(34, 36, 38, 0.08);
 ;
 @floatingShadow:
   0px 2px 4px 0px rgba(34, 36, 38, 0.12),
@@ -457,7 +456,7 @@
 
 @circularRadius                : 500rem;
 
-@borderColor               : rgba(34, 36, 38, 0.15);
+@borderColor               : rgba(34, 36, 38, 0.13);
 @strongBorderColor         : rgba(34, 36, 38, 0.22);
 @internalBorderColor       : rgba(34, 36, 38, 0.1);
 @selectedBorderColor       : rgba(34, 36, 38, 0.35);
