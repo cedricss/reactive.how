@@ -508,9 +508,13 @@ div.cta {
     }
     .headlines {
         padding: 0 1em 1em 1em;
+        margin-bottom: 0;
         h1.ui.header {
             margin-top: 0.6em;
             font-size: 1.6rem;
+        }
+        .button {
+            font-size: 77%;
         }
     }
     .stripe {
