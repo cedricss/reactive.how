@@ -1,0 +1,38 @@
+chapters:
+  - name: Chapter 1 - Introduction to Reactive Programming
+    info: |
+      Every Monday, I create a new animated card and write a new lesson. You can <a href="#subscribe">subscribe</a> to receive new lessons in your inbox and read them offline. This first chapter introduces three concepts of Reactive Programming:
+    lessons:
+      - name: Lesson 1 - Streams
+        card: fromEvent
+        video: 238067747
+        date: Monday, 18 Sept.
+
+      - name: Lesson 2 - Immutability
+        card: map
+        video: 238067754
+        date: Monday, 25 Sept.
+
+      - name: Lesson 3 - Reactivity
+        card: listen
+        video: 238723375
+        date: Monday, 2 Oct.
+
+  - name: Chapter 2 - Categories of stream operations
+    info: |
+      This second chapter presents five kinds of stream operations.
+    lessons:
+      - name: Lesson 4 - Projections
+        card: delay
+        video: 238067734
+        date: Monday, 9 Oct.
+      
+      - name: Lesson 5 - Combination
+        card: merge
+        video: 238067762
+        date: Monday, 16 Oct.
+
+      - name: Lesson 6 - Filtering with a predicate
+        card: filter
+        video: 239130196
+        date: Monday, 23 Oct.

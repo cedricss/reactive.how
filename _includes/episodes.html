@@ -1,23 +1,16 @@
 <div class="stripe">
     <h2 class="ui header">
-        Reactive programming lessons
+        Reactive programming Course
     </h2>
-    <a class="ui segment" href="/fromEvent">
-        <i class="circle thin icon"></i>Lesson 1 - Streams <small>Monday, 18 Sept.</small>
+    {% for chapter in site.data.course.chapters %}
+    <h3 class="ui header">{{ chapter.name }}</h3>
+    {% for lesson in chapter.lessons %}
+    <a class="ui segment" href="/{{lesson.card}}">
+        <i class="circle thin icon"></i>{{ lesson.name }} <small>{{ lesson.date }}</small>
     </a>
-    <a class="ui segment" href="/map">
-        <i class="circle thin icon"></i>Lesson 2 - Immutability <small>Monday, 25 Sept.</small>
-    </a>
-    <a class="ui segment" href="/listen">
-        <i class="circle thin icon"></i>Lesson 3 - Reactivity <small>Monday, 2 Oct.</small>
-    </a>
-    <a class="ui segment" href="/delay">
-        <i class="circle thin icon"></i>Lesson 4 - Time projection <small>Monday, 9 Oct.</small>
-    </a>
-    <a class="ui segment" href="/merge">
-        <i class="circle thin icon"></i>Lesson 5 - Interleaving the events <span class="ui basic yellow mini label">new</span> <small>Monday, 16 Oct.</small>
-    </a>
+    {% endfor %}
+    {% endfor %}
     <a class="ui disabled segment" href="#subscribe">
-        <i class="circle thin icon"></i>Lesson 6 (coming next Monday)
+        <i class="circle thin icon"></i>Lesson 7 (coming next Monday)
     </a>
 </div>
