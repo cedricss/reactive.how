@@ -18,7 +18,12 @@
         {% assign video = lesson.videos[1] %}
         {% include card_player.html video=video episode=true %}
         {% endif %}
-        <a href="/{{lesson.card}}" class=""><i class="file text outline icon"></i>Read the full lesson</a>
+        <p>
+        <a href="/{{lesson.card}}" class="ui basic button"><i class="file text outline icon"></i>Read <b>{{ lesson.name }}</b><i class="chevron right icon"></i></a>
+        {% if global_index == 0 %}
+        </p>
+        <p>or start with <a href="/fromEvent" class=""> Lesson 1 - Streams</a></p>
+        {% endif %}
     </div>
     {% if global_index == 0 %}
     {% include headlines.html %}
