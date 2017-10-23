@@ -16,7 +16,7 @@ preview_image_alt: Delay reactive method
      Lesson 5 - Interleaving the events <i class="arrow right icon"></i>
 </a>
 
-## Lesson 4 - Time projection
+## Lesson 4 - Projection through time
 
 With the first three lessons, you have learned three concepts of Reactive Programming. Congrats!
 

@@ -22,7 +22,7 @@ chapters:
     info: |
       This second chapter presents five kinds of stream operations.
     lessons:
-      - name: Lesson 4 - Projections
+      - name: Lesson 4 - Projection through time
         card: delay
         video: 238067734
         date: Monday, 9 Oct.
