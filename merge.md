@@ -12,11 +12,11 @@ preview_image_alt: Interleave events of multiple streams (merge)
 <a class="ui basic tiny button" href="/delay">
     <i class="arrow left icon"></i> Lesson 4 - Time projection
 </a>
-<a class="ui basic disabled tiny button" href="#subscribe">
-    Lesson 6 (coming next Monday)
+<a class="ui basic tiny button" href="/filter">
+     Lesson 6 - Filtering with a predicate <i class="arrow right icon"></i>
 </a>
 
-## Lesson 5 - Interleaving the events 
+## Lesson 5 - Combination
 
 So far, you have learned three important concepts ([streams](/fromEvent), [immutability](/map) and [reactivity](/listen)) and three kinds of stream operations:
 
@@ -40,8 +40,8 @@ This is the first time in this course you've worked with two input streams. Cool
 <a class="ui basic tiny button" href="/delay">
     <i class="arrow left icon"></i> Lesson 4 - Time projection
 </a>
-<a class="ui basic disabled tiny button" href="#subscribe">
-    Lesson 6 (coming next Monday)
+<a class="ui basic tiny button" href="/filter">
+     Lesson 6 - Filtering with a predicate <i class="arrow right icon"></i>
 </a>
 
 {% include back_home.html %}
