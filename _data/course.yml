@@ -5,17 +5,21 @@ chapters:
     lessons:
       - name: Lesson 1 - Streams
         card: fromEvent
-        video: 238067747
+        videos:
+          - 238067747
         date: Monday, 18 Sept.
 
       - name: Lesson 2 - Immutability
         card: map
-        video: 238067754
+        videos:
+          - 238067754
         date: Monday, 25 Sept.
 
       - name: Lesson 3 - Reactivity
         card: listen
-        video: 238723375
+        videos:
+          - 238723375
+          - 238900495
         date: Monday, 2 Oct.
 
   - name: Chapter 2 - Categories of stream operations
@@ -24,15 +28,20 @@ chapters:
     lessons:
       - name: Lesson 4 - Projection through time
         card: delay
-        video: 238067734
+        videos:
+          - 238067734
+          - 238900409
         date: Monday, 9 Oct.
       
       - name: Lesson 5 - Combination
         card: merge
-        video: 238067762
+        videos:
+          - 238067762
         date: Monday, 16 Oct.
 
       - name: Lesson 6 - Filtering with a predicate
         card: filter
-        video: 239130196
+        videos:
+          - 239130196
+          - 239108249
         date: Monday, 23 Oct.

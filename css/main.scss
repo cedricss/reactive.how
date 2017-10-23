@@ -75,12 +75,10 @@ ul.triangle {
 }
 
 
-.post {
-    .content {
+.post .content, .post.content {
         background-color: white;
         padding: 2.6em 2.9em;
         border-radius: 0.4em;
-    }
     .embed-video {
         padding-bottom: 75.34%;
         margin-bottom: 1em;
@@ -192,6 +190,12 @@ ul.triangle {
         font-size: 14px;
         color: #4B4B4B;
     }
+}
+
+.post.content {
+    margin: 1.6em 0 2.1em 0;
+    text-align: center;
+    padding: 2.6em 6em;
 }
 
 .ui.logo.label {
@@ -377,12 +381,11 @@ div.cta {
 }
 
 .button.cta, .uppercase {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .button.cta {
     margin-top: 0.5em;
-    padding: 1.2em 0.5em;
 }
 
 .highlighted {
@@ -456,11 +459,9 @@ div.cta {
             }
         }
     }
-    .post {
-        .content {
+    .post .content, .post.content {
             border-radius: 0;
-            padding: 0.8em 1em;
-        }
+        padding: 1em;
     }
     .footer {
         padding: 2em 0.1em!important;
@@ -518,7 +519,7 @@ div.cta {
             border-bottom: none;
         }
     }
-    h2, h3, .mobile.center {
+    h2, h3, h4, .mobile.center {
         text-align: center;
     }
     .block.flex {

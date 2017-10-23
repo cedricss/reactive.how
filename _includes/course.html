@@ -1,0 +1,37 @@
+{% assign global_index = 0 %}
+{% for chapter in site.data.course.chapters reversed %}
+<div class="stripe">
+    {% for lesson in chapter.lessons reversed %}
+    <div class="content post">
+        <h3 class="ui header">{{ lesson.date }}
+        {% if global_index == 0 %}
+        <span class="ui basic yellow label">new</span>
+        {% endif %}
+        </h3>
+        <h2 class="ui header">{{ lesson.name }}
+        </h2>
+        {% assign videos_size = lesson.videos | size %}
+        {% if videos_size == 1 %}
+        {% assign video = lesson.videos[0] %}
+        {% include card_player.html video=video episode=false %}
+        {% else if videos_size == 2 %}
+        {% assign video = lesson.videos[1] %}
+        {% include card_player.html video=video episode=true %}
+        {% endif %}
+        <a href="/{{lesson.card}}" class=""><i class="file text outline icon"></i>Read the full lesson</a>
+    </div>
+    {% if global_index == 0 %}
+    {% include headlines.html %}
+    <h4 class="ui header">Previous episodes</h4>
+    {% endif %}
+    {% assign global_index = global_index | plus:1 %}
+    {% endfor %}
+</div>
+<div class="headlines">
+        <div class="cta">
+            <a class="ui fluid cta button teal" href="#subscribe">
+                <i class="mail icon"></i> Receive the episodes
+            </a>
+    </div>
+</div>
+{% endfor %}

@@ -16,27 +16,18 @@
             <div class="headlines">
                 {% include author.html %}
                 <h1 class="ui header">Animated cards to learn reactive&nbsp;programming</h1>
-                <a class="ui teal button" href="#subscribe">Get the newsletters</a>
+                <a class="ui teal button" href="#subscribe"><i class="mail icon"></i> Receive the episodes</a>
                 <a class="ui twitter button" href="https://twitter.com/intent/tweet?text=Learn%20reactive%20programming%20with%20animated%20cards%20http%3A%2F%2Freactive.how">Tweet</a>
             </div>
             <div class="content">
                 {{ content }}
             </div>
             <div class="stripe">
-                <div class="headlines">
-                    <div class="cta">
-                        <h1 id="subscribe" class="ui header center aligned">Animated cards with free&nbsp;lessons — every Monday</h1>
-                        {% include email_form.html %}
-                        <ul class="triangle smaller sub info">
-                            <li>Downloadable animate cards (.GIF)</li>
-                            <li>Free reactive programming lessons</li>
-                            <li>Occasional news and bonuses</li>
-                            <li>Easy to unsubscribe</li>
-                        </ul>
-                    </div>
-                    {% include episodes.html %}
+                    {% if page.class == 'post' %}
+                    {% include headlines.html %}
+                    {% endif %}
                     {% include author.html %}
-                </div>
+                    {% include episodes.html %}
             </div>
         </div>
         <footer>
