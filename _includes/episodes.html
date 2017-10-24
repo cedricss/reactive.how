@@ -7,7 +7,7 @@
     <h3 class="ui header">{{ lesson.chapter }}</h3>
     {% endif %}
     <a class="ui segment" href="/{{lesson.card}}">
-        <i class="circle thin icon"></i>{{ lesson.name }} <small>{{ lesson.date }}</small>
+        <i class="circle thin icon"></i>Lesson {{ forloop.index }} - {{ lesson.name }} <small>{{ lesson.date }}</small>
     </a>
     {% endfor %}
     <a class="ui disabled segment" href="#subscribe">

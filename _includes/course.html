@@ -26,11 +26,13 @@
     <p>or start with <a href="/fromEvent" class=""> Lesson 1 - Streams</a></p>
     {% endif %}
 </div>
+
 {% if global_index == 0 %}
 {% include headlines.html %}
 <h4 class="ui header">Previous episodes</h4>
 {% endif %}
 {% assign global_index = global_index | plus:1 %}
+
 {% if lesson.chapter %}
 </div>
 <div class="headlines">
@@ -44,4 +46,5 @@
 <div class="stripe">
 {% endif %}
 {% endif %}
+
 {% endfor %}
