@@ -34,12 +34,20 @@ a {
     margin-top: 2em;
     margin-bottom: 2em;
     h1.ui.header {
-        padding-top: 1em;
+        padding-top: 0.5em;
     }
 }
 
 .cta h1 {
     font-size: 1.45em!important;
+}
+
+h1 a {
+    color: inherit;
+    font-weight: inherit;
+    &:hover {
+        color: inherit;
+    }
 }
 
 ul.triangle {
@@ -229,6 +237,9 @@ a.ui.segment {
 .stripe {
     padding: 1.5em 0em;
 
+    &:first-child {
+        padding-top: 0;
+    } 
     h2.ui.header {
         border-bottom: 1px solid rgba(0, 0, 0, 0.08);
         margin-top: 0.25em;
@@ -335,6 +346,7 @@ div.more {
     color: rgba(0, 0, 0, 0.6);
     line-height: initial;
     font-weight: 100;
+    padding-top:0.1em;
     a {
         color: rgba(0, 0, 0, 0.3)!important;
         text-decoration: underline;
@@ -386,6 +398,17 @@ div.cta {
 
 .button.cta {
     margin-top: 0.5em;
+}
+
+.micro.twitter.button {
+    font-size: 0.7em;
+    padding: 0.35em 1em 0.45em 1em;
+    box-shadow: none;
+    border: 1px solid rgba(81, 177, 243, 0.38);
+    color: #35a2f4 !important;
+    &:hover {
+        box-shadow: none;
+    }
 }
 
 .highlighted {
