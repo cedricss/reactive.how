@@ -10,13 +10,28 @@
         <div class="ui main text container {{ page.class }}">
             <div class="headlines">
                 {% include author.html %}
-                <h1 class="ui header">Animated cards to learn reactive&nbsp;programming</h1>
+                <h1 class="ui header">
+                    Animated cards to learn reactive&nbsp;programming
+                    <a href="https://github.com/cedricss/reactive.how" target="_blank" class="ui circular github icon secondary button computer only right floated"><i class="github icon"></i></a>
+                </h1>
                 <a class="ui teal button" href="#subscribe"><i class="mail icon"></i> Receive the episodes</a>
                 <a class="ui twitter button" href="https://twitter.com/intent/tweet?text=Learn%20reactive%20programming%20with%20animated%20cards%20http%3A%2F%2Freactive.how"><i class="inverted twitter icon"></i> Tweet</a>
-                <a href="https://github.com/cedricss/reactive.how" target="_blank" class="ui github basic button computer only"><i class="github icon"></i> Edit</a>
+                
             </div>
             <div class="content">
+                {% if page.class == 'post' %}
+                {% include navigation.html %}
+                {% assign lesson_index = page.lesson | minus:1 %}
+                {% assign lesson = site.data.course.lessons[lesson_index] %}
+                <h2>
+                    Lesson {{ page.lesson }} - {{ lesson.name }}
+                    <span class="computer only right floated">{{ lesson.date }}</span>
+                </h2>
                 {{ content }}
+                {% include navigation.html %}
+                {% else %}
+                {{ content }}
+                {% endif %}
             </div>
             <div class="stripe">
                     {% if page.class == 'post' %}

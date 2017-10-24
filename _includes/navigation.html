@@ -1,0 +1,30 @@
+<p class="navigation">
+{% if page.lesson > 1 %}
+{% assign lesson = page.lesson | minus:2 %}
+<a class="ui secondary tiny button" href="/{{ site.data.course.lessons[lesson].card }}">
+    <i class="arrow left icon"></i> <span class="computer only"> Lesson {{ lesson | plus:1 }}</span>
+</a>
+{% else %}
+<a class="ui disabled grey tiny button navigation placeholder">&nbsp;</a>
+{% endif %}
+{% assign lesson = page.lesson %}
+{% if page.lesson < site.data.course.lessons.size %}
+<a class="ui secondary tiny button" href="/{{ site.data.course.lessons[lesson].card }}">
+    <span class="computer only">Lesson {{ lesson | plus:1 }}</span><i class="arrow right icon"></i>
+</a>
+{% else %}
+<a class="ui secondary tiny button" href="#subscribe">
+    <i class="mail icon"></i> Stay tuned
+</a>
+{% endif %}
+<a class="ui tiny basic button" href="/">
+    <i class="block layout icon"></i> All videos
+</a>
+<a class="ui tiny basic button" href="#toc">
+    <i class="list icon"></i> <span class="computer only"> Contents</span>
+</a>
+<span class="computer only right floated">
+    <i class="github icon"></i>
+    <a href="https://github.com/cedricss/reactive.how/pulls" target="_blank">Pull request</a>
+</span>
+</p>

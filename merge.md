@@ -1,22 +1,12 @@
 ---
 id: listen
+lesson: 5
 title: Learn reactive programming - Lesson 5, Interleave events of multiple streams
 layout: default
 class: post
 preview_image: merge/content_preview.jpg
 preview_image_alt: Interleave events of multiple streams (merge)
 ---
-
-{% include back_home.html %}
-
-<a class="ui basic tiny button" href="/delay">
-    <i class="arrow left icon"></i> Lesson 4 - Time projection
-</a>
-<a class="ui basic tiny button" href="/filter">
-     Lesson 6 - Filtering with a predicate <i class="arrow right icon"></i>
-</a>
-
-## Lesson 5 - Combination
 
 So far, you have learned three important concepts ([streams](/fromEvent), [immutability](/map) and [reactivity](/listen)) and three kinds of stream operations:
 
@@ -36,12 +26,3 @@ It only accepts input streams as arguments. This is how `❚ merge` operates wit
 As you can see, it doesn't change the event values or the arrival times. No projection through a function. No projection through time. You'll see in future lessons that other cards from the _combining streams_ category can change event values and/or arrival times.
 
 This is the first time in this course you've worked with two input streams. Cool! I'll show you next Monday a fifth kind of stream operation.
-
-<a class="ui basic tiny button" href="/delay">
-    <i class="arrow left icon"></i> Lesson 4 - Time projection
-</a>
-<a class="ui basic tiny button" href="/filter">
-     Lesson 6 - Filtering with a predicate <i class="arrow right icon"></i>
-</a>
-
-{% include back_home.html %}

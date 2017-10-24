@@ -1,14 +1,14 @@
 <div class="stripe">
-    <h2 class="ui header">
+    <h2 id="toc" class="ui header">
         Reactive Programming Course
     </h2>
-    {% for chapter in site.data.course.chapters %}
-    <h3 class="ui header">{{ chapter.name }}</h3>
-    {% for lesson in chapter.lessons %}
+    {% for lesson in site.data.course.lessons %}
+    {% if lesson.chapter %}
+    <h3 class="ui header">{{ lesson.chapter }}</h3>
+    {% endif %}
     <a class="ui segment" href="/{{lesson.card}}">
         <i class="circle thin icon"></i>{{ lesson.name }} <small>{{ lesson.date }}</small>
     </a>
-    {% endfor %}
     {% endfor %}
     <a class="ui disabled segment" href="#subscribe">
         <i class="circle thin icon"></i>Lesson 7 (coming next Monday)

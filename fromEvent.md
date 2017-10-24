@@ -1,19 +1,12 @@
 ---
 id: fromEvent
+lesson: 1
 title: Learn reactive programming - Lesson 1, A stream of toggle events
 layout: default
 class: post
 preview_image: fromEvent/content_preview.jpg
 preview_image_alt: fromEvent reactive operator and streams
 ---
-
-{% include back_home.html %}
-
-<a class="ui basic tiny button" href="/map">
-     Lesson 2 - Immutability <i class="arrow right icon"></i>
-</a>
-
-## Lesson 1 - Streams
 
 This is your first Monday! I am so excited to have you on board. We build reactive machines here. Our building blocks are **cards** and **pieces**.
 
@@ -52,9 +45,3 @@ Congrats on your first experiment!
 🤔
 
 This event box is still a mystery though. What's inside? How can we open each box of the stream? That will be for next Monday!
-
-<a class="ui basic tiny button" href="/map">
-     Lesson 2 - Immutability <i class="arrow right icon"></i>
-</a>
-
-{% include back_home.html %}

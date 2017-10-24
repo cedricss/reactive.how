@@ -410,6 +410,23 @@ div.cta {
     float: right;
 }
 
+.post h2 .right.floated, .navigation .right.floated {
+    color: rgba(0,0,0,.4);
+    font-weight: 300;
+    margin-top: 0.65em;
+    font-size: 0.9rem;
+}
+
+.navigation.placeholder {
+    padding-left: 7.75em;
+}
+
+.github.right.floated {
+    font-size: 1.5rem;
+    margin-top: 0.55rem;
+    padding: 0.05em !important;
+}
+
 .light.header {
     &.weight {
         font-weight: 300!important;

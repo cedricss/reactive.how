@@ -1,22 +1,12 @@
 ---
 id: listen
+lesson: 6
 title: Learn reactive programming - Lesson 6, Filtering
 layout: default
 class: post
 preview_image: merge/content_preview.jpg
 preview_image_alt: Filter a stream
 ---
-
-{% include back_home.html %}
-
-<a class="ui basic tiny button" href="/merge">
-    <i class="arrow left icon"></i> Lesson 5 - Combination
-</a>
-<a class="ui basic disabled tiny button" href="#subscribe">
-    Lesson 7 (coming next Monday)
-</a>
-
-## Lesson 6 - Filtering with a predicate
 
 With the previous lessons, you have performed four different kinds of operations on streams. You have learned how to:
 
@@ -53,13 +43,4 @@ A predicate returns `✔ true` or `✘ false`. This is how `❚ filter` works wi
 - Otherwise, the event is ignored
 - As a result, it returns a new stream of filtered events
 
-So, you now know three reactive programming concepts and five kinds of stream operation! That's something, you can celebrate! And still, there are more. More categories. More cards per category. More Monday lessons! 😁
-
-<a class="ui basic tiny button" href="/merge">
-    <i class="arrow left icon"></i> Lesson 5 - Combination
-</a>
-<a class="ui basic disabled tiny button" href="#subscribe">
-    Lesson 7 (coming next Monday)
-</a>
-
-{% include back_home.html %}
+So, you now know three reactive programming concepts and five kinds of stream operation! That's something, you can celebrate. And still, there are more. More categories. More cards per category. More Monday lessons 😁.

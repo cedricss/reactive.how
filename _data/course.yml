@@ -1,47 +1,41 @@
-chapters:
-  - name: Chapter 1 - Introduction to Reactive Programming
-    info: |
-      Every Monday, I create a new animated card and write a new lesson. You can <a href="#subscribe">subscribe</a> to receive new lessons in your inbox and read them offline. This first chapter introduces three concepts of Reactive Programming:
-    lessons:
-      - name: Lesson 1 - Streams
-        card: fromEvent
-        videos:
-          - 238067747
-        date: Monday, 18 Sept.
+lessons:
+  - name: Streams
+    card: fromEvent
+    chapter: Chapter 1 - Introduction to Reactive Programming
+    videos:
+      - 238067747
+    date: Monday, 18 Sept.
 
-      - name: Lesson 2 - Immutability
-        card: map
-        videos:
-          - 238067754
-        date: Monday, 25 Sept.
+  - name: Immutability
+    card: map
+    videos:
+      - 238067754
+    date: Monday, 25 Sept.
 
-      - name: Lesson 3 - Reactivity
-        card: listen
-        videos:
-          - 238723375
-          - 238900495
-        date: Monday, 2 Oct.
+  - name: Reactivity
+    card: listen
+    videos:
+      - 238723375
+      - 238900495
+    date: Monday, 2 Oct.
 
-  - name: Chapter 2 - Categories of stream operations
-    info: |
-      This second chapter presents five kinds of stream operations.
-    lessons:
-      - name: Lesson 4 - Projection through time
-        card: delay
-        videos:
-          - 238067734
-          - 238900409
-        date: Monday, 9 Oct.
-      
-      - name: Lesson 5 - Combination
-        card: merge
-        videos:
-          - 238067762
-        date: Monday, 16 Oct.
+  - name: Projection through time
+    card: delay
+    chapter: Chapter 2 - Categories of stream operations
+    videos:
+      - 238067734
+      - 238900409
+    date: Monday, 9 Oct.
+  
+  - name: Combination
+    card: merge
+    videos:
+      - 238067762
+    date: Monday, 16 Oct.
 
-      - name: Lesson 6 - Filtering with a predicate
-        card: filter
-        videos:
-          - 239130196
-          - 239108249
-        date: Monday, 23 Oct.
+  - name: Filtering with a predicate
+    card: filter
+    videos:
+      - 239130196
+      - 239108249
+    date: Monday, 23 Oct.

@@ -1,5 +1,6 @@
 ---
 id: listen
+lesson: 3
 title: Learn reactive programming - Lesson 3, Reactivity
 layout: default
 class: post
@@ -7,22 +8,10 @@ preview_image: listen/content_preview.jpg
 preview_image_alt: Subscribe reactive method and listeners
 ---
 
-{% include back_home.html %}
-
-<a class="ui basic tiny button" href="/map">
-    <i class="arrow left icon"></i> Lesson 2 - Immutability
-</a>
-<a class="ui basic tiny button" href="/delay">
-    Lesson 4 - Time projection <i class="arrow right icon"></i>
-</a>
-
-## Lesson 3 - Reactivity
-
 So far you learned 2 essential Reactive Programming principles: **streams** and **immutability**. Today we explore a third principle: **reactivity**. You'll need:
 
 * a new `❚ subscribe` card 
 * a new `▬ setWifi` _listener_ piece
-
 
 > ![](img/listen/wifi.png){:.w100}
 >
@@ -51,14 +40,3 @@ In Reactive Programming we **react** to piece and stream updates. This is the re
 * you learned the principle of **reactivity**
 
 You now have the basic knowledge of Reactive Programming. Over the next lessons, you'll receive new cards that transform streams. We'll build more advanced reactive machines!
-
-
-
-<a class="ui basic tiny button" href="/map">
-    <i class="arrow left icon"></i> Lesson 2 - Immutability
-</a>
-<a class="ui basic tiny button" href="/delay">
-    Lesson 4 - Time projection <i class="arrow right icon"></i>
-</a>
-
-{% include back_home.html %}
