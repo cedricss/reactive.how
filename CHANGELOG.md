@@ -8,10 +8,25 @@ preview_image: changelog_preview.jpg
 
 [reactive.how](http://reactive.how), learn reactive programming.
 
-## `10.1` Oct 16, 2017
+## `12.1` Oct 24, 2017
+
+### 🌒
+- Update navigation bar for lessons
+
+## `12.0` Oct 23, 2017
 
 ### 🃏
-- Add [Episode 5 - Interleave of multiple streams](/merge)
+- Add [filter](/filter) card
+- Add [map](/filter) card variant
+- Add [Lesson 6 - Filtering with a predicate](/filter)
+
+### 🌕
+- Add list of full-sized episodes on homepage
+
+## `11.0` Oct 16, 2017
+
+### 🃏
+- Add [Lesson 5 - Combination](/merge)
 
 ## `10.0` Oct 13, 2017
 
