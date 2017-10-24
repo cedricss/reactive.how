@@ -7,7 +7,9 @@
     <span class="ui basic yellow label">new</span>
     {% endif %}
     </h3>
-    <h2 class="ui header">{{ lesson.name }}
+    <h2 class="ui header">
+        Lesson {{ forloop.length | minus:forloop.index | plus:1 }} -
+        {{ lesson.name }}
     </h2>
     {% assign videos_size = lesson.videos | size %}
     {% if videos_size == 1 %}
