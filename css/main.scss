@@ -440,6 +440,11 @@ div.cta {
     font-size: 0.9rem;
 }
 
+h1 .button {
+    box-shadow: none !important;
+    padding: 0.4em 1em 0.45em !important;
+}
+
 .navigation.placeholder {
     padding-left: 7.75em;
 }
@@ -534,6 +539,12 @@ div.cta {
     }
     .sub.info {
         font-size: 0.7em;
+    }
+    h1 {
+        .button {
+            font-size: 0.9rem !important;
+            padding: 0.4em !important;
+        }
     }
     h2.ui.header {
         font-size: 1.3rem;
