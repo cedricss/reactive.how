@@ -4,21 +4,19 @@
         {% include head.html %}
     </head>
     <body>
-        <div class="fixed bar">
-            <a class="ui logo large label computer only" href="http://reactive.how">reactive.how</a>
+        <div class="computer only fixed bar">
+            <a class="ui logo large label" href="http://reactive.how">reactive.how</a>
         </div>
-        <div class="ui main text container {{ page.class }}">
-            <div class="headlines">
-                {% include author.html %}
-                <h1 class="ui header">
-                    <a href="/">Animated cards to learn reactive&nbsp;programming</a>
-                    <span class="right floated">
-                        <a href="https://github.com/cedricss/reactive.how" class="ui circular secondary github icon button computer only"><i class="github icon"></i></a>
-                        <a href="https://twitter.com/intent/tweet?text=Learn%20reactive%20programming%20with%20animated%20cards%0A%0Ahttp%3A%2F%2Freactive.how" class="ui circular twitter icon button"><i class="twitter inverted icon"></i></a>
-                    </span>
-                </h1>
-                <a class="ui teal button" href="#subscribe"><i class="mail icon"></i> Receive the lessons</a>
-            </div>
+        <div id="subscribe" class="ui main text container {{ page.class }}">
+            {% include author.html %}
+            {% include headlines.html %}
+            <h3 class="ui header">
+                <a href="/">Previous episodes</a>
+                <span class="right floated">
+                    <a href="https://github.com/cedricss/reactive.how" class="ui circular secondary github icon button computer only"><i class="github icon"></i></a>
+                    <a href="https://twitter.com/intent/tweet?text=Learn%20reactive%20programming%20with%20animated%20cards%0A%0Ahttp%3A%2F%2Freactive.how" class="ui circular twitter icon button"><i class="twitter inverted icon"></i></a>
+                </span>
+            </h3>
             <div class="content">
                 {% if page.class == 'post' %}
                 {% include navigation.html %}

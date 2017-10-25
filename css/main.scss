@@ -30,24 +30,22 @@ a {
     }
 }
 
-.headlines {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    h1.ui.header {
-        padding-top: 0.5em;
-    }
+form {
+    margin-bottom: 0.7em;
 }
 
-.cta h1 {
-    font-size: 1.45em!important;
-}
-
-h1 a {
-    color: inherit;
-    font-weight: inherit;
-    &:hover {
+h3 {
+    a {
         color: inherit;
+        font-weight: inherit;
+        &:hover {
+            color: inherit;
+        }
     }
+    .button {
+        box-shadow: none !important;
+        padding: 0.4em 1em 0.45em !important;
+    } 
 }
 
 ul.triangle {
@@ -66,7 +64,7 @@ ul.triangle {
 
 .embed-video {
     position: relative;
-    padding-bottom: 155.75%;
+    padding-bottom: 155.75%;    
     height: 0;
     overflow: hidden;
     iframe {
@@ -82,11 +80,13 @@ ul.triangle {
     }
 }
 
-
 .post .content, .post.content {
-        background-color: white;
-        padding: 2.6em 2.9em;
-        border-radius: 0.4em;
+    background-color: white;
+    padding: 2.6em 2.9em;
+    border-radius: 0.4em;
+    h1 {
+        font-size: 1.5em;
+    }
     .embed-video {
         padding-bottom: 75.34%;
         margin-bottom: 1em;
@@ -201,7 +201,7 @@ ul.triangle {
 }
 
 .post.content {
-    margin: 1.6em 0 2.1em 0;
+    margin: 1em 0 2.1em 0;
     text-align: center;
     padding: 2.6em 6em;
 }
@@ -347,10 +347,6 @@ div.more {
     line-height: initial;
     font-weight: 100;
     padding-top:0.1em;
-    a {
-        color: rgba(0, 0, 0, 0.3)!important;
-        text-decoration: underline;
-    }
 }
 
 .author.block {
@@ -370,34 +366,17 @@ div.more {
     text-overflow: ellipsis;
 }
 
-.cta.very.long {
-    font-size: 0.7em;
-    .icon {
-        margin-top: -2em!important;
-    }
-}
-
 div.cta {
-    margin: 0.5em 0 3em 0;
-}
-
-@media only screen and (min-width: 767px)  {
-    div.cta {
-        width: 330px;
-        margin-left: auto;
-        margin-right: auto;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    .button {
+        line-height: 0.9em;
+        margin-top: -0.15em;
     }
-    .button.cta.limited.width {
-        max-width: 320px;
+    .input {
+        width: 65%;
     }
-}
-
-.button.cta, .uppercase {
-    font-size: 1em;
-}
-
-.button.cta {
-    margin-top: 0.5em;
 }
 
 .micro.twitter.button {
@@ -440,11 +419,6 @@ div.cta {
     font-size: 0.9rem;
 }
 
-h1 .button {
-    box-shadow: none !important;
-    padding: 0.4em 1em 0.45em !important;
-}
-
 .navigation.placeholder {
     padding-left: 7.75em;
 }
@@ -467,6 +441,19 @@ h1 .button {
 }
 
 @media only screen and (max-width: 767px) {
+    body {
+        margin-top: 1em;
+    }
+    div.cta {
+        max-width: 100%;
+        margin:0;
+        .button {
+            margin-top: 0.4em;
+        }
+        .button, .input {
+            width: 100%;
+        }
+    }
     .mobile.overflow.x {
         flex-wrap: nowrap;
         overflow-x: scroll;
@@ -505,7 +492,7 @@ h1 .button {
         }
     }
     .post .content, .post.content {
-            border-radius: 0;
+        border-radius: 0;
         padding: 1em;
     }
     .footer {
@@ -518,6 +505,7 @@ h1 .button {
         font-size: 0.66em;
     }
     .author.block {
+        margin-left: 1em;
         .bio {
             font-size: 0.9em;
         }
