@@ -27,13 +27,13 @@ lessons:
       - 238900409
     date: Monday, 9 Oct.
   
-  - name: Combination
+  - name: Two input streams. One output.
     card: merge
     videos:
       - 238067762
     date: Monday, 16 Oct.
 
-  - name: Filtering with a predicate
+  - name: Projection vs Filtering
     card: filter
     videos:
       - 239130196

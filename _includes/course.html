@@ -8,7 +8,6 @@
     {% endif %}
     </h3>
     <h2 class="ui header">
-        Lesson {{ forloop.length | minus:forloop.index | plus:1 }} -
         {{ lesson.name }}
     </h2>
     {% assign videos_size = lesson.videos | size %}
@@ -27,24 +26,15 @@
     {% endif %}
 </div>
 
-{% if global_index == 0 %}
-{% include headlines.html %}
-<h4 class="ui header">Previous episodes</h4>
-{% endif %}
 {% assign global_index = global_index | plus:1 %}
 
 {% if lesson.chapter %}
+<div class="content post">
+    <h3 class="ui header">Focus on one new concept every week with a 20 seconds gif</h3>
+    <a class="ui cta button teal" href="#subscribe">
+        <i class="mail icon"></i> Subscribe
+    </a>
 </div>
-<div class="headlines">
-    <div class="cta">
-        <a class="ui fluid cta button teal" href="#subscribe">
-            <i class="mail icon"></i> Receive the episodes
-        </a>
-    </div>
-</div>
-{% if forloop.index < forloop.length %}
-<div class="stripe">
-{% endif %}
 {% endif %}
 
 {% endfor %}
