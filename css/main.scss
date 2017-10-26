@@ -4,7 +4,7 @@
 @import "base";
 
 body {
-   margin-top: 8em;
+   margin-top: 2em;
    background-color: #f6f6f6;
 }
 
@@ -360,22 +360,32 @@ div.more {
     }
 }
 
+.move.up {
+    margin-top: -1.5em;
+}
+
 .ellipsis {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-div.cta {
-    max-width: 500px;
+.ui.input {
+    display: flex;
+    max-width: 420px;
     margin-left: auto;
     margin-right: auto;
     .button {
-        line-height: 0.9em;
-        margin-top: -0.15em;
+        margin-left: 0.5em;
     }
-    .input {
-        width: 65%;
+    input {
+        background-color: #f6f6f6 !important;
+        border-color: #f6f6f6 !important;
+        flex: inherit !important;
+        width: 100%;
+        &:focus {
+            border-color: #85b7d9;
+    }
     }
 }
 
@@ -443,16 +453,6 @@ div.cta {
 @media only screen and (max-width: 767px) {
     body {
         margin-top: 1em;
-    }
-    div.cta {
-        max-width: 100%;
-        margin:0;
-        .button {
-            margin-top: 0.4em;
-        }
-        .button, .input {
-            width: 100%;
-        }
     }
     .mobile.overflow.x {
         flex-wrap: nowrap;

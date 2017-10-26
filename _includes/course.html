@@ -1,12 +1,11 @@
-{% assign global_index = 0 %}
 <div class="stripe">
 {% for lesson in site.data.course.lessons reversed %}
 <div class="content post">
-    <h3 class="ui header">{{ lesson.date }}
-    {% if global_index == 0 %}
+    <h4 class="ui header">{{ lesson.date }}
+    {% if forloop.index == 1 %}
     <span class="ui basic yellow label">new</span>
     {% endif %}
-    </h3>
+    </h4>
     <h2 class="ui header">
         {{ lesson.name }}
     </h2>
@@ -20,21 +19,16 @@
     {% endif %}
     <p>
     <a href="/{{lesson.card}}" class="ui basic button"><i class="file text outline icon"></i>Read <b>{{ lesson.name }}</b><i class="chevron right icon"></i></a>
-    {% if global_index == 0 %}
+    {% if forloop.index == 1 %}
     </p>
-    <p>or start with <a href="/fromEvent" class=""> Lesson 1 - Streams</a></p>
+    <p>or start with <a href="/fromEvent" class=""> Episode 1 - Streams</a></p>
     {% endif %}
 </div>
-
-{% assign global_index = global_index | plus:1 %}
-
-{% if lesson.chapter %}
-<div class="content post">
-    <h3 class="ui header">Focus on one new concept every week with a 20 seconds gif</h3>
-    <a class="ui cta button teal" href="#subscribe">
-        <i class="mail icon"></i> Subscribe
-    </a>
-</div>
+{% if forloop.index == 1 %}
+{% include headlines.html %}
+<h3 class="ui header">
+Previous episodes
+{% include social.html %}
+</h3>
 {% endif %}
-
 {% endfor %}
