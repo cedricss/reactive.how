@@ -18,7 +18,7 @@
                 {% assign lesson_index = page.lesson | minus:1 %}
                 {% assign lesson = site.data.course.lessons[lesson_index] %}
                 <h2>
-                    Lesson {{ page.lesson }} - {{ lesson.name }}
+                    Episode {{ page.lesson }} - {{ lesson.name }}
                     <span class="computer only right floated">{{ lesson.date }}</span>
                 </h2>
                 {{ content }}

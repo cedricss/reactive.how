@@ -1,10 +1,12 @@
 <div class="stripe">
 {% for lesson in site.data.course.lessons reversed %}
 <div class="content post">
-    <h4 class="ui header">{{ lesson.date }}
-    {% if forloop.index == 1 %}
-    <span class="ui basic yellow label">new</span>
-    {% endif %}
+    <h4 class="ui header">
+        {% if forloop.index == 1 %}
+        <span class="ui black mini label">NEW</span>
+        {% endif %}
+        <span class="counter">Episode {{ forloop.rindex }}</span>
+        <span class="counter">{{ lesson.date }}</span>
     </h4>
     <h2 class="ui header">
         {{ lesson.name }}
