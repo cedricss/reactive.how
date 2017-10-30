@@ -39,3 +39,10 @@ lessons:
       - 239130196
       - 239108249
     date: Monday, 23 Oct.
+  - name: combineLatest vs merge
+    card: combineLatest
+    videos:
+      -
+      - 240131697
+    date: Monday, 30 Oct.
+    
