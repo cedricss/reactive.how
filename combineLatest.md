@@ -1,7 +1,7 @@
 ---
 id: combineLatest
 lesson: 7
-title: CombineLatest - Learn reactive programming
+title: Learn Reactive Programming - Episode 7 (combineLatest vs merge)
 layout: default
 class: post
 preview_image: content_preview.jpg
@@ -10,11 +10,11 @@ preview_image_alt: CombineLatest vs Merge
 
 In [Episode 5](/merge) you have discovered the _combining streams_ category and [merged](/merge) two input streams. Today, I show you a second card from this category: `❚ combineLatest`.
 
-Let's compare this card with `❚ merge`, used on the same inputs:
+Let's compare this card with `❚ merge`, used on the same input streams:
 
 {% include card_player.html video=240131697 episode=true %}
 
-On the one hand, `❚ merge` doesn't need a _projection function_, as it doesn't change the event values (learn more about projection functions in [Episode 2](/map)).
+On the one hand, `❚ merge` doesn't need a _projection function_, as it [doesn't change the event values](/merge) (learn more about projection functions in [Episode 2](/map)).
 
 On the other hand, `❚ combineLatest` accepts a _projection function_ to combine two values (or more) into a new one, noted figuratively `⚬ ⟶ ⚭ ⟵ ⚬`.
 
