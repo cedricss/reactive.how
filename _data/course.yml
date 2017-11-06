@@ -46,3 +46,10 @@ lessons:
       - 240131697
     date: Monday, 30 Oct.
     
+  - name: zip vs combineLatest
+    card: zip
+    videos:
+      -
+      - 240966482
+    date: Monday, 6 Nov.
+    

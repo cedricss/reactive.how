@@ -48,6 +48,10 @@ h3 {
     } 
 }
 
+.ui.button small {
+    font-weight: 500;
+}
+
 ul.triangle {
     padding: 0 0 0 0.5em;
     li {
@@ -194,8 +198,8 @@ ul.triangle {
         font-size: 0.95em;
         border-radius: 3px;
         font-weight: 700;
-        border: 1px solid #d5e4e2;
-        background-color: #F3FAFA;
+        border: 1px solid rgba(96, 160, 152, 0.15);
+        background-color: rgba(111, 225, 210, 0.06);
         font-style: normal;
         white-space: nowrap;
     }

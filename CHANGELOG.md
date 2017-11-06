@@ -8,17 +8,25 @@ preview_image: changelog_preview.jpg
 
 [reactive.how](http://reactive.how), learn reactive programming.
 
+## `14.0` Nov 6, 2017
+
+- Add [Episode 8 - zip vs combineLatest](/zip)
+
+## `13.0` Oct 30, 2017
+
+- Add [Episode 7 - combineLatest vs merge](/combineLatest)
+
 ## `12.1` Oct 24, 2017
 
 ### 🌒
-- Update navigation bar for lessons
+- Update navigation bar for episodes
 
 ## `12.0` Oct 23, 2017
 
 ### 🃏
 - Add [filter](/filter) card
 - Add [map](/filter) card variant
-- Add [Lesson 6 - Filtering with a predicate](/filter)
+- Add [Episode 6 - Filtering with a predicate](/filter)
 
 ### 🌕
 - Add list of full-sized episodes on homepage
@@ -26,7 +34,7 @@ preview_image: changelog_preview.jpg
 ## `11.0` Oct 16, 2017
 
 ### 🃏
-- Add [Lesson 5 - Combination](/merge)
+- Add [Episode 5 - Combination](/merge)
 
 ## `10.0` Oct 13, 2017
 
