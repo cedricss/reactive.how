@@ -4,7 +4,7 @@ lesson: 9
 title: Learn Reactive Programming - Episode 9 (Take)
 layout: default
 class: post
-preview_image: content_preview.jpg
+preview_image: take/content_preview.jpg
 preview_image_alt: Take
 ---
 
@@ -22,7 +22,7 @@ Use a `▬ number` on this card, such as `3`, to set a maximum _amount_ of event
 
 ### Stream completion
 
-What does the "stream completes" mean? As a reminder, in [Episode 1](/fromEvent) you have learned that a stream is a sequence of events over time. And in [Episode 3](/listen) you have subscribed to a stream, using a listener. Let's dive into the details now:
+What does "the stream completes" mean? As a reminder, in [Episode 1](/fromEvent) you have learned that a stream is a sequence of **events** over time. And in [Episode 3](/listen) you have subscribed to a stream, using a **listener**. Let's dive into the details now:
 
 - A stream can emit three kinds of events:
   - values
