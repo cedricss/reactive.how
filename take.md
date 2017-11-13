@@ -1,11 +1,11 @@
 ---
 id: take
 lesson: 9
-title: Learn Reactive Programming - Episode 9 (Take)
+title: Reactive Programming - Stream completion and Take operator
 layout: default
 class: post
 preview_image: take/content_preview.jpg
-preview_image_alt: Take
+preview_image_alt: Take 3 and complete
 ---
 
 In [Episode 6](/filter) you have discovered the filtering streams category and the `❚ filter` card.
