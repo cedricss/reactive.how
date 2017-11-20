@@ -8,7 +8,7 @@ preview_image: last/content_preview.jpg
 preview_image_alt: The "last" operator
 ---
 
-Today, we explore a card named `❚ last`. It returns the last value of a stream. As soon as the last value is emitted, it returns it? Naaah! How could one be certain that no value comes after? Reactive programming can't see the future.
+Today, we explore a card named `❚ last`. As soon as the input stream emits its last value, the output stream emits it? Naaah! How could one be certain that no value comes after? Reactive programming can't see the future.
 
 We have to wait for a `◉ complete` notification (read [Episode 9 - Take 3 and complete](/take) to learn more about it). Only when the stream has completed, we know this value was the last one – **and this completion may never happen**!
 
