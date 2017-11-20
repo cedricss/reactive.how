@@ -1,7 +1,7 @@
 ---
 id: last
 lesson: 10
-title: Reactive Programming - Last vs Take and the "complete" notification
+title: Reactive Programming - Last vs Take and the « ◉ complete » notification
 layout: default
 class: post
 preview_image: last/content_preview.jpg
