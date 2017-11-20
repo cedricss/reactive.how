@@ -1,7 +1,7 @@
 ---
 id: last
 lesson: 10
-title: Learn Reactive Programming - Episode 10 (Last)
+title: Reactive Programming - Last vs Take and the "complete" notification
 layout: default
 class: post
 preview_image: last/content_preview.jpg
