@@ -14,7 +14,7 @@ Here is `❚ take`, a new card from the filtering category:
 
 {% include card_player.html video=242296640 episode=true %}
 
-Use a `▬ number` on this card, such as `3`, to set a maximum _amount_ of events to emit. `❚ take` returns a new stream of **at most** _amount_ events:
+Use a `▬ number` on this card, such as `3`, to set a maximum _amount_ of events to emit. `❚ take` returns a new stream of **at most** _amount_ values:
 
 - When the input stream emits its _n-th_ value:
   - if _n_ < _amount_, the event can pass

@@ -8,12 +8,24 @@ preview_image: changelog_preview.jpg
 
 [reactive.how](http://reactive.how), learn reactive programming.
 
+## `16.0` Nov 20, 2017
+
+### 🃏
+- Add [Episode 10 - Last value?](/last)
+
+## `15.0` Nov 13, 2017
+
+### 🃏
+- Add [Episode 9 - Take 3 and complete](/take)
+
 ## `14.0` Nov 6, 2017
 
+### 🃏
 - Add [Episode 8 - zip vs combineLatest](/zip)
 
 ## `13.0` Oct 30, 2017
 
+### 🃏
 - Add [Episode 7 - combineLatest vs merge](/combineLatest)
 
 ## `12.1` Oct 24, 2017
