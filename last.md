@@ -14,7 +14,7 @@ We have to wait for a `◉ complete` notification (read [Episode 9 - Take 3 and 
 
 Last Monday, we used the card `❚ take` (watch it again below). The stream it outputs has a `◉ complete` notification overlapped by the `3` value, as it completes immediately. I would like to emphasize that this notification is **not** intended to deliver the last value of the stream. It is a separate event, without a value (though it can happen immediately after an event value).
 
-To illustrate all those principles, let's see how `❚ last` and `❚ take` work with an input stream that completes **few seconds** after the last emitted value:
+To illustrate all those principles, let's see how `❚ last` and `❚ take` work with an input stream that completes a **few seconds** after the last value emitted:
 
 {% include card_player.html video=242933193 episode=true %}
 
