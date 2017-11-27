@@ -12,10 +12,12 @@
         {{ lesson.name }}
     </h2>
     {% assign videos_size = lesson.videos | size %}
-    {% if videos_size == 1 %}
+    {% if videos_size == 0 %}
+    <img src="img/startWith/startWith.gif"/>
+    {% elsif videos_size == 1 %}
     {% assign video = lesson.videos[0] %}
     {% include card_player.html video=video episode=false %}
-    {% else if videos_size == 2 %}
+    {% elsif videos_size == 2 %}
     {% assign video = lesson.videos[1] %}
     {% include card_player.html video=video episode=true %}
     {% endif %}
