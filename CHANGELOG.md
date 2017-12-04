@@ -8,6 +8,16 @@ preview_image: changelog_preview.jpg
 
 [reactive.how](http://reactive.how), learn reactive programming.
 
+## `18.0` Dec 4, 2017
+
+### 🃏
+- Add [Episode 12 - One rate-limiting strategy (debounceTime)](/debounceTime)
+
+## `17.0` Nov 27, 2017
+
+### 🃏
+- Add [Episode 11 - Initial value!](/startWith)
+
 ## `16.0` Nov 20, 2017
 
 ### 🃏

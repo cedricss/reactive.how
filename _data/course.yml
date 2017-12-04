@@ -70,3 +70,10 @@ lessons:
   - name: Initial value!
     card: startWith
     date: Monday, 27 Nov.
+
+  - name: One rate-limiting strategy
+    card: debounceTime
+    date: Monday, 4 Dec.
+    videos:
+      -
+      - 245691062
