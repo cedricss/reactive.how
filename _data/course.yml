@@ -77,3 +77,11 @@ lessons:
     videos:
       -
       - 245691062
+
+  - name: Two rate limiting strategies
+    card: throttleTime
+    date: Monday, 11 Dec.
+    videos:
+      -
+      - 246763833
+
