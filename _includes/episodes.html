@@ -12,7 +12,9 @@
         {{ lesson.name }}
     </h2>
     {% assign videos_size = lesson.videos | size %}
-    {% if videos_size == 0 %}
+    {% if forloop.rindex == 14 %}
+    <a href="/categories"><img src="img/categories/content_preview.jpg"/></a>
+    {% elsif forloop.rindex == 11 %}
     <img src="img/startWith/startWith.gif"/>
     {% elsif videos_size == 1 %}
     {% assign video = lesson.videos[0] %}
@@ -22,11 +24,7 @@
     {% include card_player.html video=video episode=true %}
     {% endif %}
     <p>
-    <a href="/{{lesson.card}}" class="ui basic button"><i class="file text outline icon"></i>Read <b>{{ lesson.name }}</b><i class="chevron right icon"></i></a>
-    {% if forloop.index == 1 %}
-    </p>
-    <p>or start with <a href="/fromEvent" class=""> Episode 1 - Streams</a></p>
-    {% endif %}
+    <a href="/{{lesson.card}}" class="ui black button"><i class="file text outline icon"></i>Learn more...</a><i class="chevron right icon"></i>
 </div>
 {% if forloop.index == 1 %}
 {% include headlines.html %}
