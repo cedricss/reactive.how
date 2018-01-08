@@ -91,3 +91,23 @@ lessons:
     videos:
       -
 
+  - name: I wish you a wonderful Holiday Season!
+    card: distinctUntilChanged
+    date: Monday, 25 Dec.
+    videos:
+      -
+      -
+
+  - name: A New-Year special exercise
+    card: interval
+    date: Monday, 1 Jan.
+    videos:
+      -
+      -
+
+  - name: take(n) vs takeWhile(predicate) 
+    card: takeWhile
+    date: Monday, 8 Jan.
+    videos:
+      -
+      - 250094761

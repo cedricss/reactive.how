@@ -12,10 +12,14 @@
         {{ lesson.name }}
     </h2>
     {% assign videos_size = lesson.videos | size %}
-    {% if forloop.rindex == 14 %}
-    <a href="/categories"><img src="img/categories/content_preview.jpg"/></a>
-    {% elsif forloop.rindex == 11 %}
+    {% if forloop.rindex == 11 %}
     <img src="img/startWith/startWith.gif"/>
+    {% elsif forloop.rindex == 14 %}
+    <a href="/categories"><img src="img/categories/content_preview.jpg"/></a>
+    {% elsif forloop.rindex == 15 %}
+    <a href="/distinctUntilChanged"><img class="w300" src="img/distinctUntilChanged/content_preview.jpg"/></a>
+    {% elsif forloop.rindex == 16 %}
+    <a href="/interval"><img class="w300" src="img/interval/interval.gif"/></a>
     {% elsif videos_size == 1 %}
     {% assign video = lesson.videos[0] %}
     {% include card_player.html video=video episode=false %}
