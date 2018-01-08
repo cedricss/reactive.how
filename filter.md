@@ -31,6 +31,8 @@ We set the same _function_ and the same _input stream of numbers_ on those cards
 
 ><small>I'll frequently re-use previous cards, in different context, with different arguments and in comparison with new ones. Through repetitions, reactive programming will eventually become second nature for you.</small>
 
+### Predicate
+
 `▬ isEven` is used as:
 
 - a **projection** function on the `❚ map` card
