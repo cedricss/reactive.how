@@ -105,7 +105,7 @@ lessons:
       -
       -
 
-  - name: take(n) vs takeWhile(predicate) 
+  - name: take(count) vs takeWhile(predicate) 
     card: takeWhile
     date: Monday, 8 Jan.
     videos:

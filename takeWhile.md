@@ -28,5 +28,5 @@ In the animation above, can you spot the difference between the outputs? Can you
 
 The `◉ complete` notification happens at a different moment:
 
-- On the one hand, `❚ take` returns at most _amount_ values and can complete as soon as this amount is reached.
+- On the one hand, `❚ take` returns a stream that emits at most _amount_ values and can complete as soon as this amount is reached.
 - On the other hand, `❚ takeWhile` has to wait for the predicate to return `✘ false` in order to complete.
