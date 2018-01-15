@@ -10,7 +10,7 @@ preview_image_alt:
 
 Two weeks ago, I showed you the [interval](/interval) card and challenged you to create a countdown to celebrate the new year.
 
-> [![](img/countdown/interval.png){:.w250}](/interval)
+> [![](img/countdown/interval.jpg){:.w250}](/interval)
 >
 > [Read Episode 16 - Interval](/interval)
 

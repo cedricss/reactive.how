@@ -113,7 +113,7 @@ lessons:
       - 250094761
 
   - name: How to solve the countdown challenge
-    card: takeWhile
+    card: countdown
     date: Monday, 15 Jan.
     videos:
       -
