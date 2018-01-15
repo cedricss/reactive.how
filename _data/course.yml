@@ -111,3 +111,10 @@ lessons:
     videos:
       -
       - 250094761
+
+  - name: How to solve the countdown challenge
+    card: takeWhile
+    date: Monday, 15 Jan.
+    videos:
+      -
+      -

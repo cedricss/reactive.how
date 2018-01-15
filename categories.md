@@ -5,7 +5,7 @@ title: Categories - 3 month anniversary special episode
 layout: default
 class: post
 preview_image: categories/content_preview.jpg
-preview_image_alt: The "throttleTime" operator
+preview_image_alt: Categories of stream operations
 ---
 
 I published the first episode on Monday, 18 September. Today is Monday, 18 December. We are celebrating the 3 month anniversary of the series!
