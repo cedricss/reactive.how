@@ -22,6 +22,8 @@
     <a href="/interval"><img class="w300" src="img/interval/interval.gif"/></a>
     {% elsif forloop.rindex == 18 %}
     <a href="/countdown"><img src="img/countdown/countdown.jpg"/></a>
+    {% elsif forloop.rindex == 19 %}
+    <a href="/countdown"><img src="img/first/LastVsFirst.jpeg"/></a>
     {% elsif videos_size == 1 %}
     {% assign video = lesson.videos[0] %}
     {% include card_player.html video=video episode=false %}
