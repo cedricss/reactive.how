@@ -26,7 +26,7 @@ lessons:
       - 238067734
       - 238900409
     date: Monday, 9 Oct.
-  
+
   - name: Two input streams. One output.
     card: merge
     videos:
@@ -39,6 +39,7 @@ lessons:
       - 239130196
       - 239108249
     date: Monday, 23 Oct.
+
   - name: combineLatest vs merge
     card: combineLatest
     videos:
@@ -115,6 +116,13 @@ lessons:
   - name: How to solve the countdown challenge
     card: countdown
     date: Monday, 15 Jan.
+    videos:
+      -
+      -
+
+  - name: last vs first. Are they symmetrical?
+    card: first
+    date: Monday, 22 Jan.
     videos:
       -
       -
