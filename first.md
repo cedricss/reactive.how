@@ -39,7 +39,7 @@ Read more about stream completion in [Episode 9](/take#stream-completion).
 <br/>
 
 ![](img/first/Last1NvsFrist1N.jpg)
-**Answer**: Not when the input stream emits only one value **and completes later**. `❚ first` and `❚ last` are not strictly "symmetrical". Remember that `❚ last` has to wait for the `◉ complete` notification ([read more about stream completion](/take#stream-completion)).
+**Answer**: Not when the input stream emits only one value **and completes later** or **never completes**. `❚ first` and `❚ last` are not strictly "symmetrical". Remember that `❚ last` has to wait for the `◉ complete` notification ([read more about stream completion](/take#stream-completion)).
 
 ## Quick Exercises
 
