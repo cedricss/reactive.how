@@ -126,3 +126,10 @@ lessons:
     videos:
       -
       -
+
+  - name: Can you fill in the blanks?
+    card: skipWhile
+    date: Monday, 29 Jan.
+    videos:
+      -
+      -

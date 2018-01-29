@@ -118,6 +118,7 @@ ul.triangle {
         max-width:40px;
     }
     img {
+        border-radius: 10px;
         width:100%;
     }
     img.w30 {
@@ -125,6 +126,9 @@ ul.triangle {
     }
     img.w50 {
         width: 50px;
+    }
+    img.w79 {
+        width: 79px;
     }
     img.w100 {
         width: 100px;
@@ -141,8 +145,20 @@ ul.triangle {
     img.w300 {
         width: 300px;
     }
+    img.w350 {
+        width: 350px;
+    }
     img.w400 {
         width: 400px;
+    }
+    img.w450 {
+        width: 450px;
+    }
+    img.w500 {
+        width: 500px;
+    }
+    img.w550 {
+        width: 550px;
     }
     ul:not(.triangle) {
         background-color: #f7f7f7;
