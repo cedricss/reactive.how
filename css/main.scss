@@ -117,6 +117,8 @@ ul.triangle {
     .box {
         max-width:40px;
     }
+
+
     img {
         border-radius: 10px;
         width:100%;
@@ -166,9 +168,9 @@ ul.triangle {
         
         border-radius: 0.4em;
         li {
-            list-style: none;
+            
             &:before {
-                content: '►';
+                
                 padding-right: 0.6em;
                 font-size: 0.7em;
                 color: #616161;
@@ -221,6 +223,16 @@ ul.triangle {
         background-color: rgba(111, 225, 210, 0.06);
         font-style: normal;
         white-space: nowrap;
+        &.one {
+            border-radius: 10px;
+            background-color: white;
+            border: 1.4px solid #70e5d7;
+            padding: 2px 6px;
+        }
+        &.two {
+            background-color: white;
+            border: 1.4px solid rgb(252, 215, 61);
+        }
     }
     pre {
         background-color: #E9E9E9;

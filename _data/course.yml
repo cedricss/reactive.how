@@ -133,3 +133,10 @@ lessons:
     videos:
       -
       -
+
+  - name: The scan operator
+    card: scan
+    date: Monday, 5 Feb.
+    videos:
+      -
+      - 254283000
