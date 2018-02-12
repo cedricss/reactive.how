@@ -140,3 +140,10 @@ lessons:
     videos:
       -
       - 254283000
+
+  - name: reduce vs scan
+    card: reduce
+    date: Monday, 12 Feb.
+    videos:
+      -
+      - 255356781
