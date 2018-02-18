@@ -147,3 +147,10 @@ lessons:
     videos:
       -
       - 255356781
+
+  - name: Four ways to count
+    card: count
+    date: Monday, 19 Feb.
+    videos:
+      - 
+      - 256387349
