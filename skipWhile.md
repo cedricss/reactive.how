@@ -63,7 +63,7 @@ Note: `❚ take` is another _slicing_ card (it returns a new stream of at most _
 
 Finally, you can filter an input stream by emitting zero or one event value. For example, an output stream can emit only the [first](/first) or the [last](/last) event value of an input stream. To emit only the last value _that satisfies a predicate_, you can [chain](/listen#chain) `❚ filter(predicate)` and `❚ last()`.
 
-In some reactive programming libraries (like RxJS), you can simply use `❚ first` and `❚ last` with an optional predicate:
+In some reactive stream libraries (like RxJS), you can simply use `❚ first` and `❚ last` with an optional predicate:
 
 ![](/img/skipWhile/first0-last0.jpg)
 
