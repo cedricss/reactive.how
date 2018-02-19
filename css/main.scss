@@ -145,22 +145,22 @@ ul.triangle {
         width: 250px;
     }
     img.w300 {
-        width: 300px;
+        max-width: 300px;
     }
     img.w350 {
-        width: 350px;
+        max-width: 350px;
     }
     img.w400 {
-        width: 400px;
+        max-width: 400px;
     }
     img.w450 {
-        width: 450px;
+        max-width: 450px;
     }
     img.w500 {
-        width: 500px;
+        max-width: 500px;
     }
     img.w550 {
-        width: 550px;
+        max-width: 550px;
     }
     ul:not(.triangle) {
         background-color: #f7f7f7;
