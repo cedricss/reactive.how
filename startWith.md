@@ -24,8 +24,8 @@ Set an _initial_ value on `❚ startWith`, such as `0`:
 In the [Episode 3](/listen) we created a chain of 3 cards. Here is a small excerpt from this episode (or read [the full episode](/listen)):
 
 - `❚ fromEvent` reacts to the `▬ toggle`. It creates a sequence of toggle events over time, **in reaction** to each toggle status change (read [Episode 1](/fromEvent)).
-- `❚ map` projects each toggle events to `✘ on` or `✘ off` (read [Episode 2](/map)).
-- `❚ subscribe` adds `▬ setWifi` as a **listener** of the stream. This listener accepts `✘ on` or `✘ off` event value and turns the wifi _on_ or _off_ accordingly.
+- `❚ map` projects each toggle events to `✔ on` or `✘ off` (read [Episode 2](/map)).
+- `❚ subscribe` adds `▬ setWifi` as a **listener** of the stream. This listener accepts `✔ on` or `✘ off` event value and turns the wifi _on_ or _off_ accordingly.
 
 > [![](img/startWith/toggle-wifi.jpg)](/listen)
 > <br/><small>[Watch Episode 3 ↗](/listen)</small>
