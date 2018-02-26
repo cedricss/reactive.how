@@ -35,7 +35,7 @@ We set the same _function_ and the same _input stream of numbers_ on those cards
 
 `▬ isEven` is used as:
 
-- a **projection** function on the `❚ map` card
+- a **project** function on the `❚ map` card
 - a **predicate** function on the `❚ filter` card
 
 A predicate returns `✔ true` or `✘ false`. This is how `❚ filter` works with a predicate:
@@ -43,6 +43,6 @@ A predicate returns `✔ true` or `✘ false`. This is how `❚ filter` works wi
 - Each event of the input stream is given to the predicate
 - If the predicate returns `✔ true`, the event can pass
 - Otherwise, the event is ignored
-- As a result, it returns a new stream of filtered events
+- As a result, it returns a new stream of filtered values
 
 So, you now know three reactive programming concepts and five kinds of stream operation! That's something, you can celebrate. And still, there are more. More categories. More cards per category. More Monday lessons 😁.

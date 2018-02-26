@@ -24,8 +24,8 @@ Set an _initial_ value on `❚ startWith`, such as `0`:
 In the [Episode 3](/listen) we created a chain of 3 cards. Here is a small excerpt from this episode (or read [the full episode](/listen)):
 
 - `❚ fromEvent` reacts to the `▬ toggle`. It creates a sequence of toggle events over time, **in reaction** to each toggle status change (read [Episode 1](/fromEvent)).
-- `❚ map` projects each toggle events to `✘ on` or `✘ off` (read [Episode 2](/map)).
-- `❚ subscribe` adds `▬ setWifi` as a **listener** of the stream. This listener accepts `✘ on` or `✘ off` event value and turns the wifi _on_ or _off_ accordingly.
+- `❚ map` projects each toggle events to `✔ true` or `✘ false` (read [Episode 2](/map)).
+- `❚ subscribe` adds `▬ setWifi` as a **listener** of the stream. This listener accepts boolean values (`✔ true` or `✘ false`) and turns the wifi _on_ or _off_ accordingly.
 
 > [![](img/startWith/toggle-wifi.jpg)](/listen)
 > <br/><small>[Watch Episode 3 ↗](/listen)</small>
@@ -34,13 +34,13 @@ It begins like this:
 
 - the application starts
 - after a few seconds, the toggle is turned off by the user
-- so, a first event `✘ off` is emitted
+- so, a first event `✘ false` is emitted
 - as a result, the listener turns the wifi component _off_
 - and so on...
 
 But, from the pure perspective of the event stream, it's not clear what is the status of the wifi component _before_ the first interaction on the toggle. Is the wifi _on_ by default? _off_? maybe in an _undefined/buggy_ state?
 
-I would like the chain of cards to be **responsible for setting the initial state** of the wifi component. To do so, I can add a fourth card to start with an initial `✔ on` event value:
+I would like the chain of cards to be **responsible for setting the initial state** of the wifi component. To do so, I can add a fourth card to start with an initial `✔ true` event value:
 
 > `❚ fromEvent(toggle)`<br/>
 >  ➟`❚ map(isChecked)`<br/>

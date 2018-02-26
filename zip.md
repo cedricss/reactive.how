@@ -10,9 +10,9 @@ preview_image_alt: Zip vs CombineLatest
 
 After `❚ merge` ([Episode 5](/merge)) and `❚ combineLatest` ([Episode 7](/combineLatest)), we continue our exploration of the _combining streams_ category. Today I picked a third card from this category: `❚ zip`.
 
-As for `❚ combineLatest`, we need a _projection function_ that combines two values (or more) into a new one. I note it figuratively `⚬ ⟶ ⚭ ⟵ ⚬`.
+As for `❚ combineLatest`, we need a **project** function that combines two values (or more) into a new one. I note it figuratively `⚬ ⟶ ⚭ ⟵ ⚬`.
 
-Let's compare those two cards. In the following example, they both take the exact same arguments (the same _input streams_ and the same _projection function_):
+Let's compare those two cards. In the following example, they both take the exact same arguments (the same input streams and the same project function):
 
 {% include card_player.html video=240966482 episode=true %}
 

@@ -14,9 +14,9 @@ Let's compare this card with `❚ merge`, used on the same input streams:
 
 {% include card_player.html video=240131697 episode=true %}
 
-On the one hand, `❚ merge` doesn't need a _projection function_, as it [doesn't change the event values](/merge) (learn more about projection functions in [Episode 2](/map)).
+On the one hand, `❚ merge` doesn't need a **project** function, as it [doesn't change the event values](/merge) (learn more about project functions in [Episode 2](/map)).
 
-On the other hand, `❚ combineLatest` accepts a _projection function_ to combine two values (or more) into a new one, noted figuratively `⚬ ⟶ ⚭ ⟵ ⚬`.
+On the other hand, `❚ combineLatest` accepts a **project** function to combine two values (or more) into a new one, noted figuratively `⚬ ⟶ ⚭ ⟵ ⚬`.
 
  This is how `❚ combineLatest` operates with two (or more) input streams:
 
