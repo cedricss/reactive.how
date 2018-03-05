@@ -52,7 +52,7 @@ In this example, the function <code class="one">n</code> ⟶ <code class="one">n
 
 ## Summary
 
-- Some operators may accept functions as arguments. But these functions don't have to work with the input or the output stream (the operators do).
+- Some operators may accept functions as arguments. These functions don't have to work with the input or the output stream. The operators do.
 - How you label a function (eg. "project" or "predicate" function) depends on how you use it. A function is not a _project_ or _predicate_ function in itself.
 
 Next Monday, we'll continue the exploration of operators and functions with a second part!

@@ -27,9 +27,9 @@
     {% elsif forloop.rindex == 20 %}
     <a href="/skipWhile"><img src="img/skipWhile/exercises.jpg"/></a>
     {% elsif forloop.rindex == 24 %}
-    <a href="/predicate">
-    <img class="w450" src="img/predicate/predicate.gif" />
-    </a>
+    <a href="/predicate"><img class="w450" src="img/predicate/predicate.gif" /></a>
+    {% elsif forloop.rindex == 25 %}
+    <a href="/accumulator"><img class="w450" src="img/accumulator/accumulator1.gif" /></a>
     {% elsif videos_size == 1 %}
     {% assign video = lesson.videos[0] %}
     {% include card_player.html video=video episode=false %}
