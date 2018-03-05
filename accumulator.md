@@ -25,7 +25,7 @@ A function that:
 - and returns one <code class="two">new value</code>
 - where **value 1** and **new value** are of the same type
 
-may be used as an **accumulator** function on scanning and reducing operators (eg. [scan](/scan) or [reduce](/reduce)). In this case, <code class="two">value 1</code> and <code class="two">new value</code> are often called "accumulation" or "acc".
+may be used as an **accumulator** function with the [scan](/scan) and [reduce](/reduce) operators. In this case, <code class="two">value 1</code> and <code class="two">new value</code> are often called "accumulation" or "acc".
 
 Despite the names _accumulator_ and _accumulation_, accumulator functions **don't store** the result "for later use". The operators do save the result. They will eventually give it back to their accumulator function. This is why accumulator functions need to take an accumulation as an argument.
 
