@@ -1,50 +1,63 @@
 <div class="stripe">
-{% for lesson in site.data.course.lessons reversed %}
-<div class="content post">
-    <h4 class="ui header">
-        {% if forloop.index == 1 %}
-        <span class="ui black mini label">NEW</span>
-        {% endif %}
-        <span class="counter">Episode {{ forloop.rindex }}</span>
-        <span class="counter">{{ lesson.date }}</span>
-    </h4>
-    <h2 class="ui header">
-        {{ lesson.name }}
-    </h2>
-    {% assign videos_size = lesson.videos | size %}
-    {% if forloop.rindex == 11 %}
-    <img src="img/startWith/startWith.gif"/>
-    {% elsif forloop.rindex == 14 %}
-    <a href="/categories"><img src="img/categories/content_preview.jpg"/></a>
-    {% elsif forloop.rindex == 15 %}
-    <a href="/distinctUntilChanged"><img class="w300" src="img/distinctUntilChanged/content_preview.jpg"/></a>
-    {% elsif forloop.rindex == 16 %}
-    <a href="/interval"><img class="w300" src="img/interval/interval.gif"/></a>
-    {% elsif forloop.rindex == 18 %}
-    <a href="/countdown"><img src="img/countdown/countdown.jpg"/></a>
-    {% elsif forloop.rindex == 19 %}
-    <a href="/first"><img src="img/first/LastVsFirst.jpeg"/></a>
-    {% elsif forloop.rindex == 20 %}
-    <a href="/skipWhile"><img src="img/skipWhile/exercises.jpg"/></a>
-    {% elsif forloop.rindex == 24 %}
-    <a href="/predicate"><img class="w450" src="img/predicate/predicate.gif" /></a>
-    {% elsif forloop.rindex == 25 %}
-    <a href="/accumulator"><img class="w450" src="img/accumulator/accumulator1.gif" /></a>
-    {% elsif videos_size == 1 %}
-    {% assign video = lesson.videos[0] %}
-    {% include card_player.html video=video episode=false %}
-    {% elsif videos_size == 2 %}
-    {% assign video = lesson.videos[1] %}
-    {% include card_player.html video=video episode=true %}
-    {% endif %}
-    <p>
-    <a href="/{{lesson.card}}" class="ui black button"><i class="file text outline icon"></i>Learn more...</a><i class="chevron right icon"></i>
-</div>
-{% if forloop.index == 1 %}
-{% include headlines.html %}
-<h3 class="ui header">
-Previous episodes
-{% include social.html %}
-</h3>
-{% endif %}
-{% endfor %}
+    {% for lesson in site.data.course.lessons reversed %}
+    <div class="content post">
+        <h4 class="ui header">
+            {% if forloop.index == 1 %}
+            <span class="ui black mini label">NEW</span>
+            {% endif %}
+            <span class="counter">Episode {{ forloop.rindex }}</span>
+            <span class="counter">{{ lesson.date }}</span>
+        </h4>
+        <h2 class="ui header">
+            {{ lesson.name }}
+        </h2>
+        {% assign videos_size = lesson.videos | size %} {% if forloop.rindex == 11 %}
+        <img src="img/startWith/startWith.gif" /> {% elsif forloop.rindex == 14 %}
+        <a href="/categories">
+            <img src="img/categories/content_preview.jpg" />
+        </a>
+        {% elsif forloop.rindex == 15 %}
+        <a href="/distinctUntilChanged">
+            <img class="w300" src="img/distinctUntilChanged/content_preview.jpg" />
+        </a>
+        {% elsif forloop.rindex == 16 %}
+        <a href="/interval">
+            <img class="w300" src="img/interval/interval.gif" />
+        </a>
+        {% elsif forloop.rindex == 18 %}
+        <a href="/countdown">
+            <img src="img/countdown/countdown.jpg" />
+        </a>
+        {% elsif forloop.rindex == 19 %}
+        <a href="/first">
+            <img src="img/first/LastVsFirst.jpeg" />
+        </a>
+        {% elsif forloop.rindex == 20 %}
+        <a href="/skipWhile">
+            <img src="img/skipWhile/exercises.jpg" />
+        </a>
+        {% elsif forloop.rindex == 24 %}
+        <a href="/predicate">
+            <img class="w450" src="img/predicate/predicate.gif" />
+        </a>
+        {% elsif forloop.rindex == 25 %}
+        <a href="/accumulator">
+            <img class="w450" src="img/accumulator/accumulator1.gif" />
+        </a>
+        {% elsif forloop.rindex == 26 %}
+        <a href="/accumulator">
+            <img class="w550" src="img/max/scanreducemax.gif" />
+        </a>
+        {% elsif videos_size == 1 %} {% assign video = lesson.videos[0] %} {% include card_player.html video=video episode=false
+        %} {% elsif videos_size == 2 %} {% assign video = lesson.videos[1] %} {% include card_player.html video=video episode=true
+        %} {% endif %}
+        <p>
+            <a href="/{{lesson.card}}" class="ui black button">
+                <i class="file text outline icon"></i>Learn more...</a>
+            <i class="chevron right icon"></i>
+    </div>
+    {% if forloop.index == 1 %} {% include headlines.html %}
+    <h3 class="ui header">
+        Previous episodes {% include social.html %}
+    </h3>
+    {% endif %} {% endfor %}

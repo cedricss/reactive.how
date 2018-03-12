@@ -32,7 +32,7 @@ A function that:
 - takes one <code class="one">value</code>
 - and returns one <code class="two">new value</code> of any type
 
-may be used as a **project** function on a [**map**](/map) operator.
+may be used as a **project** function with [**map**](/map).
 
 A function that:
 

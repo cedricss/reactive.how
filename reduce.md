@@ -42,4 +42,4 @@ I've highlighted the differences:
 
 As you can see, while `❚ scan` returns a new stream of progressively accumulated values, `❚ reduce` returns a new stream of, at most, one value. At most? If the input stream never completes, `❚ reduce` **will never emit any value** on the output stream.
 
-Ultimately, `❚ reduce` is equivalent to `❚ scan` chained with `❚ last` (read&nbsp;[Episode&nbsp;10&nbsp;-&nbsp;Last value](/last)).
+Ultimately, `❚ reduce` is equivalent to `❚ scan` chained with `❚ takeLast(1)`.
