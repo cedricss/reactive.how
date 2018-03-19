@@ -19,21 +19,6 @@ body {
     padding-top: 3em;
 }
 
-.featured {
-    margin: 2em 0;
-    text-align:center;
-    h3.ui.header {
-        margin: 0;
-        padding: 0;
-    }
-    a {
-        color: #444444;
-    }
-    img {
-        max-width: 250px;
-        border-radius: 5px;
-    }
-}
 a {
     color: #00b5ad;
     font-weight: 500;
@@ -106,6 +91,50 @@ span.rxjs {
     }
 }
 
+img {
+    border-radius: 10px;
+    width:100%;
+}
+img.w30 {
+    width: 30px;
+}
+img.w50 {
+    width: 50px;
+}
+img.w79 {
+    width: 79px;
+}
+img.w100 {
+    width: 100px;
+}
+img.w150 {
+    width: 150px;
+}
+img.w200 {
+    width: 200px;
+}
+img.w250 {
+    width: 250px;
+}
+img.w300 {
+    max-width: 300px;
+}
+img.w350 {
+    max-width: 350px;
+}
+img.w400 {
+    max-width: 400px;
+}
+img.w450 {
+    max-width: 450px;
+}
+img.w500 {
+    max-width: 500px;
+}
+img.w550 {
+    max-width: 550px;
+}
+
 .counter {
     background: #f6f6f6;
     color: #494949;
@@ -140,49 +169,7 @@ span.rxjs {
     }
 
 
-    img {
-        border-radius: 10px;
-        width:100%;
-    }
-    img.w30 {
-        width: 30px;
-    }
-    img.w50 {
-        width: 50px;
-    }
-    img.w79 {
-        width: 79px;
-    }
-    img.w100 {
-        width: 100px;
-    }
-    img.w150 {
-        width: 150px;
-    }
-    img.w200 {
-        width: 200px;
-    }
-    img.w250 {
-        width: 250px;
-    }
-    img.w300 {
-        max-width: 300px;
-    }
-    img.w350 {
-        max-width: 350px;
-    }
-    img.w400 {
-        max-width: 400px;
-    }
-    img.w450 {
-        max-width: 450px;
-    }
-    img.w500 {
-        max-width: 500px;
-    }
-    img.w550 {
-        max-width: 550px;
-    }
+    
     ul:not(.triangle) {
         background-color: #f7f7f7;
         padding: 0.5em 0em 0.5em 2em;
@@ -444,8 +431,8 @@ div.more {
         margin-left: 0.5em;
     }
     input {
-        background-color: #f6f6f6 !important;
-        border-color: #f6f6f6 !important;
+        background-color: #ffffff !important;
+        border: 1px solid #a4a4a4 !important;
         flex: inherit !important;
         width: 100%;
         &:focus {

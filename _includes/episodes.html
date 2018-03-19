@@ -1,9 +1,26 @@
 <div class="stripe">
-    {% for lesson in site.data.course.lessons reversed %}
     <div class="content post">
         <h4 class="ui header">
+            <span class="ui pink mini label">FEATURED</span>
+        </h4>
+        <h2 class="ui header">
+            scan vs. reduce</h2>
+        <a href="/reduce">
+            <img class="w350" src="/img/reduce/reduce-scan-featured.gif" />
+        </a>
+
+        <a href="/reduce" class="ui button">
+            <i class="file text outline icon"></i>Read the full article
+            <i class="chevron right icon"></i>
+        </a>
+
+    </div>
+    {% for lesson in site.data.course.lessons reversed %}
+    <div class="content post">
+
+        <h4 class="ui header">
             {% if forloop.index == 1 %}
-            <span class="ui black mini label">NEW</span>
+            <span class="ui pink mini label">NEW</span>
             {% endif %}
             <span class="counter">Episode {{ forloop.rindex }}</span>
             <span class="counter">{{ lesson.date }}</span>
@@ -45,7 +62,7 @@
             <img class="w450" src="img/accumulator/accumulator1.gif" />
         </a>
         {% elsif forloop.rindex == 26 %}
-        <a href="/accumulator">
+        <a href="/max">
             <img class="w550" src="img/max/scanreducemax.gif" />
         </a>
         {% elsif forloop.rindex == 27 %}
@@ -56,9 +73,11 @@
         %} {% elsif videos_size == 2 %} {% assign video = lesson.videos[1] %} {% include card_player.html video=video episode=true
         %} {% endif %}
         <p>
-            <a href="/{{lesson.card}}" class="ui black button">
-                <i class="file text outline icon"></i>Learn more...</a>
-            <i class="chevron right icon"></i>
+            <a href="/{{lesson.card}}" class="ui button">
+                <i class="file text outline icon"></i>Read the full article
+                <i class="chevron right icon"></i>
+            </a>
+        </p>
     </div>
     {% if forloop.index == 1 %} {% include headlines.html %}
     <h3 class="ui header">
