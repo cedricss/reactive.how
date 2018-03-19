@@ -18,10 +18,17 @@ Recently, [Ben Lesh tweeted](https://twitter.com/BenLesh/status/9732554069474672
 * [Prettier](https://prettier.io/) code formatter, that now supports the pipeline operator by default
 * [Fira Code](https://github.com/tonsky/FiraCode) font with programming ligatures to have `▷` instead of `|>`
 
-This episode continues in an RxJS specific article:
-<br/>[**RxJS pipeable operators vs. dot-chaining**](/rxjs/pipeable-operators-vs-dot-chaining)
+🎨 In the [previous episode](/max) I used the [Gloom theme](https://marketplace.visualstudio.com/items?itemName=adamgirton.gloom) port for VS Code. But it doesn't work with ▷ the ligature. Instead, in today's demo, I used the [Hydra theme](https://marketplace.visualstudio.com/items?itemName=juanmnl.vscode-theme-hydra).
 
-Also, I created animated cards that show how the operators used in this episode work:<br/>[**Episode 2 - map**](/map)<br/>[**Episode 9 - take**](/take)<br/>[**Episode 16 - interval**](/interval)
+## Learn more
+
+This episode continues in an RxJS specific article:
+
+> <small><span class="rxjs"><strong>RxJS</strong></span></small> [**Pipeable operators vs. dot-chaining**](/rxjs/pipeable-operators-vs-dot-chaining)
+
+Also, I created animated cards that show how the operators used in this episode work:
+
+> [![](/img/map/icon.png){:.w150}](/map) [![](/img/take/icon.png){:.w250}](/take) <br/> ▶️ [**Episode 2 - map**](/map) &nbsp;▶️ [**Episode 9 - take**](/take)
 
 ## A new episode every Monday
 

@@ -28,8 +28,9 @@ const stream = Observable.interval(TICK)
 RxJS 5.5 introduced _pipeable operators_ and `pipe`:
 
 ```
-import { interval } from 'rxjs/observable/interval';
+// Pull in only what you need:
 import { take, map } from 'rxjs/operators';
+import { interval } from 'rxjs/observable/interval';
 
 const stream = interval(TICK).pipe(
   take(LENGTH),
@@ -43,7 +44,7 @@ const stream = interval(TICK).pipe(
 You can now easily build your own operators and chain them with the RxJS ones:
 
 ```
-// Custom operator based on RxJS map:
+// Create your own operator based on RxJS map:
 const draw = brush =>
   map(num =>
     brush.repeat(Math.floor(num * 65))
