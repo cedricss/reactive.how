@@ -169,8 +169,15 @@ lessons:
       - 
       -
 
-  - name: How <code>❚ max</code> works
+  - name: How <code>❚ max</code> works under the hood
     card: max
+    date: Monday, 12 Mar.
+    videos:
+      - 
+      -
+
+  - name: The JavaScript pipeline operator proposal
+    card: pipeline-operator
     date: Monday, 17 Mar.
     videos:
       - 
