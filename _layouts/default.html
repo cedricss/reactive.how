@@ -14,24 +14,14 @@
         </h3>
         {% endif %}
         <div class="content">
-            {% if page.class == 'post' %} {% if page.path contains "rxjs" %}
-            <p class="navigation">
-
-                <a class="ui secondary tiny button" href="#subscribe">
-                    <i class="mail icon"></i> Stay tuned
-                </a>
-                <a class="ui tiny basic button" href="/">
-                    <i class="block layout icon"></i> Browse episodes
-                </a>
-            </p>
-            <span class="computer only right floated">{{ page.date }}</span>
-            {% else %} {% include navigation.html %} {% assign lesson_index = page.lesson | minus:1 %} {% assign lesson = site.data.course.lessons[lesson_index]
+            {% if page.path contains "rxjs" %} {% include rxjs_nav.html %}{{ content }} {% elsif page.class == 'post' %} {% include navigation.html
+            %} {% assign lesson_index = page.lesson | minus:1 %} {% assign lesson = site.data.course.lessons[lesson_index]
             %}
             <h2>
                 Episode {{ page.lesson }} - {{ lesson.name }}
                 <span class="computer only right floated">{{ lesson.date }}</span>
-            </h2>{% endif %} {{content }} {% if page.path contains "rxjs" %} {% else %} {% include navigation.html %} {% endif
-            %} {% else %} {{ content }} {% endif %}
+            </h2>
+            {{content }} {% include navigation.html %} {% else %} {{ content }}{% endif %}
         </div>
         <div id="subscribe">
             {% include headlines.html %}
@@ -40,6 +30,7 @@
         <div class="stripe">
             {% include author.html %}
         </div>
+
     </div>
     <footer>
         {% include footer.html %}

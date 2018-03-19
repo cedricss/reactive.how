@@ -6,7 +6,7 @@
         <h2 class="ui header">
             scan vs. reduce</h2>
         <a href="/reduce">
-            <img class="w350" src="/img/reduce/reduce-scan-featured.gif" />
+            <img class="w350" src="/img/reduce/reduce-scan-featured.gif" alt="operators scan vs. reduce" />
         </a>
 
         <a href="/reduce" class="ui button">
@@ -29,45 +29,45 @@
             {{ lesson.name }}
         </h2>
         {% assign videos_size = lesson.videos | size %} {% if forloop.rindex == 11 %}
-        <img src="img/startWith/startWith.gif" /> {% elsif forloop.rindex == 14 %}
+        <img src="img/startWith/startWith.gif" alt="startWith operator"/> {% elsif forloop.rindex == 14 %}
         <a href="/categories">
-            <img src="img/categories/content_preview.jpg" />
+            <img src="img/categories/content_preview.jpg" alt="reactive programming categories" />
         </a>
         {% elsif forloop.rindex == 15 %}
         <a href="/distinctUntilChanged">
-            <img class="w300" src="img/distinctUntilChanged/content_preview.jpg" />
+            <img class="w300" src="img/distinctUntilChanged/content_preview.jpg" alt="RxJS distinctUntilChanged" />
         </a>
         {% elsif forloop.rindex == 16 %}
         <a href="/interval">
-            <img class="w300" src="img/interval/interval.gif" />
+            <img class="w300" src="img/interval/interval.gif" alt="rxjs interval" />
         </a>
         {% elsif forloop.rindex == 18 %}
         <a href="/countdown">
-            <img src="img/countdown/countdown.jpg" />
+            <img src="img/countdown/countdown.jpg" alt="countdown challenge" />
         </a>
         {% elsif forloop.rindex == 19 %}
         <a href="/first">
-            <img src="img/first/LastVsFirst.jpeg" />
+            <img src="img/first/LastVsFirst.jpeg" alt="last vs first"/>
         </a>
         {% elsif forloop.rindex == 20 %}
         <a href="/skipWhile">
-            <img src="img/skipWhile/exercises.jpg" />
+            <img src="img/skipWhile/exercises.jpg" alt="skipWhile operator"/>
         </a>
         {% elsif forloop.rindex == 24 %}
         <a href="/predicate">
-            <img class="w450" src="img/predicate/predicate.gif" />
+            <img class="w450" src="img/predicate/predicate.gif" alt="reactive programming predicate" />
         </a>
         {% elsif forloop.rindex == 25 %}
         <a href="/accumulator">
-            <img class="w450" src="img/accumulator/accumulator1.gif" />
+            <img class="w450" src="img/accumulator/accumulator1.gif" alt="reactive programming accumulator" />
         </a>
         {% elsif forloop.rindex == 26 %}
         <a href="/max">
-            <img class="w550" src="img/max/scanreducemax.gif" />
+            <img class="w550" src="img/max/scanreducemax.gif" alt="rxjs scan vs. reduce" />
         </a>
         {% elsif forloop.rindex == 27 %}
         <a href="/pipeline-operator">
-            <img class="w550" src="/img/pipeline-operator/code-with-pipeline-operator.gif" />
+            <img class="w550" src="/img/pipeline-operator/code-with-pipeline-operator.gif" alt="javascript pipeline operator" />
         </a>
         {% elsif videos_size == 1 %} {% assign video = lesson.videos[0] %} {% include card_player.html video=video episode=false
         %} {% elsif videos_size == 2 %} {% assign video = lesson.videos[1] %} {% include card_player.html video=video episode=true
@@ -84,3 +84,4 @@
         Previous episodes {% include social.html %}
     </h3>
     {% endif %} {% endfor %}
+</div>
