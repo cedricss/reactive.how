@@ -7,6 +7,7 @@
 
 <body>
     <div class="ui main text container {{ page.class }}">
+
         {% include author.html %} {% if page.class == 'post' %}
         <h3 class="ui header move up">
             &nbsp; {% include social.html %}
@@ -35,8 +36,17 @@
         <div id="subscribe">
             {% include headlines.html %}
         </div>
+
         <div class="stripe">
             {% include author.html %}
+        </div>
+        <div class="featured">
+            <a href="http://reactive.how">
+                <img src="/img/featured.png" />
+            </a>
+            <h3 class="ui header">
+                <a href="http://reactive.how">reactive.how</a>
+            </h3>
         </div>
     </div>
     <footer>
