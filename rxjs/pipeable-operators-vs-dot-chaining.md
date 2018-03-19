@@ -13,7 +13,7 @@ date: Monday, 19 Mar.
 > ![](/img/pipeline-operator/code-with-pipeline-operator.gif)
 > Animation from [Episode 27 - JavaScript Pipeline Operator](/pipeline-operator).
 
-## RxJS 5.5 and dot-chaining
+## RxJS <5.5 and dot-chaining
 
 Prior to RxJS 5.5, you were _dot-chaining_ the operators like this:
 
@@ -58,7 +58,7 @@ const stream = interval(TICK).pipe(
 
 ## RxJS 6 beta and rx-compat
 
-RxJS 6 is coming soon. If you have a code base dot-chaining operators, you can still use it thanks to the compatibility package. It adds operators to Observable.prototype and creation methods to Observable:
+RxJS 6 is coming soon. If you have a code base with dot-chaining operators, you can still use it thanks to the compatibility package. It adds operators to Observable.prototype and creation methods to Observable:
 
 ```
 $ npm install rxjs@beta
