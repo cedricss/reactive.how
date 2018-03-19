@@ -4,7 +4,7 @@
 @import "base";
 
 body {
-   margin-top: 2em;
+    margin-top: 2em;
    background-color: #f6f6f6;
 }
 
@@ -19,6 +19,21 @@ body {
     padding-top: 3em;
 }
 
+.featured {
+    margin: 2em 0;
+    text-align:center;
+    h3.ui.header {
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        color: #444444;
+    }
+    img {
+        max-width: 250px;
+        border-radius: 5px;
+    }
+}
 a {
     color: #00b5ad;
     font-weight: 500;
