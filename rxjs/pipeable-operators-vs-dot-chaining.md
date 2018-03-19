@@ -1,6 +1,6 @@
 ---
 id: rxjs/dot
-title: RxJS Pipeable operators vs. Dot-chaning
+title: RxJS Pipeable operators vs. Dot-chaining
 layout: default
 class: post
 preview_image: 

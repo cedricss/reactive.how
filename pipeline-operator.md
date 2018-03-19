@@ -21,7 +21,7 @@ Recently, [Ben Lesh tweeted](https://twitter.com/BenLesh/status/9732554069474672
 This episode continues in an RxJS specific article:
 <br/>[**RxJS pipeable operators vs. dot-chaining**](/rxjs/pipeable-operators-vs-dot-chaining)
 
-Also, I created animated cards that show how the operators used in this episode works:<br/>[**Episode 2 - map**](/map)<br/>[**Episode 9 - take**](/take)<br/>[**Episode 16 - interval**](/interval)
+Also, I created animated cards that show how the operators used in this episode work:<br/>[**Episode 2 - map**](/map)<br/>[**Episode 9 - take**](/take)<br/>[**Episode 16 - interval**](/interval)
 
 ## A new episode every Monday
 
