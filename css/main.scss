@@ -157,6 +157,7 @@ img.w550 {
 }
 .post .content, .post.content {
     background-color: white;
+    margin-top: 2em;
     padding: 2.6em 2.9em;
     border-radius: 0.4em;
     h1 {
@@ -299,8 +300,7 @@ a.ui.segment {
     }
 }
 .stripe {
-    padding: 1.5em 0em;
-
+    padding: 0;
     &:first-child {
         padding-top: 0;
     } 
@@ -352,7 +352,7 @@ div.more {
 }
 
 .footer {
-    padding: 5em 2em!important;
+    padding: 3em 2em 6em 2em !important;
     background-color:#f6f6f6!important;
     .logo.label {
         margin: 0em 0 0.2em 0em;
@@ -367,6 +367,10 @@ div.more {
             }
         }
     }
+}
+
+.last.container {
+    margin-bottom: 10em;
 }
 
 .transparent.cards .card {
@@ -405,16 +409,10 @@ div.more {
     }
 }
 
-.sub.info {
-    font-size: 0.9em;
-    color: rgba(0, 0, 0, 0.6);
-    line-height: initial;
-    font-weight: 100;
-    padding-top:0.1em;
-}
-
 .author.block {
+    width: 75%;
     .avatar.image {
+        margin-top: 0.5em;
         width: 3em;
         height: 3em;
     }
@@ -423,7 +421,15 @@ div.more {
         text-decoration: none;
     }
 }
-
+.sub.info {
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: initial;
+    padding-top:0.1em;
+    a {
+        text-decoration: underline;
+    }
+}
 .move.up {
     margin-top: -1.5em;
 }

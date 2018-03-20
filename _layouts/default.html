@@ -9,9 +9,7 @@
     <div class="ui main text container {{ page.class }}">
 
         {% include author.html %} 
-        <h3 class="ui header move up">
-            &nbsp; {% include social.html %}
-        </h3>
+
     
         <div class="content">
             {% if page.path contains "rxjs" %} {% include rxjs_nav.html %}{{ content }} {% elsif page.class == 'post' %} {% include navigation.html
@@ -27,14 +25,17 @@
             {% include headlines.html %}
         </div>
 
-        <div class="stripe">
-            {% include author.html %}
-        </div>
+   
 
     </div>
     <footer>
         {% include footer.html %}
     </footer>
+    <div class="ui text last container">
+        <div class="stripe">
+            {% include author.html %}
+        </div>
+    </div>
     {% include scripts.html %}
 </body>
 
