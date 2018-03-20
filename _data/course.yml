@@ -47,7 +47,7 @@ lessons:
       - 240131697
     date: Monday, 30 Oct.
     
-  - name: zip vs combineLatest
+  - name: zip vs combineLatest in RxJS
     card: zip
     videos:
       -
@@ -106,7 +106,7 @@ lessons:
       -
       -
 
-  - name: take(count) vs takeWhile(predicate) 
+  - name: take(count) vs takeWhile(predicate) in RxJS
     card: takeWhile
     date: Monday, 8 Jan.
     videos:
@@ -169,7 +169,7 @@ lessons:
       - 
       -
 
-  - name: How <code>❚ max</code> works under the hood
+  - name: How <code>❚ max</code> works under the hood in RxJS
     card: max
     date: Monday, 12 Mar.
     videos:
