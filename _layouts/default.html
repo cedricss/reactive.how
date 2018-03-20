@@ -8,11 +8,11 @@
 <body>
     <div class="ui main text container {{ page.class }}">
 
-        {% include author.html %} {% if page.class == 'post' %}
+        {% include author.html %} 
         <h3 class="ui header move up">
             &nbsp; {% include social.html %}
         </h3>
-        {% endif %}
+    
         <div class="content">
             {% if page.path contains "rxjs" %} {% include rxjs_nav.html %}{{ content }} {% elsif page.class == 'post' %} {% include navigation.html
             %} {% assign lesson_index = page.lesson | minus:1 %} {% assign lesson = site.data.course.lessons[lesson_index]

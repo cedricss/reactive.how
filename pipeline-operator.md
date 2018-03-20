@@ -28,6 +28,6 @@ I also wrote about RxJS [**Pipeable operators vs. dot-chaining**](/rxjs/pipeable
 
 ## A new episode every Monday
 
-> [![](/img/reduce/icon.png){:.w350}](/reduce) <br/>[Episode 22 - **scan vs. reduce**](/reduce)
+> [![](/img/reduce/reduce-scan-featured.gif){:.w350}](/reduce) <br/>[Episode 22 - **scan vs. reduce**](/reduce)
 
 📮 You can subscribe to [the mailing list](#subscribe) to receive new episodes right inside your inbox. Or [follow me on Twitter](https://twitter.com/CedricSoulas).
