@@ -8,9 +8,10 @@ preview_image: pipeline-operator/content_preview.jpg
 preview_image_alt: pipeline operator
 ---
 
-Recently, [Ben Lesh tweeted](https://twitter.com/BenLesh/status/973255406947467264) the importance of the [pipeline operator proposal](https://github.com/tc39/proposal-pipeline-operator) in JavaScript. In this episode I show you how it feels to use this operator, especially with RxJS pipeable operators (read [pipeable operators vs. dot-chaining](/rxjs/pipeable-operators-vs-dot-chaining)):
+Today, I show you the pipeline operator proposal in Javascript, in action with RxJS pipeable operators. Links about the animated cards and my configuration are after the video!
 
 ![](/img/pipeline-operator/code-with-pipeline-operator.gif)
+> _Recently, [Ben Lesh tweeted](https://twitter.com/BenLesh/status/973255406947467264) the importance of the [pipeline operator proposal](https://github.com/tc39/proposal-pipeline-operator) in JavaScript._
 
 **Try the pipeline operator!** This is what I installed:
 
