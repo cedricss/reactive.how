@@ -12,7 +12,7 @@ date:
 
 <h1 class="ui header">RxJS Explorer</h1>
 
-<div class="ui secondary menu">
+<div class="ui secondary stackable menu">
 <a class="item" data-tab="v5.0">RxJS 5.0</a>
 <a class="item" data-tab="v5.5">RxJS 5.5</a>
 <a class="item" data-tab="v5.6">RxJS 5.6</a>
