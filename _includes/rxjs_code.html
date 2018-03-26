@@ -1,0 +1,22 @@
+<div class="code">
+    <div class="window">
+        <img src="/img/window.png" />
+    </div>
+    <div class="ui pointing secondary menu">
+        {% if include.version != "5.0" %}
+        <a class="item active" data-tab="v{{ include.version }}/pipe-method">
+            <i class="computer only icon align justify"></i> pipe method</a>
+        {% endif %}
+        <a class="item" data-tab="v{{ include.version }}/dot-chaining">
+            <i class="computer only icon list ul"></i> dot-chaining</a>
+        {% if include.version != "5.0" %}
+        <a class="item" data-tab="v{{ include.version }}/pipeline">
+            <i class="flask icon"></i> pipeline</a>
+        {% endif %}
+    </div>
+    {% if include.version != "5.0" %}{% include rxjs_code_tab.html version=include.version pipeline=include.pipeline package=include.package
+    compat=include.compat tab="pipe-method" active=true %} {% endif %} {% include rxjs_code_tab.html version=include.version
+    pipeline=include.pipeline package=include.package compat=include.compat tab="dot-chaining" %} {% if include.version !=
+    "5.0" %} {% include rxjs_code_tab.html version=include.version pipeline=include.pipeline package=include.package compat=include.compat
+    tab="pipeline" %} {% endif %}
+</div>

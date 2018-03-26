@@ -15,9 +15,9 @@
         </a>
 
     </div>
-        <h3 class="ui header">
-            &nbsp; {% include social.html %}
-        </h3>
+    <h3 class="ui header">
+        &nbsp; {% include social.html %}
+    </h3>
     {% for lesson in site.data.course.lessons reversed %}
     <div class="content post">
 
@@ -27,13 +27,15 @@
             {% endif %}
             <span class="counter">Episode {{ forloop.rindex }}</span>
             <span class="counter">{{ lesson.date }}</span>
-            <span class="operator"><a href=/{{lesson.card}}>{{ lesson.card }}</a></span>
+            <span class="operator">
+                <a href=/{{lesson.card}}>{{ lesson.card }}</a>
+            </span>
         </h4>
         <h2 class="ui header">
             {{ lesson.name }}
         </h2>
         {% assign videos_size = lesson.videos | size %} {% if forloop.rindex == 11 %}
-        <img src="img/startWith/startWith.gif" alt="startWith operator"/> {% elsif forloop.rindex == 14 %}
+        <img src="img/startWith/startWith.gif" alt="startWith operator" /> {% elsif forloop.rindex == 14 %}
         <a href="/categories">
             <img src="img/categories/content_preview.jpg" alt="reactive programming categories" />
         </a>
@@ -51,11 +53,11 @@
         </a>
         {% elsif forloop.rindex == 19 %}
         <a href="/first">
-            <img src="img/first/LastVsFirst.jpeg" alt="last vs first"/>
+            <img src="img/first/LastVsFirst.jpeg" alt="last vs first" />
         </a>
         {% elsif forloop.rindex == 20 %}
         <a href="/skipWhile">
-            <img src="img/skipWhile/exercises.jpg" alt="skipWhile operator"/>
+            <img src="img/skipWhile/exercises.jpg" alt="skipWhile operator" />
         </a>
         {% elsif forloop.rindex == 24 %}
         <a href="/predicate">
@@ -72,6 +74,10 @@
         {% elsif forloop.rindex == 27 %}
         <a href="/pipeline-operator">
             <img class="w550" src="/img/pipeline-operator/code-with-pipeline-operator.png" alt="javascript pipeline operator" />
+        </a>
+        {% elsif forloop.rindex == 28 %}
+        <a href="/rxjs/explorer">
+            <img class="w550" src="/img/rxjs/explorer.png" alt="javascript rxjs explorer" />
         </a>
         {% elsif videos_size == 1 %} {% assign video = lesson.videos[0] %} {% include card_player.html video=video episode=false
         %} {% elsif videos_size == 2 %} {% assign video = lesson.videos[1] %} {% include card_player.html video=video episode=true

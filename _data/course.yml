@@ -182,3 +182,10 @@ lessons:
     videos:
       - 
       -
+  
+  - name: RxJS Explorer
+    card: rxjs/explorer
+    date: Monday, 26 Mar.
+    videos:
+      - 
+      -

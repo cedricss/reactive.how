@@ -15,7 +15,8 @@ defaults:
 exclude: [
 .git,
 .gitignore,
-node_modules,
+"node_modules",
+"*/node_modules",
 lib/semantic/src,
 lib/semantic/tasks,
 README.md,

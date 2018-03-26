@@ -1,30 +1,34 @@
-<p class="navigation">
-{% if page.lesson > 1 %}
-{% assign lesson = page.lesson | minus:2 %}
-<a class="ui secondary tiny button" href="/{{ site.data.course.lessons[lesson].card }}">
-    <i class="arrow left icon"></i> <span class="computer only"> Ep. {{ lesson | plus:1 }}</span>
-</a>
-{% else %}
-<a class="ui disabled grey tiny button navigation placeholder">&nbsp;</a>
-{% endif %}
-{% assign lesson = page.lesson %}
-{% if page.lesson < site.data.course.lessons.size %}
-<a class="ui secondary tiny button" href="/{{ site.data.course.lessons[lesson].card }}">
-    <span class="computer only">Ep. {{ lesson | plus:1 }}</span><i class="arrow right icon"></i>
-</a>
-<a class="ui pink tiny button" href="#subscribe">
-    <span class="computer only"><i class="mail icon"></i></span> Newsletter
-</a>
-{% else %}
-<a class="ui pink tiny button" href="#subscribe">
-    <i class="mail icon"></i> Get the next episodes
-</a>
-{% endif %}
-<a class="ui tiny basic button" href="/">
-    <span class="computer only"><i class="play black icon"></i></span> Watch all
-</a>
-<span class="computer only right floated">
-    <i class="github icon"></i>
-    <a href="https://github.com/cedricss/reactive.how/">Source on Github</a>
-</span>
+<p class="navigation {{page.class}}">
+    {% if page.lesson > 1 %} {% assign lesson = page.lesson | minus:2 %}
+    <a class="ui secondary tiny button" href="/{{ site.data.course.lessons[lesson].card }}">
+        <i class="arrow left icon"></i>
+        <span class="computer only"> Ep. {{ lesson | plus:1 }}</span>
+    </a>
+    {% else %}
+    <a class="ui disabled grey tiny button navigation placeholder">&nbsp;</a>
+    {% endif %} {% assign lesson = page.lesson %} {% if page.lesson
+    < site.data.course.lessons.size %} <a class="ui secondary tiny button"
+        href="/{{ site.data.course.lessons[lesson].card }}">
+        <span class="computer only">Ep. {{ lesson | plus:1 }}</span>
+        <i class="arrow right icon"></i>
+        </a>
+        <a class="ui pink tiny button" href="#subscribe">
+            <span class="computer only">
+                <i class="mail icon"></i>
+            </span> Newsletter
+        </a>
+        {% else %}
+        <a class="ui pink tiny button" href="#subscribe">
+            <i class="mail icon"></i> Get the next episodes
+        </a>
+        {% endif %}
+        <a class="ui tiny basic button" href="/">
+            <span class="computer only">
+                <i class="play black icon"></i>
+            </span> Watch all
+        </a>
+        <span class="computer only right floated">
+            <i class="github icon"></i>
+            <a href="https://github.com/cedricss/reactive.how/">Source on Github</a>
+        </span>
 </p>

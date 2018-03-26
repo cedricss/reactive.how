@@ -3,17 +3,13 @@
   "version": "4.1.0",
   "description": "Learn reactive programming",
   "devDependencies": {
-    "semantic-ui": "^2.2.11"
+    "semantic-ui": "^2.3"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cedricss/reactive.how.git"
   },
-  "keywords": [
-    "reactive programming",
-    "rxjs",
-    "xstream"
-  ],
+  "keywords": ["reactive programming", "rxjs", "xstream"],
   "author": "Cédric Soulas",
   "bugs": {
     "url": "https://github.com/cedricss/reactive.how/issues"

@@ -1,0 +1,21 @@
+{
+  "name": "rxjs-6.0-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Cédric Soulas",
+  "dependencies": {
+    "rxjs": "^6.0.0-beta.2",
+    "rxjs-compat": "^6.0.0-beta.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "@babel/register": "^7.0.0-beta.42",
+    "@babel/cli": "^7.0.0-beta.42",
+    "@babel/node": "^7.0.0-beta.42",
+    "@babel/plugin-proposal-pipeline-operator": "^7.0.0-beta.42",
+    "babel-eslint": "^8.2.2",
+    "prettier-eslint": "^8.8.1"
+  }
+}
