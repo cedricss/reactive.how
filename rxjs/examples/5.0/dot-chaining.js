@@ -3,7 +3,7 @@ import "rxjs/add/observable/interval"
 import "rxjs/add/operator/map"
 import "rxjs/add/operator/take"
 
-import { TICK, LENGTH, gaussian } from "../util/base"
+import { TICK, LENGTH, gaussian } from "./base"
 
 const stream = Observable.interval(TICK)
   .take(LENGTH)

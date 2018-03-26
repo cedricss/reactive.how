@@ -16,6 +16,7 @@ date:
 <a class="item" data-tab="v5.0">RxJS 5.0</a>
 <a class="item" data-tab="v5.5">RxJS 5.5</a>
 <a class="item" data-tab="v5.6">RxJS 5.6</a>
+<a class="item" data-tab="v6.0-compat">RxJS 6.0 + rxjs-compat</a>
 <a class="item active" data-tab="v6.0">RxJS 6.0</a>
 </div>
 
@@ -27,6 +28,9 @@ date:
 </div>
 <div class="ui tab" data-tab="v5.6">
 {% include rxjs_code.html version="5.6" package="^5.6.0-forward-compat.0" %}
+</div>
+<div class="ui tab" data-tab="v6.0-compat">
+{% include rxjs_code.html version="6.0-compat" package="^6.0.0-beta.2" %}
 </div>
 <div class="ui tab active" data-tab="v6.0">
 {% include rxjs_code.html version="6.0" package="^6.0.0-beta.2" %}

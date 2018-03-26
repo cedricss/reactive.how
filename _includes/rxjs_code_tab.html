@@ -3,7 +3,7 @@
     <pre>
 "dependencies": {
     "rxjs": "{{ include.package }}",
-    {% if include.version == "6.0" and include.tab == "dot-chaining" %}"rxjs-compat": "^6.0.0-beta.2",
+    {% if include.version == "6.0-compat" %}"rxjs-compat": "^6.0.0-beta.2",
     ...{% else %}...{% endif %}
 }{% if include.tab == "pipeline" %}
 "devDependencies": {
