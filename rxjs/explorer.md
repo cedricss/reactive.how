@@ -45,6 +45,9 @@ date:
 
 <script>$('.menu .item').tab();</script>
 
+<br/>
+<small>This is the source code of the [▶️ "Pipeline Operator" demo in Episode 27](/pipeline-operator).</small>
+
 ## Highlights
 
 * RxJS 5.5 introduced pipeable operators. It is very easy to build custom and reusable operators.
