@@ -3,14 +3,17 @@ id: rxjs/dot
 title: RxJS Pipeable operators vs. Dot-chaining
 layout: default
 class: post
-preview_image: 
-preview_image_alt:
-date: Monday, 19 Mar.
+preview_image: rxjs/explorer_preview.jpg
+preview_image_alt: explorer preview
+date: Monday, 26 Mar.
 ---
 
 ## <span class="rxjs">RxJS</span> Pipeable operators vs. Dot-chaining
 
-📣 I'll update this article on Monday, 26 Mar. with new details. [Stay tuned!](/rxjs/pipeable-operators-vs-dot-chaining#subscribe)
+📣 UPDATE: this article now takes the form of an [RxJS Explorer](/rxjs/explorer):
+
+> [![](/img/rxjs/explorer.png)](/rxjs/explorer)
+> Visit [reactive.how/rxjs/explorer](/rxjs/explorer)
 
 > ![](/img/pipeline-operator/code-with-pipeline-operator.gif)
 > Animation from [Episode 27 - JavaScript Pipeline Operator](/pipeline-operator).
@@ -62,9 +65,6 @@ const stream = interval(TICK).pipe(
 ## RxJS 6 beta and rx-compat
 
 RxJS 6 is coming soon. If you have a code base with dot-chaining operators, you can still use it thanks to the compatibility package `rx-compat`. It adds operators to Observable.prototype and creation methods to Observable.
-
-More details coming on Monday, 26 Mar.
-
 
 ## The future
 

@@ -53,7 +53,8 @@ date:
 
 * [Episode 27 - JavaScript Pipeline Operator](/pipeline-operator)
 * [Pipeable Operators](https://github.com/ReactiveX/rxjs/blob/master/doc/pipeable-operators.md) <i class="icon small external alternate"></i>
-* [RxJS Update Guide (work in progress)](https://goo.gl/osWFzo) <i class="icon small external alternate"></i>
+* [RxJS 6.0 Update Guide (work in progress)](https://goo.gl/osWFzo) <i class="icon small external alternate"></i>
+* [RxJS 6.0 & Webpack: Build and Treeshaking](https://github.com/ReactiveX/rxjs/blob/master/doc/pipeable-operators.md#build-and-treeshaking) <i class="icon small external alternate"></i>
 
 <a class="ui tiny pink button" href="/">
     <i class="block layout icon"></i> Browse all episodes
