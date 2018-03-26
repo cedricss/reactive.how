@@ -8,6 +8,8 @@ preview_image_alt: explorer preview
 date:
 ---
 
+<h3>reactive.how - Episode 28</h3>
+
 <h1 class="ui header">RxJS Explorer</h1>
 
 <div class="ui secondary menu">
