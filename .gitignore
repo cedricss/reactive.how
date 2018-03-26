@@ -9,6 +9,7 @@ lib/semantic/*
 lib/semantic/dist/*
 !lib/semantic/dist/semantic.min.css
 !lib/semantic/dist/components/tab.min.css
+!lib/semantic/dist/components/tab.min.js
 !lib/semantic/dist/semantic.min.js
 !lib/semantic/dist/themes
 lib/semantic/dist/themes/basic
