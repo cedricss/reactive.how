@@ -48,14 +48,6 @@ date:
 <br/>
 <small>This is the source code of the [▶️ "Pipeline Operator" demo in Episode 27](/pipeline-operator).</small>
 
-## Highlights
-
-* RxJS 5.5 introduced pipeable operators. It is very easy to build custom and reusable operators.
-* RxJS 5.5 has a pipe utility function:
-  * as a method built into `Observable`
-  * and as a function at `rxjs/util/pipe`
-* In RxJS 6.0, the legacy dot-chaining operators no longer exist. If you need them, add the **optional** compatibility package `rxjs-compat`.
-
 ## Learn more
 
 * [Episode 27 - JavaScript Pipeline Operator](/pipeline-operator)

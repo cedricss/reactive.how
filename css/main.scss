@@ -204,6 +204,13 @@ img.w550 {
         padding: 20px;
         white-space: pre-wrap;
     }
+    pre.comment {
+        color: #d8dbff;
+        border-top: none;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
     .link {
         padding: 20px;
         a {
@@ -230,7 +237,6 @@ img.w550 {
                 color: white;
             }
         }
-
         .active.item {
             border-bottom-color: #ff0e60;
             background-color: #2a2c3c;

@@ -1,6 +1,22 @@
 <div class="ui tab {% if include.active %}active{% endif %}" data-tab="v{{ include.version }}/{{ include.tab }}">
+    <pre class="comment">{% if include.version == "5.0" %}/**
+ * RxJS 5.0 only had dot-chaining operators.
+ */{% endif %}{% if include.version == "5.5" %}/**
+ * RxJS 5.5 introduced pipeable operators.
+ * Very easy to build custom and reusable operators!
+ * Look at the "draw" operator in the "pipe method" tab.
+ */{% endif %}{% if include.version == "5.6" %}/**
+ * RxJS 5.6 is a short-term option.
+ * Learn more: https://goo.gl/osWFzo
+ */{% endif %}{% if include.version == "6.0-compat" %}/**
+ * Install rxjs-compat to keep on using deprecated APIs with v6.
+ * Learn more: https://goo.gl/osWFzo
+ */{% endif %}{% if include.version == "6.0" %}/**
+ * The legacy dot-chaining operators no longer exist in v6.
+ * Learn more about API and imports changes: https://goo.gl/osWFzo
+ */{% endif %}</pre>
     <img style="max-width:420px" src="examples/{{ include.version }}/img/{{ include.tab }}.png">
-    <pre>
+    <pre class="package">
 "dependencies": {
     "rxjs": "{{ include.package }}",
     {% if include.version == "6.0-compat" %}"rxjs-compat": "^6.0.0-beta.2",
