@@ -189,3 +189,10 @@ lessons:
     videos:
       - 
       -
+
+  - name: A stream of colors with Popmotion <code>tween</code>
+    card: popmotion/tween
+    date: Monday, 2 Apr.
+    videos:
+      - 
+      -

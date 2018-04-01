@@ -8,12 +8,11 @@
 <body>
     <div class="ui main text container {{ page.class }}">
 
-        {% include author.html link=true %} 
+        {% include author.html link=true %}
 
-    
         <div class="content">
-            {% if page.path contains "rxjs" %} {% include rxjs_nav.html %}{{ content }} {% elsif page.class == 'post' %} {% include navigation.html
-            %} {% assign lesson_index = page.lesson | minus:1 %} {% assign lesson = site.data.course.lessons[lesson_index]
+            {% if page.path contains "rxjs" %} {% include navigation.html %}{{ content }} {% elsif page.class == 'post' %} {% include
+            navigation.html %} {% assign lesson_index = page.lesson | minus:1 %} {% assign lesson = site.data.course.lessons[lesson_index]
             %}
             <h2>
                 Episode {{ page.lesson }} - {{ lesson.name }}
@@ -25,7 +24,7 @@
             {% include headlines.html %}
         </div>
 
-   
+
 
     </div>
     <footer>

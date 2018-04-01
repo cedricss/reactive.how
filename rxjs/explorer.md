@@ -1,6 +1,7 @@
 ---
 id: rxjs/explorer
 title: RxJS Explorer
+lesson: 28
 layout: default
 class: app
 preview_image: rxjs/explorer_preview.jpg
