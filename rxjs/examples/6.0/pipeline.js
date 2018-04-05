@@ -1,15 +1,20 @@
-import { interval } from "rxjs"
-import { map, take } from "rxjs/operators"
+import { interval } from "rxjs";
+import { map, take } from "rxjs/operators";
 
-import { TICK, LENGTH, gaussian } from "./base"
+import { TICK, LENGTH, gaussian } from "./base";
 
-const draw = brush =>
-  map(num => num * 65 |> Math.floor |> brush.repeat)
+/**
+ * The JavaScript pipeline operator proposal is
+ * at an early stage and may never get added!
+ */
+const draw = brush => stream =>
+  stream  // it replaces the pipe utility function
+  |> take(LENGTH)
+  |> map(num => num * 65 |> Math.floor |> brush.repeat);
 
 const stream =
-  interval(TICK)
-  |> take(LENGTH)
+  interval(TICK)  // it replaces the pipe method
   |> map(gaussian)
-  |> draw("•")
+  |> draw("•");
 
-stream.subscribe(console.log)
+stream.subscribe(console.log);
