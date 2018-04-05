@@ -9,12 +9,17 @@ import { TICK, LENGTH, gaussian } from "./base";
  */
 const draw = brush => stream =>
   stream  // it replaces the pipe utility function
-  |> take(LENGTH)
-  |> map(num => num * 65 |> Math.floor |> brush.repeat);
+  |> map(
+    num =>
+      num * 65
+      |> Math.floor  // it enables function chaining
+      |> brush.repeat
+  )
+  |> take(LENGTH);
 
 const stream =
-  interval(TICK)  // it replaces the pipe method
-  |> map(gaussian)
+  interval(TICK)
+  |> map(gaussian)  // it replaces the pipe method
   |> draw("•");
 
 stream.subscribe(console.log);

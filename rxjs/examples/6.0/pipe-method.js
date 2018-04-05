@@ -10,8 +10,8 @@ import { TICK, LENGTH, gaussian } from "./base";
  */
 const draw = brush =>
   pipe(
-    take(LENGTH),
-    map(num => brush.repeat(Math.floor(num * 65)))
+    map(num => brush.repeat(Math.floor(num * 65))),
+    take(LENGTH)
   );
 
 /**
