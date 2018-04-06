@@ -3,21 +3,26 @@ id: rxjs/explorer
 title: RxJS Explorer
 lesson: 28
 layout: default
-class: app
+class: post
 preview_image: rxjs/explorer_preview.jpg
 preview_image_alt: explorer preview
-date:
 ---
 
-<h3>reactive.how - Episode 28</h3>
+<div class="ui stackable grid">
+<div class="seven wide column">
+<h1 class="ui header explorer">RxJS Explorer <code class="ui pink label">2.0</code></h1>
+<h2 class="subtitle">Learn. Compare. Update.</h2>
+</div>
+<div class="nine wide right aligned column">
+<a href="/rxjs/pipeable-operators"><img src="/img/rxjs/pipeable-operators/interval-map-take.png" class="w350" alt="interval map take"/></a><br/>
+This explorer is based on those three cards.<p><i class="small pink question circle icon"></i> <a href="/rxjs/pipeable-operators"><strong>Learn how they work »</strong></a></p>
+</div>
 
-<h1 class="ui header">RxJS Explorer</h1>
-
-<div class="ui secondary stackable menu">
+<div class="ui five item stackable menu">
 <a class="item" data-tab="v5.0">RxJS 5.0</a>
 <a class="item" data-tab="v5.5">RxJS 5.5</a>
 <a class="item" data-tab="v5.6">RxJS 5.6</a>
-<a class="item" data-tab="v6.0-compat">RxJS 6.0 + rxjs-compat</a>
+<a class="item" data-tab="v6.0-compat">RxJS 6.0 <small>&nbsp;+ rxjs-compat</small></a>
 <a class="item active" data-tab="v6.0">RxJS 6.0</a>
 </div>
 
@@ -31,10 +36,10 @@ date:
 {% include rxjs_code.html version="5.6" package="^5.6.0-forward-compat.0" %}
 </div>
 <div class="ui tab" data-tab="v6.0-compat">
-{% include rxjs_code.html version="6.0-compat" package="^6.0.0-beta.2" %}
+{% include rxjs_code.html version="6.0-compat" package="^6.0.0-rc.0" %}
 </div>
 <div class="ui tab active" data-tab="v6.0">
-{% include rxjs_code.html version="6.0" package="^6.0.0-beta.2" %}
+{% include rxjs_code.html version="6.0" package="^6.0.0-rc.0" %}
 </div>
 
 <script
@@ -45,17 +50,3 @@ date:
 <script src="/lib/semantic/dist/components/tab.min.js"></script>
 
 <script>$('.menu .item').tab();</script>
-
-<br/>
-<small>This is the source code of the [▶️ "Pipeline Operator" demo in Episode 27](/pipeline-operator).</small>
-
-## Learn more
-
-* [Episode 27 - JavaScript Pipeline Operator](/pipeline-operator)
-* [Pipeable Operators](https://github.com/ReactiveX/rxjs/blob/master/doc/pipeable-operators.md) <i class="icon small external alternate"></i>
-* [RxJS 6.0 Update Guide (work in progress)](https://goo.gl/osWFzo) <i class="icon small external alternate"></i>
-* [RxJS 6.0 & Webpack: Build and Treeshaking](https://github.com/ReactiveX/rxjs/blob/master/doc/pipeable-operators.md#build-and-treeshaking) <i class="icon small external alternate"></i>
-
-<a class="ui tiny pink button" href="/">
-    <i class="block layout icon"></i> Browse all episodes
-</a>
