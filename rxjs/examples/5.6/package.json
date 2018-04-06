@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "Cédric Soulas",
   "dependencies": {
-    "rxjs": "^5.6.0-forward-compat.0"
+    "rxjs": "^5.6.0-forward-compat.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

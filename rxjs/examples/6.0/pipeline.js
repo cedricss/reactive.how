@@ -5,7 +5,7 @@ import { TICK, LENGTH, gaussian } from "./base";
 
 /**
  * The JavaScript pipeline operator proposal is
- * at an early stage and may never get added!
+ * at an early stage. This is experimental!
  */
 const draw = brush => stream =>
   stream  // it replaces the pipe utility function
