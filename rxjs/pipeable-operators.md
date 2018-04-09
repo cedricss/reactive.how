@@ -142,7 +142,6 @@ const bezier_stream = interval(350).pipe(
 
 * Import _pipeable operators_ from `rxjs/operators`
 * Chain them with the **pipe method** built into `Observable`
-* Import everything else straight from `rxjs` in RxJS 6.0
 * Optionally, import the **pipe function** to build custom and reusable operators from other pipeable operators
 
 You can download the full source code in several versions on [reactive.how/rxjs/explorer](http://reactive.how/rxjs/explorer).
