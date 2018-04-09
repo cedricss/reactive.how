@@ -196,3 +196,10 @@ lessons:
     videos:
       - 
       -
+
+  - name: Pipeable operators - Build your own with RxJS!
+    card: rxjs/pipeable-operators
+    date: Monday, 9 Apr.
+    videos:
+      - 
+      -

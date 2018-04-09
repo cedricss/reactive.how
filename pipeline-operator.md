@@ -26,7 +26,9 @@ Today, I show you the pipeline operator proposal in Javascript, in action with R
 
 > <small>🎨 In the [previous episode](/max), I used the [Gloom theme](https://marketplace.visualstudio.com/items?itemName=adamgirton.gloom) port for VS Code. But it doesn't work with ▷ the ligature. Instead, in today's demo, I used the [Hydra theme](https://marketplace.visualstudio.com/items?itemName=juanmnl.vscode-theme-hydra).</small>
 
-**NEW 🔥** Try [RxJS Explorer](/rxjs/explorer) to learn more and download the source code of this demo.
+**UPDATE 1 🔥** Try [RxJS Explorer](/rxjs/explorer) to learn more and download the source code of this demo.
+
+**UPDATE 2 🔥** Full tutorial available: [Pipeable operators - Build your own in RxJS!](/rxjs/pipeable-operators)
 
 ## A new episode every Monday
 

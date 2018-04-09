@@ -1,7 +1,7 @@
 ---
 id: pipeable-operators
 lesson: 30
-title: Draw in your console with RxJS
+title: Pipeable operators - Build your own with RxJS!
 layout: default
 class: post
 preview_image: rxjs/pipeable-operators/content_preview.jpg
@@ -10,9 +10,9 @@ preview_image_alt:
 
 This Monday, I will use RxJS pipeable operators and create a custom and reusable operator. This is based on the demo I made in [Episode 27](/pipeline-operator).
 
-> Let's print this gaussian in the console:
+> Let's print this in the console:
 
-> ![](/img/rxjs/pipeable-operators/gaussian.gif){:.w200}
+> ![](/img/rxjs/pipeable-operators/interval-map-draw.gif)
 
 > with those three cards:
 
@@ -39,20 +39,18 @@ A [listener](/listen) reacts to events emitted by a stream (values, error and [c
 
 This example is based on RxJS **v6.0** and pipeable operators. Download other versions with my [explorer](http://reactive.how/rxjs/explorer):
 
-> [![](/img/rxjs/explorer/content_preview.jpg){:.w400}](/rxjs/explorer)<br/>[RxJS Explorer 2.0](/rxjs/explorer)
+> [![](/img/rxjs/explorer/content_preview.jpg){:.w500}](/rxjs/explorer)<br/>[RxJS Explorer 2.0](/rxjs/explorer)
 
-In RxJS 6.0, pipeable operators are imported from `rxjs/operators` and everything else straight from `rxjs`:
+Import the creation function `❚ interval` and the pipeable operators `❚ map` and `❚ take`:
 
 ```
 import { interval } from "rxjs";
 import { map, take } from "rxjs/operators";
 ```
 
-The creation function `❚ interval` returns an `Observable`. Use the built-in `pipe` method to chain pipeable operators and obtain a new `Observable`. Use the `subscribe` method to pass a stream listener.
+> ![](/img/rxjs/pipeable-operators/interval-map-draw.gif)
 
-> ![](/img/rxjs/pipeable-operators/interval.gif){:.w150}
-> ![](/img/rxjs/pipeable-operators/map.gif){:.w150}
-> ![](/img/rxjs/pipeable-operators/gaussian.gif){:.w150}<br/> <small>stream1.subscribe(console.log) stream2.subscribe(console.log) stream3.subscribe(console.log)</small>
+The creation function `❚ interval` returns an `Observable`. It has a built-in `pipe` method to chain pipeable operators and obtain a new `Observable`.
 
 Emit incremental numbers and complete immediately after the 25th value:
 
@@ -81,9 +79,15 @@ const stream3 = interval(350).pipe(
 );
 ```
 
+Use the `subscribe` method to pass a stream listener:
+
+```
+stream.subscribe(console.log)
+```
+
 ## Part 3 - Creation of a reusable and custom operator
 
-What if I want both a gaussian stream of `•` and a bezier stream of `~`?
+What if I want both a gaussian stream of `•` **and** a bezier stream of `~`?
 
 ```
 const gaussian_stream = interval(350).pipe(
@@ -110,7 +114,7 @@ import { interval, pipe } from "rxjs";
 import { map, take } from "rxjs/operators";
 ```
 
-I use this **pipe function** to chain _map_ and _take_. Et voilà my custom `draw` operator:
+I use this **pipe function** to chain _map_ and _take_. Et voilà! My custom `draw` operator:
 
 ```
 const draw = brush =>

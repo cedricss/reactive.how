@@ -77,11 +77,15 @@
         </a>
         {% elsif forloop.rindex == 28 %}
         <a href="/rxjs/explorer">
-            <img class="w450" src="/img/rxjs/explorer_preview.jpg" alt="javascript rxjs explorer" />
+            <img class="w450" src="/img/rxjs/explorer/content_preview.jpg" alt="javascript rxjs explorer" />
         </a>
         {% elsif forloop.rindex == 29 %}
         <a href="/popmotion/tween">
             <img class="w500" src="/img/popmotion/tween/tween.gif" alt="javascript popmotion tween" />
+        </a>
+        {% elsif forloop.rindex == 30 %}
+        <a href="/rxjs/pipeable-operators">
+            <img class="w500" src="/img/rxjs/pipeable-operators/interval-map-draw.gif" alt="rxjs tutorial with pipeable operators" />
         </a>
         {% elsif videos_size == 1 %} {% assign video = lesson.videos[0] %} {% include card_player.html video=video episode=false
         %} {% elsif videos_size == 2 %} {% assign video = lesson.videos[1] %} {% include card_player.html video=video episode=true

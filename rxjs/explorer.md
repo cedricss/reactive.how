@@ -4,7 +4,7 @@ title: RxJS Explorer
 lesson: 28
 layout: default
 class: post
-preview_image: rxjs/explorer_preview.jpg
+preview_image: rxjs/explorer/content_preview.jpg
 preview_image_alt: explorer preview
 ---
 
