@@ -7,25 +7,27 @@
 
 <body>
     <div class="ui main text container {{ page.class }}">
-
-        {% include author.html link=true %}
-
+        {% include author.html link=true %} {% if page.path contains "rxjs/explorer" %}
         <div class="content">
-            {% if page.path contains "rxjs" %} {% include navigation.html %}{{ content }} {% elsif page.class == 'post' %} {% include
-            navigation.html %} {% assign lesson_index = page.lesson | minus:1 %} {% assign lesson = site.data.course.lessons[lesson_index]
-            %}
+            {% include navigation.html %}
+        </div>
+    </div>
+    <div class="ui main text container app">
+        {% endif %}
+        <div class="content">
+            {% if page.path contains "rxjs/pipeable-operators-vs-dot-chaining" %} {% include navigation.html %} {{ content }} {% elsif
+            page.class == 'post' %} {% unless page.path contains "rxjs/explorer" %} {% include navigation.html %} {% assign
+            lesson_index = page.lesson | minus:1 %} {% assign lesson = site.data.course.lessons[lesson_index] %}
             <h2>
                 Episode {{ page.lesson }} - {{ lesson.name }}
                 <span class="computer only right floated">{{ lesson.date }}</span>
             </h2>
-            {{content }} {% include navigation.html %} {% else %} {{ content }}{% endif %}
+            {{content }} {% include navigation.html %} {% endunless %} {% else %} {{ content }} {% endif %} {% if page.path contains
+            "rxjs/explorer" %} {{ content }}{% endif %}
         </div>
         <div id="subscribe">
             {% include headlines.html %}
         </div>
-
-
-
     </div>
     <footer>
         {% include footer.html %}

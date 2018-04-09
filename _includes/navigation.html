@@ -7,8 +7,7 @@
     {% else %}
     <a class="ui disabled grey tiny button navigation placeholder">&nbsp;</a>
     {% endif %} {% assign lesson = page.lesson %} {% if page.lesson
-    < site.data.course.lessons.size %} <a class="ui secondary tiny button"
-        href="/{{ site.data.course.lessons[lesson].card }}">
+    < site.data.course.lessons.size %} <a class="ui secondary tiny button" href="/{{ site.data.course.lessons[lesson].card }}">
         <span class="computer only">Ep. {{ lesson | plus:1 }}</span>
         <i class="arrow right icon"></i>
         </a>
