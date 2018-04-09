@@ -1,22 +1,49 @@
 <div class="ui stackable mobile reversed grid">
 
-    <div class="seven wide justified column">
+    <div class="seven wide column">
         <div class="row">{% if include.version == "5.0" %}
-            <h4>🗝️ Legacy dot-chaining operators</h4> In RxJS 5.0 and before, we only had dot-chaining operators. Already feeling
-            nostalgic?{% endif %}{% if include.version == "5.5" %}
-            <h4>🎉 Hello pipeable operators!</h4>RxJS 5.5 introduced
-            <a href="https://github.com/ReactiveX/rxjs/blob/master/doc/pipeable-operators.md">pipeable operators</a>. In particular, you can easily build custom and reusable operators! Open the
-            <i>pipe method</i> tab and look at the custom
-            <code>draw</code> operator. {% endif %}{% if include.version == "5.6" %}
-            <h4>⛱️ Optional milestone</h4> RxJS 5.6 is meant to
-            <a href="https://goo.gl/osWFzo">ease the upgrade to 6.0</a>. This is a short-term option. {% endif %}{% if include.version == "6.0-compat" %}
-            <h4>🎁 Compatibility package</h4>
-            <a href="https://goo.gl/osWFzo">Install</a> the optional
-            <code>rxjs-compat</code> to keep on using dot-chaining operators and deprecated APIs with v6.
-            <br/> {% endif %}{% if include.version == "6.0" %}
-            <h4>👋 Goodbye dot-chaining operators!</h4>The legacy dot-chaining operators no longer exist in v6. And there are
-            several
-            <a href="https://goo.gl/osWFzo">API changes</a>. {% endif %}
+            <div class="ui blue message">
+                <h4>Legacy dot-chaining operators
+                    <span class="ui right floated">🗝️</span>
+                </h4>
+                <p>In RxJS 5.0 and before, we only had dot-chaining operators. Already feeling nostalgic?</p>
+            </div>{% endif %}{% if include.version == "5.5" %}
+            <div class="ui blue message">
+                <h4>Hello pipeable operators!
+                    <span class="ui right floated">🎉</span>
+                </h4>
+                <p>RxJS 5.5 introduced
+                    <a href="/rxjs/pipeable-operators">pipeable operators</a>. In particular, you can easily build custom and reusable operators! Open the
+                    <i>pipe method</i> tab and look at the custom
+                    <code>draw</code> operator.
+                </p>
+            </div>{% endif %}{% if include.version == "5.6" %}
+            <div class="ui blue message">
+                <h4>Optional milestone
+                    <span class="ui right floated">⛱️</span>
+                </h4>
+                <p>RxJS 5.6 is meant to
+                    <a href="https://goo.gl/osWFzo">ease the upgrade to 6.0</a>. This is a short-term option.
+                </p>
+            </div>{% endif %}{% if include.version == "6.0-compat" %}
+            <div class="ui blue message">
+                <h4>Compatibility package
+                    <span class="ui right floated">🎁</span>
+                </h4>
+                <p>
+                    Install the
+                    <code>rxjs-compat</code> package to keep on using dot-chaining operators and deprecated APIs with v6.
+                </p>
+            </div> {% endif %}{% if include.version == "6.0" %}
+            <div class="ui blue message">
+                <h4>Goodbye dot-chaining operators
+                    <span class="ui right floated">👋</span>
+                </h4>
+                <p>
+                    The legacy dot-chaining operators no longer exist in v6. And there are several
+                    <a href="https://goo.gl/osWFzo">API changes</a>.
+                </p>
+            </div>{% endif %}
             <h4>📦 package.json</h4>
             <pre class="package">
 "dependencies": {
@@ -33,15 +60,17 @@
             <h4>
                 <i class="computer only icon align justify"></i> Pipeable operators
             </h4>
-            Use the pipe method built into
-            <code>Observable</code>. Optionally, import the pipe function to build custom and reusable operators from other pipeable operators.
-            <h4>⚗️ JavaScript pipeline operator</h4>
-            Try the experimental
-            <a href="http://reactive.how/pipeline-operator">JavaScript pipeline operator with babel</a> if you dare. This proposal is still at an early stage.
+            Use the
+            <a href="/rxjs/pipeable-operators">pipe method</a> built into
+            <code>Observable</code>. Optionally, import the
+            <a href="/rxjs/pipeable-operators">pipe function</a> to build custom and reusable operators from other pipeable operators.
             <h4>🌳 Imports, build and treeshaking</h4>
             Pipeable operators can be imported from
             <code>rxjs/operators</code>. You should
-            <a href="https://github.com/ReactiveX/rxjs/blob/master/doc/pipeable-operators.md#build-and-treeshaking">update your bundling tools and configuration</a> to avoid larger application bundles.{% endif %}
+            <a href="https://github.com/ReactiveX/rxjs/blob/master/doc/pipeable-operators.md#build-and-treeshaking">update your bundling tools and configuration</a> to avoid larger application bundles.
+            <h4>⚗️ JavaScript pipeline operator</h4>
+            Try the experimental
+            <a href="http://reactive.how/pipeline-operator">JavaScript pipeline operator with babel</a> if you dare. This proposal is still at an early stage. {% endif %}
 
         </div>
     </div>

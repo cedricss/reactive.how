@@ -53,10 +53,36 @@ h3 {
     font-weight: 500;
 }
 
+/**
+ * To refactor to reactive.how semantic theme once stable:
+ */
 .ui.message {
     background-color: white;
     box-shadow: none;
     -webkit-box-shadow: none;
+    &.blue {
+        background-color: #fbfbff;
+        color: #1f202c;
+        -webkit-box-shadow: 0 0 0 1px #dcdeec inset, 0 0 0 0 transparent;
+        box-shadow: 0 0 0 1px #dcdeec inset, 0 0 0 0 transparent;
+    }
+}
+$ui-menu-border: rgb(213, 213, 232);
+.ui.menu {
+    margin-bottom: 3em;
+    border: 1px solid $ui-menu-border;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(213, 213, 232, 0.3);
+    box-shadow: 0 1px 2px 0 rgba(213, 213, 232, 0.3);
+    .item:before {
+        background: $ui-menu-border;
+    }
+    & .item.active{
+        font-weight: 900;
+        background: rgba(230, 230, 255, 0.5);
+    }
+    & a.item:hover, .active.item:hover {
+        background: rgba(230, 230, 255, 0.7);
+    }
 }
 
 ul.triangle {
@@ -254,15 +280,6 @@ img.w550 {
                 border-bottom-color: #ff0e60;
             }
         }
-    }
-}
-
-.ui.menu {
-    margin-bottom: 3em;
-    -webkit-box-shadow: 0 1px 2px 0 rgba(34,36,38,0.05);
-    box-shadow: 0 1px 2px 0 rgba(34,36,38,0.05);
-    & .item.active{
-        font-weight: 900;
     }
 }
 
@@ -720,12 +737,15 @@ div.more {
     }
 }
 
+@media only screen and (min-width: 767px) {
+    .ui.grid>* {
+        padding: 0;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     body {
         margin-top: 1em;
-    }
-    .code {
-        margin-left: 4px;
     }
     .mobile.overflow.x {
         flex-wrap: nowrap;
