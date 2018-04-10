@@ -36,10 +36,10 @@ This explorer is based on those three cards.<p><i class="small pink question cir
 {% include rxjs_code.html version="5.6" package="^5.6.0-forward-compat.0" %}
 </div>
 <div class="ui tab" data-tab="v6.0-compat">
-{% include rxjs_code.html version="6.0-compat" package="^6.0.0-rc.0" %}
+{% include rxjs_code.html version="6.0-compat" package="^6.0.0-tactical-rc.1" %}
 </div>
 <div class="ui tab active" data-tab="v6.0">
-{% include rxjs_code.html version="6.0" package="^6.0.0-rc.0" %}
+{% include rxjs_code.html version="6.0" package="^6.0.0-tactical-rc.1" %}
 </div>
 
 <script
