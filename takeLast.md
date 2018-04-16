@@ -12,16 +12,16 @@ This Monday I drew a new card: `❚ takeLast`. Let's compare it with [`❚ take`
 
 > ![](/img/takeLast/takeLast-take.png)
 
-`❚ take` and `❚ takeLast` share identical behavior:
+Use a `▬ number` on those card, such as `3`, to set a maximum _amount_ of events to emit. `❚ take` and `❚ takeLast` share identical behavior:
 
 - they both return a new stream of at most _amount_ values.
 - if the input stream source emits fewer than _amount_ values then all of its values are emitted on the output stream.
 
-The stream returned by `❚ take` emits the values at the same time as their counterpart on the input stream. This is not the case for `❚ takeLast`. Remember: a stream is a sequence of events **over time**. And we can't see the future! _takeLast_ have to wait for the `◉ complete` notification. Only then, we know what are the last values.
+The stream returned by `❚ take` emits the values at the same time as their counterpart on the input stream. This is not the case for `❚ takeLast`. Remember: a stream is a sequence of events **over time**. And we can't see the future! _takeLast_ must wait for the `◉ complete` notification. Only then, we know what are the last values.
 
 ## takeLast
 
-Use a `▬ number` on this card, such as `3`, to set a maximum _amount_ of events to emit. `❚ takeLast` returns a new stream of **at most** _amount_ values:
+`❚ takeLast` returns a new stream of **at most** _amount_ values:
 
 - When the input stream completes, the output stream:
   - emits each of the last _amount_ values emitted by the input stream
