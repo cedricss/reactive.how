@@ -87,6 +87,10 @@
         <a href="/rxjs/pipeable-operators">
             <img class="w500" src="/img/rxjs/pipeable-operators/interval-map-draw.gif" alt="rxjs tutorial with pipeable operators" />
         </a>
+        {% elsif forloop.rindex == 31 %}
+        <a href="/takeLast">
+            <img class="w500" src="/img/takeLast/content_preview.jpg" alt="takeLast vs take" />
+        </a>
         {% elsif videos_size == 1 %} {% assign video = lesson.videos[0] %} {% include card_player.html video=video episode=false
         %} {% elsif videos_size == 2 %} {% assign video = lesson.videos[1] %} {% include card_player.html video=video episode=true
         %} {% endif %}

@@ -26,9 +26,15 @@ This is how `❚ last` operates with one input stream:
 
 So, this card returns a new stream of **at most** one value.
 
+**Note:** what happens if the stream completes without emitting a value depends on the reactive library you use.
+
 ## Summary
 
 - A stream can complete emitting a notification (read [Episode 9](/take))
 - The `◉ complete` notification is a special event with no value
 - A listener can subscribe to a stream and act upon its completion
 - Also, the behavior of some cards like `❚ last` is based on this notification
+
+## See also
+
+> [**Episode 31 - takeLast vs take**](/takeLast) <br/> [![](/img/takeLast/content_preview.jpg){:.w300}](/takeLast)
