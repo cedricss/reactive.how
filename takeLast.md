@@ -12,7 +12,7 @@ This Monday I drew a new card: `❚ takeLast`. Let's compare it with [`❚ take`
 
 > ![](/img/takeLast/takeLast-take.png)
 
-Use a `▬ number` on those card, such as `3`, to set a maximum _amount_ of events to emit. `❚ take` and `❚ takeLast` share identical behavior:
+Use a `▬ number` on these cards, such as `3`, to set a maximum _amount_ of events to emit. `❚ take` and `❚ takeLast` share identical behavior:
 
 - they both return a new stream of at most _amount_ values.
 - if the input stream source emits fewer than _amount_ values then all of its values are emitted on the output stream.
