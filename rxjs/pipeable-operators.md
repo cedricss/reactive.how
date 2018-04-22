@@ -8,7 +8,7 @@ preview_image: rxjs/pipeable-operators/content_preview.jpg
 preview_image_alt:
 ---
 
-This Monday, I will use RxJS pipeable operators and create a custom and reusable operator. This is based on the demo I made in [Episode 27](/pipeline-operator).
+Today, I will use RxJS pipeable operators and create a custom and reusable operator. This is based on the demo I made in [Episode 27](/pipeline-operator).
 
 > Let's print this in the console:
 
