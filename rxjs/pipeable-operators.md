@@ -50,7 +50,7 @@ import { map, take } from "rxjs/operators";
 
 > ![](/img/rxjs/pipeable-operators/interval-map-draw.gif)
 
-The creation function `❚ interval` returns an `Observable`. It has a built-in `pipe` method to chain pipeable operators and obtain a new `Observable`.
+The creation function `❚ interval` returns an `Observable`. It has a built-in `pipe` method to chain pipeable operators.
 
 Emit incremental numbers and complete immediately after the 25th value:
 
