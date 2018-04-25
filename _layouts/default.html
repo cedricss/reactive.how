@@ -7,7 +7,13 @@
 
 <body>
     <div class="ui main text container {{ page.class }}">
-        {% include author.html link=true %} {% if page.path contains "rxjs/explorer" %}
+        {% include author.html link=true %}
+        <div class="ui message app">
+            <span class="color pink">🎉 RxJS 6.0 is released! I created
+                <a href="/rxjs/explorer"><strong>RxJS Explorer</strong></a> to learn, update and compare the versions.
+            </span>
+        </div>
+        {% if page.path contains "rxjs/explorer" %}
         <div class="content">
             {% include navigation.html %}
         </div>
