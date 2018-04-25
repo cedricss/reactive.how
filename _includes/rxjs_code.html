@@ -48,7 +48,7 @@
             <pre class="package">
 "dependencies": {
     "rxjs": "{{ include.package }}",
-    {% if include.version == "6.0-compat" %}"rxjs-compat": "^6.0.0-tactical-rc.1",
+    {% if include.version == "6.0-compat" %}"rxjs-compat": "^6.0.0",
     ...{% else %}...{% endif %}
 }{% if include.tab == "pipeline" %}
 "devDependencies": {

@@ -5,8 +5,8 @@
   "main": "index.js",
   "author": "Cédric Soulas",
   "dependencies": {
-    "rxjs": "^6.0.0-tactical-rc.1",
-    "rxjs-compat": "^6.0.0-tactical-rc.1"
+    "rxjs": "^6.0.0",
+    "rxjs-compat": "^6.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.42",
