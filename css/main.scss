@@ -523,7 +523,7 @@ div.more {
 }
 
 .last.container {
-    margin-bottom: 11em;
+    padding-bottom: 11em;
 }
 
 .transparent.cards .card {
@@ -570,25 +570,24 @@ div.more {
 .author.block {
     font-weight: 300;
     max-width: 580px;
-
+    margin: 2em 0;
     .avatar.image {
-        margin-top: 0.5em;
-        width: 3em;
-        height: 3em;
+        margin-top: 0.2em;
+        width: 4em;
+        height: 4em;
     }
 
     a {
-        color: #2f2f2f;
+        color: black;
         font-weight: 500;
         text-decoration: none;
     }
 }
 
 .sub.info {
-    font-size: 0.9em;
     color: rgba(0, 0, 0, 0.7);
     line-height: initial;
-    padding-top: 0.1em;
+    padding-top: 0.4em;
 
     a {
         text-decoration: underline;
