@@ -1,0 +1,134 @@
+combineLatest:
+    accepts: ["`2+` input streams", "a `project` function <small>(optional)</small>"]
+    steps:
+    - "**Whenever** any input stream emits a value, it combines the **latest** values emitted by each input stream"
+    returns: a new stream of combined values
+    
+debounceTime:
+    accepts: ["`1` input stream", "`time period` number"]
+    steps:
+    - Whenever an event is emitted, the `time period` of silence measured restarts from zero
+    - It waits for a `time period` of silence and then emits the latest value of the input stream
+    returns: a new stream of debounced values
+
+delay:
+    accepts: ["`1` input stream", "`time period` number"]
+    steps:
+    - It emits each value of the input stream with a `time period` delay 
+    returns: a new stream of timeshifted values
+
+merge:
+    accepts: ["`2+` input streams"]
+    steps:
+    - It interleaves the values of the input streams
+    returns: a new stream of interleaved values
+
+map:
+    accepts: ["`1` input stream", "a `project` function"]
+    steps:
+    - When the input stream emits a value, it is given to the `project` function and the resulting value is emitted
+    returns: a new stream of projected values
+
+filter:
+    accepts: ["`1` input stream", "a `predicate` function"]
+    steps:
+    - When the input stream emits a value, it is given to the `predicate`:
+        - If the predicate returns `✔ true`, the value is emitted
+        - Otherwise, the value is ignored
+    returns: a new stream of filtered values
+
+first:
+    accepts: ["`1` input stream", "a `predicate` <small>(optional)</small>"]
+    steps:
+    - When the input stream emits a first value, the output stream:
+        - emits this first value
+        - and **immediately** completes
+    returns: a new stream emitting only the first value
+
+last:
+    accepts: ["`1` input stream", "a `predicate` <small>(optional)</small>"]
+    steps:
+    - When the input stream completes, the output stream:
+        - emits the last value emitted by the input stream
+        - and **immediately** completes
+    returns: a new stream of **at most** one value
+
+reduce:
+    accepts: ["`1` input stream", "an `accumulator`", "a `seed` <small>(optional)</small>"]
+    steps:
+    - The `seed` will be used as an _initial_ accumulation **acc**
+    - When the input stream emits a value **v**:
+        - "**v** and the latest **acc** are given to the `accumulator`" 
+        - the returned value will be used as the next **acc**
+    - When the input stream completes, the output stream emits the last **acc** and completes
+    returns: a new stream of accumulated values
+
+count:
+    accepts: 
+    steps:
+    - (coming soon)
+    returns:
+
+max:
+    accepts: 
+    steps:
+    - (coming soon)
+    returns:
+
+scan:
+    accepts: ["`1` input stream", "an `accumulator`", "a `seed` <small>(optional)</small>"]
+    steps:
+    - The `seed` will be used as an _initial_ accumulation **acc**
+    - When the input stream emits a value **v**:
+        - "**v** and the latest **acc** are given to the `accumulator`" 
+        - the returned value is emitted and will be used as the next **acc**
+    returns: a new stream of accumulated values
+
+take:
+    accepts: ["`1` input stream", "an `amount`"]
+    steps:
+    - When the input stream emits its _n-th_ value:
+        - if _n_ < `amount`, the value is emitted
+        - if _n_ == `amount`, the value is emitted **and** the stream **immediately** completes
+    returns: a new stream of **at most** `amount` values
+
+takeWhile:
+    accepts: ["`1` input stream", "a `predicate` function"]
+    steps:
+    - When the input stream emits a value, it is given to the `predicate`:
+        - If the `predicate` returns `✔ true`, the value is emitted
+        - otherwise, the value is ignored **and** the stream **immediately** completes
+    returns: a new stream of filtered values
+
+skipWhile:
+    accepts: ["`1` input stream", "a `predicate` function"]
+    steps:
+    - It ignores all values emitted by the input stream as long as the `predicate` returns `✔ true`
+    - As soon as it returns `✔ false` for one value:
+        - this value is emitted
+        - all further ones will be emitted whether they satisfy the predicate or not
+    - If the input stream completes, the output stream completes at the same time
+    returns: a new stream of filtered values
+
+takeLast:
+    accepts: ["`1` input stream", "an `amount`"]
+    steps:
+    - When the input stream completes, the output stream:
+        - emits each of the last `amount` values emitted by the input stream (they are emitted as separate event values)
+        - and immediately completes
+    - If the input stream never completes, the output stream never emits
+    returns: a new stream of **at most** `amount` values
+
+throttleTime:
+    accepts: ["`1` input stream", "`time period` number"]
+    steps:
+    - It starts by emitting the first values of the input stream
+    - Then, it limits the rate of values to **at most** one per `time period`
+    returns: a new stream of throttled values
+
+zip:
+    accepts: ["`2+` input streams", "a `project` function <small>(optional)</small>"]
+    steps:
+    - It waits for **all** input streams to have all emitted their _n-th_ value
+    - As soon as this condition is met, it combines all those _n-th_ values and emits the _n-th_ combined value
+    returns: a new stream of combined values
