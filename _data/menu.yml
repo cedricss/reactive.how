@@ -1,0 +1,45 @@
+chapters:
+  - name: Getting started
+    categories:
+      - name: Reactive Programming
+        items:
+        - name: Streams
+          url: fromEvent
+        - name: Immutability
+          deactivated: true
+        - name: Reactivity
+          deactivated: true
+
+  - name: Specials
+    categories:
+    - name: RxJS lessons
+      items:
+      - name: RxJS Explorer
+        url: rxjs/explorer
+      - name: Pipeable operators, build your own
+        url: rxjs/pipeable-operators
+    - name: Misc.
+      items:
+      - name: The JavaScript pipeline operator
+        url: pipeline-operator
+      - name: A stream of colors with Popmotion
+        url: popmotion/tween
+
+
+  - name: See also
+    categories:
+    - name: Exercises
+      items:
+      - name: Create a countdown
+        url: countdown
+      - name: Fill in the blanks
+        url: skipWhile
+      - name: Four ways to count in RxJS
+        url: count
+
+    - name: Functions
+      items:
+      - name: Project and Predicate
+        url: predicate
+      - name: Accumulator
+        url: accumulator

@@ -1,0 +1,86 @@
+categories:
+  - name: Essentials
+    items:
+    - name: map
+      url: map
+    - name: filter
+      versus: map
+      url: filter
+    - name: merge
+      url: merge
+    - name: scan
+      url: scan
+
+  - name: Reducing
+    items:
+    - name: reduce
+      versus: scan
+      url: reduce
+    - name: max
+      versus: reduce
+      url: max
+    - name: count
+      url: count
+      versus: reduce
+
+  - name: Taking
+    items:
+    - name: take
+      versus: filter
+      url: take
+    - name: takeWhile
+      versus: take
+      url: takeWhile
+    - name: first
+      versus: take
+      url: first
+
+  - name: Skipping
+    items:
+    - name: skip
+      url: skip
+      aka: drop
+      deactivated: true
+    - name: skipWhile
+      url: skipWhile
+      versus: takeWhile
+    - name: takeLast
+      versus: take
+      url: takeLast
+    - name: last
+      versus: take
+      url: last
+
+  - name: Combining
+    items:
+    - name: combineLatest
+      versus: merge
+      url: combineLatest
+    - name: zip
+      versus: combineLatest
+      url: zip
+
+  - name: Time
+    items:
+    - name: delay
+      url: delay
+      versus: debounceTime
+    - name: debounceTime
+      url: debounceTime
+      versus: delay
+    - name: throttleTime
+      versus: debounceTime
+      url: throttleTime
+
+
+  - name: Concatenating
+    items:
+    - name: startWith
+      url: startWith
+      deactivated: true
+    - name: endWith
+      url: endWith
+      deactivated: true
+    - name: concat
+      url: concat
+      deactivated: true

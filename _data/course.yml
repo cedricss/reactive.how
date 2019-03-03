@@ -4,209 +4,209 @@ lessons:
     chapter: Chapter 1 - Introduction to Reactive Programming
     videos:
       - 238067747
-    date: Monday, 18 Sept.
+    date: Monday, 18 Sept. 2017
 
   - name: Immutability
     card: map
     videos:
       - 238067754
-    date: Monday, 25 Sept.
+    date: Monday, 25 Sept. 2017
 
   - name: Reactivity
     card: listen
     videos:
       - 238723375
       - 238900495
-    date: Monday, 2 Oct.
+    date: Monday, 2 Oct. 2017
 
-  - name: Projection through time
+  - name: delay
     card: delay
     chapter: Chapter 2 - Categories of stream operations
     videos:
       - 238067734
       - 238900409
-    date: Monday, 9 Oct.
+    date: Monday, 9 Oct. 2017
 
-  - name: Two input streams. One output.
+  - name: merge
     card: merge
     videos:
       - 238067762
-    date: Monday, 16 Oct.
+    date: Monday, 16 Oct. 2017
 
-  - name: Projection vs Filtering
+  - name: map vs filter
     card: filter
     videos:
       - 239130196
       - 239108249
-    date: Monday, 23 Oct.
+    date: Monday, 23 Oct. 2017
 
   - name: combineLatest vs merge
     card: combineLatest
     videos:
       -
       - 240131697
-    date: Monday, 30 Oct.
+    date: Monday, 30 Oct. 2017
     
   - name: zip vs combineLatest in RxJS
     card: zip
     videos:
       -
       - 240966482
-    date: Monday, 6 Nov.
+    date: Monday, 6 Nov. 2017
 
   - name: Take 3 and complete
     card: take
     videos:
       -
       - 242296640
-    date: Monday, 13 Nov.
+    date: Monday, 13 Nov. 2017
 
   - name: Last value?
     card: last
     videos:
       -
       - 242933193
-    date: Monday, 20 Nov.
+    date: Monday, 20 Nov. 2017
 
   - name: Initial value!
     card: startWith
     date: Monday, 27 Nov.
 
-  - name: One rate-limiting strategy
+  - name: delay vs debounceTime
     card: debounceTime
     date: Monday, 4 Dec.
     videos:
       -
       - 245691062
 
-  - name: Two rate limiting strategies
+  - name: debounceTime vs throttleTime
     card: throttleTime
-    date: Monday, 11 Dec.
+    date: Monday, 11 Dec. 2017
     videos:
       -
       - 246763833
 
   - name: Categories - Special 3 month anniversary 🎉
     card: categories
-    date: Monday, 18 Dec.
+    date: Monday, 18 Dec. 2017
     videos:
       -
 
   - name: I wish you a wonderful Holiday Season!
     card: distinctUntilChanged
-    date: Monday, 25 Dec.
+    date: Monday, 25 Dec. 2017
     videos:
       -
       -
 
   - name: A New-Year special exercise
     card: interval
-    date: Monday, 1 Jan.
+    date: Monday, 1 Jan. 2017
     videos:
       -
       -
 
   - name: take(count) vs takeWhile(predicate) in RxJS
     card: takeWhile
-    date: Monday, 8 Jan.
+    date: Monday, 8 Jan. 2018
     videos:
       -
       - 250094761
 
   - name: How to solve the countdown challenge
     card: countdown
-    date: Monday, 15 Jan.
+    date: Monday, 15 Jan. 2018
     videos:
       -
       -
 
-  - name: last vs first. Are they symmetrical?
+  - name: first
     card: first
-    date: Monday, 22 Jan.
+    date: Monday, 22 Jan. 2018
     videos:
       -
       -
 
   - name: Can you fill in the blanks?
     card: skipWhile
-    date: Monday, 29 Jan.
+    date: Monday, 29 Jan. 2018
     videos:
       -
       -
 
-  - name: The scan operator
+  - name: scan
     card: scan
-    date: Monday, 5 Feb.
+    date: Monday, 5 Feb. 2018
     videos:
       -
       - 254283000
 
   - name: reduce vs scan
     card: reduce
-    date: Monday, 12 Feb.
+    date: Monday, 12 Feb. 2018
     videos:
       -
       - 255356781
 
   - name: Four ways to count
     card: count
-    date: Monday, 19 Feb.
+    date: Monday, 19 Feb. 2018
     videos:
       - 
       - 256387349
 
   - name: Operators and functions - Part 1
     card: predicate
-    date: Monday, 26 Feb.
+    date: Monday, 26 Feb. 2018
     videos:
       - 
       -
 
   - name: Operators and functions - Part 2
     card: accumulator
-    date: Monday, 5 Mar.
+    date: Monday, 5 Mar. 2018
     videos:
       - 
       -
 
   - name: How <code>❚ max</code> works under the hood in RxJS
     card: max
-    date: Monday, 12 Mar.
+    date: Monday, 12 Mar. 2018
     videos:
       - 
       -
 
   - name: The JavaScript pipeline operator proposal
     card: pipeline-operator
-    date: Monday, 19 Mar.
+    date: Monday, 19 Mar. 2018
     videos:
       - 
       -
   
   - name: RxJS Explorer
     card: rxjs/explorer
-    date: Monday, 26 Mar.
+    date: Monday, 26 Mar. 2018
     videos:
       - 
       -
 
   - name: A stream of colors with Popmotion <code>tween</code>
     card: popmotion/tween
-    date: Monday, 2 Apr.
+    date: Monday, 2 Apr. 2018
     videos:
       - 
       -
 
   - name: Pipeable operators - Build your own with RxJS!
     card: rxjs/pipeable-operators
-    date: Monday, 9 Apr.
+    date: Monday, 9 Apr. 2018
     videos:
       - 
       -
 
   - name: takeLast vs take
     card: takeLast
-    date: Monday, 16 Apr.
+    date: Monday, 16 Apr. 2018
     videos:
       - 
       -
