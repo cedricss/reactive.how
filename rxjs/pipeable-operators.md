@@ -2,6 +2,9 @@
 id: pipeable-operators
 lesson: 30
 title: Pipeable operators - Build your own with RxJS!
+learnBackAbout: zip
+learnAbout: pipeline-operator
+seeAlso: rxjs/explorer
 layout: default
 class: post
 preview_image: rxjs/pipeable-operators/content_preview.jpg
@@ -145,3 +148,7 @@ const bezier_stream = interval(350).pipe(
 * Optionally, import the **pipe function** to build custom and reusable operators from other pipeable operators
 
 You can download the full source code in several versions on [reactive.how/rxjs/explorer](http://reactive.how/rxjs/explorer).
+
+## See also
+
+[![](/img/rxjs/content_preview_higher.jpg){:.w450.shadow-lg}](/rxjs) <br/> [**Launchpad for RxJS**](/rxjs)

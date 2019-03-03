@@ -20,13 +20,6 @@ A clock is another source of events. Tick, tock. With `❚ interval` you can cre
 
 _Note: this is how it works in RxJS. It may be a bit different with some other reactive libraries. I will compare them in a future episode._
 
-In the Creating Stream category, you now have two cards:
-
-- fromEvent (read [Episode 1](/fromEvent))
-- interval
-
-Learn more about the three other categories I wrote about on [reactive.how/categories](/categories) (transformation, filtering and combining)
-
 ## New-Year exercise 🎉
 
 Now, are you ready for a little challenge? 

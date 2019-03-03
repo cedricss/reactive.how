@@ -8,7 +8,7 @@ preview_image: accumulator/content_preview.jpg
 preview_image_alt: accumulator function
 ---
 
-Last Monday, in [Part 1](/predicate), you've learned:
+In [Part 1](/predicate), you've learned:
 
 - Some operators may accept functions as arguments. These functions don't have to work with the input or the output stream. The operators do.
 - How you label a function (eg. "project" or "predicate" function) depends on how you use it. A function is not a _project_ or _predicate_ function in itself.
@@ -50,3 +50,9 @@ Even if a function is used as an _accumulator_ function, it doesn't have to "acc
 - An _accumulator_ function returns a value of the same type as its first argument.
 - It can ignore its second argument or accumulate it with the first one.
 - It doesn’t have to remember the result.
+
+## See also
+
+> [![](/img/predicate/content_preview.jpg){:.w300}](/predicate) <br/> [**project vs predicate**](/predicate)
+
+> [![](/img/reduce/content_preview.jpg){:.w300}](/reduce) <br/> [**reduce vs scan**](/reduce)

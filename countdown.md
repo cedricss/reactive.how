@@ -3,6 +3,9 @@ id: countdown
 lesson: 18
 title: Reactive Programming - How to solve the countdown challenge
 layout: default
+learnBackAbout: popmotion/tween
+learnAbout: skipWhile
+seeAlso:
 class: post
 preview_image: countdown/countdown.jpg
 preview_image_alt:

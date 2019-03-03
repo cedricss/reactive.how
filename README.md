@@ -1,15 +1,10 @@
-# Reactive.how
+# reactive.how
 
-## Learn reactive programming
+Experimental branch. Switch to [version 1](https://github.com/cedricss/reactive.how/tree/v1).
 
-<a href="http://reactive.how/"><img width="50%" src="img/collection_preview.png" /></a>
+<a href="https://reactive.how/"><img width="50%" src="img/content_preview.jpg" /></a>
 
-### A new animated card every Monday ✨
-
-- [Watch episodes](http://reactive.how/)
-- [Get updates + bonuses](http://reactive.how/#subscribe)
-
-## Contribute
-
-- [Edit the card collection](_data/cards.yml)
-- [Send feedback and issues](https://github.com/cedricss/reactive.how/issues)
+- [Learn RxJS operators and Reactive Programming principles](http://reactive.how/)
+- [Launchpad for RxJS](https://reactive.how/rxjs)
+- [RxJS Explorer](https://reactive.how/rxjs/explorer)
+- [Stay tuned](https://reactive.how/#subscribe)

@@ -1,6 +1,8 @@
 ---
 id: fromEvent
 lesson: 1
+learnAbout: filter
+seeAlso: map
 title: Learn reactive programming - Lesson 1, A stream of toggle events
 layout: default
 class: post
@@ -8,40 +10,27 @@ preview_image: fromEvent/content_preview.jpg
 preview_image_alt: fromEvent reactive operator and streams
 ---
 
-This is your first Monday! I am so excited to have you on board. We build reactive machines here. Our building blocks are **cards** and **pieces**.
-
-![](img/fromEvent/card-piece.png)
-
-Every Monday we'll play with cards and pieces to learn new reactive programming skills. Today, I'm pleased to give you your first building blocks:
-
-> ![](img/fromEvent/toggle.png){:.w100}
->
-> <small>The `▬ toggle` interactive piece. It can be turned on and off.</small>
-
 {% include card_player.html video=238067747 episode=false %}
 
-> <small>The `❚ fromEvent` card</small>
+`fromEvent` is a function that accepts a source of events, such as _click events_ on a toggle. As a result, it creates **a sequence of events over time**. This sequence is called a **stream**.
 
-This card accepts a source of events, such as _click events_ on the `▬ toggle` interactive piece. As a result, it creates **a sequence of events over time**. This sequence is called a **stream**.
+Reactive programming is programming with **streams**. 
 
-Reactive programming is programming with **streams**. With the full deck of cards, you'll be able to:
+Reactive stream libraries like RxJS let you:
 
 - **create** a stream from various sources
 - **transform** and **filter** a stream in different ways
 - **combine** multiple streams
 - and more!
 
-I can’t wait to give you new cards!
 
-## Summary
+## See also
 
-Congrats on your first experiment! 
 
-* you unlocked `▬ toggle`
-* you unlocked `❚ fromEvent`
-* you learned the concept of **stream**
+> [![](/img/filter/content_preview.png){:.w300}](/filter) <br/> [**map vs filter**](/filter)
 
-![](img/fromEvent/box.png){:.box}
-🤔
+> [![](/img/rxjs/pipeable-operators/content_preview.jpg){:.w300}](/rxjs/pipeable-operators) <br/> [**Pipeable operators - Build your own with RxJS!**](/rxjs/pipeable-operators)
 
-This event box is still a mystery though. What's inside? How can we open each box of the stream? That will be for next Monday!
+> [![](/img/zip/content_preview.jpg){:.w300}](/zip) <br/> [**zip vs combineLatest**](/zip)
+
+> [![](/img/pipeline-operator/content_preview.jpg){:.w300}](/pipeline-operator) <br/> [**The JavaScript pipeline operator proposal**](/pipeline-operator)

@@ -1,9 +1,14 @@
 ---
 id: max
+mainCompare: reduce
 lesson: 26
-title: Reactive Programming - scan, reduce, max
+compare: [reduce, max]
+title: How the RxJS &quot;max&quot; operator works under the hood (scan, reduce)
+learnAbout: count
+learnBackAbout: reduce
 layout: default
 class: post
+image: max/scanreducemax.gif
 preview_image: max/content_preview.jpg
 preview_image_alt: scan, reduce, max
 ---
@@ -16,10 +21,6 @@ This is how a `❚ max` operator would operate with an input stream:
 
 Some reactive stream libraries (eg. RxJS) provide this `❚ max` operator, while others don't. How would you code _max_ yourself?
 
-Watch the solution below.
-
-![](img/max/scanreducemax.gif)
-
 ### Comparer function
 
 In RxJS, `❚ min` and `❚ max` accept on optional comparer function as an argument.
@@ -27,3 +28,7 @@ In RxJS, `❚ min` and `❚ max` accept on optional comparer function as an argu
 For example:
 
 > ![](img/max/maxcomparer.png){:.w400}
+
+> ## See also
+
+> [![](/img/rxjs/pipeable-operators/content_preview.jpg){:.w300}](/rxjs/pipeable-operators) <br/> [**Pipeable operators - Build your own with RxJS!**](/rxjs/pipeable-operators)

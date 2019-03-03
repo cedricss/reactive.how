@@ -1,7 +1,14 @@
 ---
 id: skipWhile
+mainCompare: skipWhile
 lesson: 20
-title: Reactive Programming - Predicates everywhere
+seeAlso: take vs takeWhile
+seeAlsoLink: takeWhile
+title: takeWhile vs skipwhile in RxJS - Predicates everywhere
+compare: [skipWhile, takeWhile]
+learnBackAbout: takeWhile
+learnAbout: takeLast
+image: skipWhile/takeWhile1-skipWhile1.jpg
 layout: default
 class: post
 preview_image: skipWhile/exercises.jpg
@@ -9,7 +16,6 @@ preview_image_alt:
 ---
 
 ![](/img/skipWhile/exercises.jpg)
-> _This episode will show you how to perform each of those operations_
 
 Can you fill in the blanks? Try to find solutions that use only one card. If you are stuck, try at least to solve them with a [chain](/listen#chain) of several cards. Watch the solutions below when you are ready.
 
@@ -76,3 +82,9 @@ This is how `❚ last` operates with one input stream and a predicate:
 ### Summary
 
 ![](/img/skipWhile/solutions.jpg)
+
+## See also
+
+> [![](/img/rxjs/pipeable-operators/content_preview.jpg){:.w300}](/rxjs/pipeable-operators) <br/> [**Pipeable operators - Build your own with RxJS!**](/rxjs/pipeable-operators)
+
+> [![](/img/pipeline-operator/content_preview.jpg){:.w300}](/pipeline-operator) <br/> [**The JavaScript pipeline operator proposal**](/pipeline-operator)

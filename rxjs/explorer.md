@@ -2,7 +2,7 @@
 id: rxjs/explorer
 title: RxJS Explorer
 lesson: 28
-layout: default
+layout: default1
 class: post
 preview_image: rxjs/explorer/content_preview.jpg
 preview_image_alt: explorer preview
@@ -50,3 +50,6 @@ This explorer is based on those three cards.<p><i class="small pink question cir
 <script src="/lib/semantic/dist/components/tab.min.js"></script>
 
 <script>$('.menu .item').tab();</script>
+
+<h3 style="width:100%;margin-bottom:0">Learn more about RxJS operators and deprecated operators:<h3>
+<p><a href="/rxjs"><img src="/img/rxjs/content_preview_higher.jpg" alt="" class="w450 shadow-lg"></a> <br> <a style="margin-bottom:2rem" href="/rxjs">Launchpad for RxJS</a></p>

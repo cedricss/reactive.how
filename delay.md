@@ -1,30 +1,22 @@
 ---
 id: delay
+compareWith: debounceTime
 lesson: 4
-title: Learn reactive programming - Lesson 4, Time projection
+video: 238900409
+compare: [delay]
+learnAbout: debounceTime
+learnBackAbout: takeLast
+title: The delay operator in Reactive Programming - Time projection
 layout: default
 class: post
 preview_image: delay/content_preview.jpg
 preview_image_alt: Delay reactive method
 ---
 
-With the first three lessons, you have learned three concepts of Reactive Programming. Congrats!
+_delay_ accepts a _time period_ argument, such as `2500` milliseconds.
 
-- 1 - [Streams](/fromEvent)
-- 2 - [Immutability](/map)
-- 3 - [Reactivity](/listen)
+It doesn't change the relative time intervals between the events.
 
-Today, I'm sending you the `❚ delay` card:
+> ## Next
 
-{% include card_player.html video=238900409 episode=true %}
-
-Use a `▬ number` piece on this card to set the time period, such as `2500` milliseconds. Then, this is how `❚ delay` operates:
-
-- It projects each event of an input stream through time
-- As a result, it returns a new stream of timeshifted events
-
-As you can see, it doesn't change the relative time intervals between the events.
-
-Two weeks ago, you projected events through a **function** with [map](/map). You now have learned cards can also project events through **time**. Yeah!
-
-Next Monday, we'll play with _two_ input streams 😎.
+> [![](/img/debounceTime/content_preview.jpg){:.w300}](/debounceTime) <br/> [**debounceTime vs delay**](/debounceTime)

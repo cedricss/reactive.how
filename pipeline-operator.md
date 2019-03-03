@@ -2,6 +2,9 @@
 id: pipeline-operator
 lesson: 27
 title: Reactive Programming - JavaScript Pipeline Operator
+learnBackAbout: rxjs/pipeable-operators
+learnAbout: popmotion/tween
+seeAlso: takeWhile
 layout: default
 class: post
 preview_image: pipeline-operator/content_preview.jpg
@@ -30,8 +33,6 @@ Today, I show you the pipeline operator proposal in Javascript, in action with R
 
 **UPDATE 2 🔥** Full tutorial available: [Pipeable operators - Build your own in RxJS!](/rxjs/pipeable-operators)
 
-## A new episode every Monday
+## See also
 
-> [![](/img/reduce/reduce-scan-featured.gif){:.w350}](/reduce) <br/>[Episode 22 - **scan vs. reduce**](/reduce)
-
-📮 You can subscribe to [the mailing list](#subscribe) to receive new episodes right inside your inbox. Or [follow me on Twitter](https://twitter.com/CedricSoulas).
+[![](/img/rxjs/content_preview_higher.jpg){:.w450.shadow-lg}](/rxjs) <br/> [**Launchpad for RxJS**](/rxjs)

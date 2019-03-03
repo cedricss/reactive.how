@@ -1,26 +1,26 @@
 ---
 id: combineLatest
+compare: [combineLatest, merge]
+mainCompare: combineLatest
 lesson: 7
-title: Learn Reactive Programming - Episode 7 (combineLatest vs merge)
-layout: default
+video: 240131697
+focusOn: merge
+learnBackAbout: merge
+learnAbout: takeWhile
+compareAlsoWith: zip
 class: post
-preview_image: content_preview.jpg
+title: combineLatest vs merge in RxJS with animations
+layout: default
+preview_image: combineLatest/content_preview.jpg
 preview_image_alt: CombineLatest vs Merge
 ---
 
-In [Episode 5](/merge) you have discovered the _combining streams_ category and [merged](/merge) two input streams. Today, I show you a second card from this category: `❚ combineLatest`.
+## combineLatest / combine
 
-Let's compare this card with `❚ merge`, used on the same input streams:
+This operator is called **combineLatest** in RxJS or simply **combine** in other reactive streams library.
 
-{% include card_player.html video=240131697 episode=true %}
+> ## See also
 
-On the one hand, `❚ merge` doesn't need a **project** function, as it [doesn't change the event values](/merge) (learn more about project functions in [Episode 2](/map)).
+> [![](/img/zip/content_preview.jpg){:.w450}](/zip) <br/> [**zip vs combineLatest**](/zip)
 
-On the other hand, `❚ combineLatest` accepts a **project** function to combine two values (or more) into a new one, noted figuratively `⚬ ⟶ ⚭ ⟵ ⚬`.
-
- This is how `❚ combineLatest` operates with two (or more) input streams:
-
-- **Whenever** any input stream emits a value, it combines the **latest** values emitted by each input stream
-- As a result, it returns a new stream of combined events
-
-You now know two different ways of combining streams 🙌. Next Monday, I'll show you a third card that combines streams!
+> [![](/img/rxjs/content_preview_higher.jpg){:.w450.shadow-lg}](/rxjs) <br/> [**Launchpad for RxJS**](/rxjs)

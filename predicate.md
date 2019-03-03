@@ -55,4 +55,11 @@ In this example, the function <code class="one">n</code> ⟶ <code class="one">n
 - Some operators may accept functions as arguments. These functions don't have to work with the input or the output stream. The operators do.
 - How you label a function (eg. "project" or "predicate" function) depends on how you use it. A function is not a _project_ or _predicate_ function in itself.
 
-Next Monday, we'll continue the exploration of operators and functions with a second part!
+
+## See also
+
+> [![](/img/filter/content_preview.png){:.w300}](/filter) <br/> [**map vs filter**](/filter)
+
+> [![](/img/accumulator/content_preview.png){:.w300}](/accumulator) <br/> [**accumulator**](/accumulator)
+
+

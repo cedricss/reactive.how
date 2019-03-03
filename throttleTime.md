@@ -1,29 +1,28 @@
 ---
 id: throttleTime
+mainCompare: debounceTime
 lesson: 13
-title: Two rate limiting strategies (debounceTime vs throttleTime)
+video: 246763833
+learnBackAbout: debounceTime
+learnAbout: reduce  
+compare: [debounceTime, throttleTime]
+title: Rate-limiting in RxJS - debounceTime vs throttleTime
 layout: default
 class: post
 preview_image: throttleTime/content_preview.jpg
 preview_image_alt: The "throttleTime" operator
 ---
 
-Last Monday [I introduced](/debounceTime) the following issue:
+## debounceTime vs throttleTime in RxJS
 
 > _If your stream is created from key presses or mouse movements, you'll likely deal with bursts of events.  But you can't react to every single event, as it would overload the CPU or flood the servers with too many requests._
 
-I presented the `❚ debounceTime` card. It rate-limits events, based on an "emission silence" window of time. Learn more about it in [Episode 12](/debounceTime).
+`❚ debounceTime` rate-limits events, based on an "emission silence" window of time. `❚ throttleTime` doesn't delay events.
 
-Today, we explore another rate-limiting strategy with the `❚ throttleTime` card. Like `❚ debounceTime`, it accepts a time period argument. But `❚ throttleTime` doesn't delay events:
+They both accept a _time period_ argument, such as `500` milliseconds.
 
-{% include card_player.html video=246763833 episode=true %}
+> ## See also
 
-Use a `▬ number` piece on `❚ throttleTime` to set a _time period_, such as `500` milliseconds. Then, this is how `❚ throttleTime` operates:
+> [![](/img/pipeline-operator/content_preview.jpg){:.w300}](/pipeline-operator) <br/> [**The JavaScript pipeline operator proposal**](/pipeline-operator)
 
-- It starts by emitting the first event of the input stream
-- Then, it limits the rate of events to **at most** one per _time period_
-- As a result, it returns a new stream of "throttled" events
-
-## Summary
-
-`❚ debounceTime` and `❚ throttleTime` both accept a _time period_ and rate limit the emissions of the input stream. But as you can see on the visualization above, they operate in a very different way. Take some time considering both options for your next project!
+> [![](/img/rxjs/content_preview_higher.jpg){:.w450.shadow-lg}](/rxjs) <br/> [**Launchpad for RxJS**](/rxjs)
